@@ -20,10 +20,22 @@ class RateViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        configureView()
+    }
+}
+
+// MARK: Private functions
+
+private extension RateViewController {
+    
+    func configureView() {
         confirmButton.layer.cornerRadius = 4.0
     }
-    
-    // MARK: IBActions
+}
+
+// MARK: IBActions
+
+private extension RateViewController {
     
     @IBAction func tapCloseButton(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)

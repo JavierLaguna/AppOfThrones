@@ -23,10 +23,24 @@ class EpisodeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        configureView()
+    }
+}
+
+// MARK: Private functions
+
+private extension EpisodeViewController {
+    
+    func configureView() {
+        title = "Seasons"
+        
         rateButton.layer.cornerRadius = 4.0
     }
+}
 
-    // MARK: IBActions
+// MARK: IBActions
+
+private extension EpisodeViewController {
     
     @IBAction func openRate(_ sender: Any) {
         let rateVC = RateViewController()
