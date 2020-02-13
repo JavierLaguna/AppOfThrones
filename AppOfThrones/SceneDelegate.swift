@@ -20,19 +20,21 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
             return
         }
         
+        let tabBarVC = UITabBarController()
         let episodesVC = EpisodeViewController()
         let castVC = CastViewController()
         let houseVC = HouseViewController()
         let settingsVC = SettingsViewController()
         
-        episodesVC.tabBarItem = UITabBarItem(title: "Seasons", image: nil, tag: 0)
-        castVC.tabBarItem = UITabBarItem(title: "Cast", image: nil, tag: 1)
-        houseVC.tabBarItem = UITabBarItem(title: "Houses", image: nil, tag: 2)
-        settingsVC.tabBarItem = UITabBarItem(title: "Settings", image: nil, tag: 3)
+        episodesVC.tabBarItem = UITabBarItem(title: "Seasons", image: UIImage(systemName: "film.fill"), tag: 0)
+        castVC.tabBarItem = UITabBarItem(title: "Cast", image: UIImage(systemName: "person.3.fill"), tag: 1)
+        houseVC.tabBarItem = UITabBarItem(title: "Houses", image: UIImage(systemName: "shield.lefthalf.fill"), tag: 2)
+        settingsVC.tabBarItem = UITabBarItem(title: "Settings", image: UIImage(systemName: "gear"), tag: 3)
         
-        let tabBarVC = UITabBarController()
         tabBarVC.viewControllers = [episodesVC, castVC, houseVC, settingsVC]
-        
+        tabBarVC.tabBar.barStyle = .black
+        tabBarVC.tabBar.tintColor = UIColor(red: 235/255, green: 172/255, blue: 38/255, alpha: 1)
+
         window = UIWindow.init(frame: windowScene.coordinateSpace.bounds)
         window?.windowScene = windowScene
         window?.rootViewController = tabBarVC

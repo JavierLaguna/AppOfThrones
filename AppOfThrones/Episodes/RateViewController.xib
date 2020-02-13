@@ -19,29 +19,35 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5TI-su-1kt">
-                    <rect key="frame" x="20" y="44" width="46" height="30"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5TI-su-1kt">
+                    <rect key="frame" x="20" y="44" width="46" height="46"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="46" id="bMB-Ao-0G4"/>
-                        <constraint firstAttribute="height" constant="30" id="dCP-aD-ghU"/>
+                        <constraint firstAttribute="height" constant="46" id="dCP-aD-ghU"/>
                     </constraints>
-                    <state key="normal" title="Button"/>
+                    <color key="tintColor" red="0.92156862750000001" green="0.67450980390000004" blue="0.14901960780000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" image="xmark.circle.fill" catalog="system">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="tapCloseButton:" destination="-1" eventType="touchUpInside" id="zrF-14-9Fn"/>
+                    </connections>
                 </button>
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Baratheon" translatesAutoresizingMaskIntoConstraints="NO" id="cj6-xa-mvN">
-                    <rect key="frame" x="20" y="94" width="335" height="260"/>
+                    <rect key="frame" x="20" y="110" width="335" height="260.00000000000023"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="260" id="LSR-Nf-132"/>
                     </constraints>
                 </imageView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TCT-G5-Hl4">
-                    <rect key="frame" x="20" y="418" width="335" height="28.666666666666686"/>
+                    <rect key="frame" x="20" y="434" width="335" height="28.666666666666686"/>
                     <fontDescription key="fontDescription" type="system" pointSize="24"/>
                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YLd-BC-Ggf">
                     <rect key="frame" x="20" y="682" width="335" height="64"/>
-                    <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="backgroundColor" red="0.92156862750000001" green="0.67450980390000004" blue="0.14901960780000001" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="64" id="lrb-Cy-Glc"/>
                     </constraints>
@@ -54,7 +60,8 @@
                     </connections>
                 </button>
                 <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="kvO-Xe-xFm">
-                    <rect key="frame" x="18" y="510.66666666666674" width="339" height="31"/>
+                    <rect key="frame" x="18" y="526.66666666666663" width="339" height="31"/>
+                    <color key="tintColor" red="0.92156862750000001" green="0.67450980390000004" blue="0.14901960780000001" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="30" id="ijZ-Cd-Rwf"/>
                     </constraints>
@@ -83,5 +90,6 @@
     </objects>
     <resources>
         <image name="Baratheon" width="950" height="1425"/>
+        <image name="xmark.circle.fill" catalog="system" width="64" height="60"/>
     </resources>
 </document>
