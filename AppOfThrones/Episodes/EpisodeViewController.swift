@@ -17,4 +17,8 @@ class EpisodeViewController: UIViewController {
         super.viewDidLoad()
         
     }
+    
+    @IBAction func openRate(_ sender: Any) {
+        
+    }
 }

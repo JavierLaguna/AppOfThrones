@@ -16,7 +16,46 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Rnt-y4-hQ0">
+                    <rect key="frame" x="20" y="88" width="374" height="32"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="31" id="ZtO-Oa-CzP"/>
+                    </constraints>
+                    <segments>
+                        <segment title="1"/>
+                        <segment title="2"/>
+                        <segment title="3"/>
+                        <segment title="4"/>
+                        <segment title="5"/>
+                        <segment title="6"/>
+                        <segment title="7"/>
+                        <segment title="8"/>
+                    </segments>
+                </segmentedControl>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u9A-hd-T5j">
+                    <rect key="frame" x="20" y="766" width="374" height="64"/>
+                    <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="64" id="nlY-56-Uin"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="24"/>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <state key="normal" title="Rate"/>
+                    <connections>
+                        <action selector="openRate:" destination="-1" eventType="touchUpInside" id="iEO-n6-kba"/>
+                    </connections>
+                </button>
+            </subviews>
             <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="Rnt-y4-hQ0" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="44" id="2tC-10-Oyk"/>
+                <constraint firstItem="u9A-hd-T5j" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="5Ec-IF-vKw"/>
+                <constraint firstItem="Rnt-y4-hQ0" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="JXt-In-u8L"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="u9A-hd-T5j" secondAttribute="bottom" constant="32" id="eYh-iH-Xv7"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="u9A-hd-T5j" secondAttribute="trailing" constant="20" id="fxB-zM-9cC"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Rnt-y4-hQ0" secondAttribute="trailing" constant="20" id="mGV-lW-6EU"/>
+            </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <point key="canvasLocation" x="139" y="129"/>
         </view>

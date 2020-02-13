@@ -10,6 +10,7 @@ import UIKit
 
 class RateViewController: UIViewController {
     
+    // MARK: IBOutlets
     @IBOutlet weak var rateLabel: UILabel!
     @IBOutlet weak var confirmButton: UIButton!
     

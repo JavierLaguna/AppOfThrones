@@ -20,11 +20,22 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
             return
         }
         
-        let rateViewController = RateViewController()
+        let episodesVC = EpisodeViewController()
+        let castVC = CastViewController()
+        let houseVC = HouseViewController()
+        let settingsVC = SettingsViewController()
+        
+        episodesVC.tabBarItem = UITabBarItem(title: "Seasons", image: nil, tag: 0)
+        castVC.tabBarItem = UITabBarItem(title: "Cast", image: nil, tag: 1)
+        houseVC.tabBarItem = UITabBarItem(title: "Houses", image: nil, tag: 2)
+        settingsVC.tabBarItem = UITabBarItem(title: "Settings", image: nil, tag: 3)
+        
+        let tabBarVC = UITabBarController()
+        tabBarVC.viewControllers = [episodesVC, castVC, houseVC, settingsVC]
         
         window = UIWindow.init(frame: windowScene.coordinateSpace.bounds)
         window?.windowScene = windowScene
-        window?.rootViewController = rateViewController
+        window?.rootViewController = tabBarVC
         window?.makeKeyAndVisible()
     }
 
