@@ -22,6 +22,8 @@ final class CastTableViewCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        
+        configureView()
     }
     
     // MARK: Public functions
