@@ -9,7 +9,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EpisodeViewController" customModule="AppOfThrones" customModuleProvider="target">
             <connections>
-                <outlet property="rateButton" destination="u9A-hd-T5j" id="oHA-2m-XBW"/>
+                <outlet property="episodesTable" destination="6JX-bZ-eMg" id="I5g-8c-VNY"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -34,27 +34,19 @@
                         <segment title="8"/>
                     </segments>
                 </segmentedControl>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u9A-hd-T5j">
-                    <rect key="frame" x="20" y="766" width="374" height="64"/>
-                    <color key="backgroundColor" red="0.92156862750000001" green="0.67450980390000004" blue="0.14901960780000001" alpha="1" colorSpace="calibratedRGB"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="64" id="nlY-56-Uin"/>
-                    </constraints>
-                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="24"/>
-                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    <state key="normal" title="Rate"/>
-                    <connections>
-                        <action selector="openRate:" destination="-1" eventType="touchUpInside" id="iEO-n6-kba"/>
-                    </connections>
-                </button>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="6JX-bZ-eMg">
+                    <rect key="frame" x="0.0" y="143" width="414" height="719"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                </tableView>
             </subviews>
             <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
             <constraints>
                 <constraint firstItem="Rnt-y4-hQ0" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="44" id="2tC-10-Oyk"/>
-                <constraint firstItem="u9A-hd-T5j" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="5Ec-IF-vKw"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="6JX-bZ-eMg" secondAttribute="bottom" id="Ikx-za-EqL"/>
                 <constraint firstItem="Rnt-y4-hQ0" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="JXt-In-u8L"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="u9A-hd-T5j" secondAttribute="bottom" constant="32" id="eYh-iH-Xv7"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="u9A-hd-T5j" secondAttribute="trailing" constant="20" id="fxB-zM-9cC"/>
+                <constraint firstItem="6JX-bZ-eMg" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="NDa-4m-10f"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="6JX-bZ-eMg" secondAttribute="trailing" id="WXB-1Z-7b0"/>
+                <constraint firstItem="6JX-bZ-eMg" firstAttribute="top" secondItem="Rnt-y4-hQ0" secondAttribute="bottom" constant="24" id="fTY-2K-OJT"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Rnt-y4-hQ0" secondAttribute="trailing" constant="20" id="mGV-lW-6EU"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>

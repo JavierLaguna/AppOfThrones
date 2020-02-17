@@ -8,12 +8,12 @@
 
 import UIKit
 
-class RateViewController: UIViewController {
+final class RateViewController: UIViewController {
     
     // MARK: IBOutlets
     
-    @IBOutlet weak var rateLabel: UILabel!
-    @IBOutlet weak var confirmButton: UIButton!
+    @IBOutlet private weak var rateLabel: UILabel!
+    @IBOutlet private weak var confirmButton: UIButton!
     
     // MARK: LifeCycle
     
@@ -22,20 +22,14 @@ class RateViewController: UIViewController {
         
         configureView()
     }
-}
-
-// MARK: Private functions
-
-private extension RateViewController {
     
-    func configureView() {
+    // MARK: Private functions
+    
+    private func configureView() {
         confirmButton.layer.cornerRadius = 4.0
     }
-}
-
-// MARK: IBActions
-
-private extension RateViewController {
+    
+    // MARK: IBActions
     
     @IBAction func tapCloseButton(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)

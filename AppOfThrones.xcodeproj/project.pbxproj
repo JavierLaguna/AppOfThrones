@@ -14,6 +14,8 @@
 		4989F58E23F34BD30058EF88 /* AppOfThronesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4989F58D23F34BD30058EF88 /* AppOfThronesTests.swift */; };
 		4989F59923F35E430058EF88 /* RateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4989F59823F35E430058EF88 /* RateViewController.swift */; };
 		4989F59B23F35E890058EF88 /* RateViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4989F59A23F35E890058EF88 /* RateViewController.xib */; };
+		49A45C4E23FB31D100474F8D /* EpisodeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A45C4C23FB31D100474F8D /* EpisodeTableViewCell.swift */; };
+		49A45C4F23FB31D100474F8D /* EpisodeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49A45C4D23FB31D100474F8D /* EpisodeTableViewCell.xib */; };
 		49BAF29923F5F09D005B5534 /* EpisodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49BAF29723F5F09D005B5534 /* EpisodeViewController.swift */; };
 		49BAF29A23F5F09D005B5534 /* EpisodeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49BAF29823F5F09D005B5534 /* EpisodeViewController.xib */; };
 		49BAF29D23F5F419005B5534 /* Episode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49BAF29C23F5F419005B5534 /* Episode.swift */; };
@@ -47,6 +49,8 @@
 		4989F58F23F34BD30058EF88 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4989F59823F35E430058EF88 /* RateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RateViewController.swift; sourceTree = "<group>"; };
 		4989F59A23F35E890058EF88 /* RateViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RateViewController.xib; sourceTree = "<group>"; };
+		49A45C4C23FB31D100474F8D /* EpisodeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeTableViewCell.swift; sourceTree = "<group>"; };
+		49A45C4D23FB31D100474F8D /* EpisodeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EpisodeTableViewCell.xib; sourceTree = "<group>"; };
 		49BAF29723F5F09D005B5534 /* EpisodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeViewController.swift; sourceTree = "<group>"; };
 		49BAF29823F5F09D005B5534 /* EpisodeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EpisodeViewController.xib; sourceTree = "<group>"; };
 		49BAF29C23F5F419005B5534 /* Episode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Episode.swift; sourceTree = "<group>"; };
@@ -127,6 +131,8 @@
 				49BAF29823F5F09D005B5534 /* EpisodeViewController.xib */,
 				4989F59823F35E430058EF88 /* RateViewController.swift */,
 				4989F59A23F35E890058EF88 /* RateViewController.xib */,
+				49A45C4C23FB31D100474F8D /* EpisodeTableViewCell.swift */,
+				49A45C4D23FB31D100474F8D /* EpisodeTableViewCell.xib */,
 			);
 			path = Episodes;
 			sourceTree = "<group>";
@@ -252,6 +258,7 @@
 				4989F58323F34BD20058EF88 /* LaunchScreen.storyboard in Resources */,
 				49BAF2A323F60214005B5534 /* CastViewController.xib in Resources */,
 				49BAF2B023F60938005B5534 /* HouseViewController.xib in Resources */,
+				49A45C4F23FB31D100474F8D /* EpisodeTableViewCell.xib in Resources */,
 				49BAF29A23F5F09D005B5534 /* EpisodeViewController.xib in Resources */,
 				4989F58023F34BD20058EF88 /* Assets.xcassets in Resources */,
 			);
@@ -271,6 +278,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49A45C4E23FB31D100474F8D /* EpisodeTableViewCell.swift in Sources */,
 				4989F59923F35E430058EF88 /* RateViewController.swift in Sources */,
 				4989F57723F34BCE0058EF88 /* AppDelegate.swift in Sources */,
 				49BAF2A623F602A7005B5534 /* SettingsViewController.swift in Sources */,

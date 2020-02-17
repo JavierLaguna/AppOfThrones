@@ -8,11 +8,11 @@
 
 import UIKit
 
-class EpisodeViewController: UIViewController {
+final class EpisodeViewController: UIViewController {
     
     // MARK: IBOutlets
     
-    @IBOutlet weak var rateButton: UIButton!
+    @IBOutlet private weak var episodesTable: UITableView!
     
     // MARK: Variables
     
@@ -24,26 +24,46 @@ class EpisodeViewController: UIViewController {
         super.viewDidLoad()
         
         configureView()
+        configureTable()
     }
-}
-
-// MARK: Private functions
-
-private extension EpisodeViewController {
     
-    func configureView() {
+    // MARK: Private functions
+    
+    private func configureView() {
         title = "Seasons"
-        
-        rateButton.layer.cornerRadius = 4.0
     }
+    
+    private func configureTable() {
+        episodesTable.dataSource = self
+        episodesTable.delegate = self
+        
+        episodesTable.register(UINib(nibName: "EpisodeTableViewCell", bundle: nil), forCellReuseIdentifier: "EpisodeTableViewCell")
+    }
+    
+    // MARK: IBActions
+    
 }
 
-// MARK: IBActions
+// MARK: UITableViewDataSource
 
-private extension EpisodeViewController {
-    
-    @IBAction func openRate(_ sender: Any) {
-        let rateVC = RateViewController()
-        present(rateVC, animated: true, completion: nil)
+extension EpisodeViewController: UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 1
     }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "EpisodeTableViewCell", for: indexPath) as? EpisodeTableViewCell else {
+            return UITableViewCell()
+        }
+        
+        return cell
+    }
+    
+
+}
+
+// MARK: UITableViewDelegate
+
+extension EpisodeViewController: UITableViewDelegate {
+
 }
