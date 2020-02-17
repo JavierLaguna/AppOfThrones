@@ -16,6 +16,9 @@
 		4989F59B23F35E890058EF88 /* RateViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4989F59A23F35E890058EF88 /* RateViewController.xib */; };
 		49A45C4E23FB31D100474F8D /* EpisodeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A45C4C23FB31D100474F8D /* EpisodeTableViewCell.swift */; };
 		49A45C4F23FB31D100474F8D /* EpisodeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49A45C4D23FB31D100474F8D /* EpisodeTableViewCell.xib */; };
+		49A45C5223FB488300474F8D /* CastTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A45C5023FB488300474F8D /* CastTableViewCell.swift */; };
+		49A45C5323FB488300474F8D /* CastTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49A45C5123FB488300474F8D /* CastTableViewCell.xib */; };
+		49A45C5523FB4B4800474F8D /* Cast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A45C5423FB4B4800474F8D /* Cast.swift */; };
 		49BAF29923F5F09D005B5534 /* EpisodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49BAF29723F5F09D005B5534 /* EpisodeViewController.swift */; };
 		49BAF29A23F5F09D005B5534 /* EpisodeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49BAF29823F5F09D005B5534 /* EpisodeViewController.xib */; };
 		49BAF29D23F5F419005B5534 /* Episode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49BAF29C23F5F419005B5534 /* Episode.swift */; };
@@ -51,6 +54,9 @@
 		4989F59A23F35E890058EF88 /* RateViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RateViewController.xib; sourceTree = "<group>"; };
 		49A45C4C23FB31D100474F8D /* EpisodeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeTableViewCell.swift; sourceTree = "<group>"; };
 		49A45C4D23FB31D100474F8D /* EpisodeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EpisodeTableViewCell.xib; sourceTree = "<group>"; };
+		49A45C5023FB488300474F8D /* CastTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CastTableViewCell.swift; sourceTree = "<group>"; };
+		49A45C5123FB488300474F8D /* CastTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CastTableViewCell.xib; sourceTree = "<group>"; };
+		49A45C5423FB4B4800474F8D /* Cast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cast.swift; sourceTree = "<group>"; };
 		49BAF29723F5F09D005B5534 /* EpisodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeViewController.swift; sourceTree = "<group>"; };
 		49BAF29823F5F09D005B5534 /* EpisodeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EpisodeViewController.xib; sourceTree = "<group>"; };
 		49BAF29C23F5F419005B5534 /* Episode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Episode.swift; sourceTree = "<group>"; };
@@ -105,7 +111,7 @@
 				49BAF29B23F5F3E7005B5534 /* Model */,
 				49BAF29E23F601DD005B5534 /* Cast */,
 				49BAF29623F5F07A005B5534 /* Episodes */,
-				49BAF2AC23F6082A005B5534 /* House */,
+				49BAF2AC23F6082A005B5534 /* Houses */,
 				49BAF29F23F601F7005B5534 /* Settings */,
 				4989F57623F34BCE0058EF88 /* AppDelegate.swift */,
 				4989F57823F34BCE0058EF88 /* SceneDelegate.swift */,
@@ -141,6 +147,7 @@
 			isa = PBXGroup;
 			children = (
 				49BAF29C23F5F419005B5534 /* Episode.swift */,
+				49A45C5423FB4B4800474F8D /* Cast.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -150,6 +157,8 @@
 			children = (
 				49BAF2A023F60214005B5534 /* CastViewController.swift */,
 				49BAF2A123F60214005B5534 /* CastViewController.xib */,
+				49A45C5023FB488300474F8D /* CastTableViewCell.swift */,
+				49A45C5123FB488300474F8D /* CastTableViewCell.xib */,
 			);
 			path = Cast;
 			sourceTree = "<group>";
@@ -163,13 +172,13 @@
 			path = Settings;
 			sourceTree = "<group>";
 		};
-		49BAF2AC23F6082A005B5534 /* House */ = {
+		49BAF2AC23F6082A005B5534 /* Houses */ = {
 			isa = PBXGroup;
 			children = (
 				49BAF2AD23F60938005B5534 /* HouseViewController.swift */,
 				49BAF2AE23F60938005B5534 /* HouseViewController.xib */,
 			);
-			path = House;
+			path = Houses;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -255,6 +264,7 @@
 			files = (
 				4989F59B23F35E890058EF88 /* RateViewController.xib in Resources */,
 				49BAF2A723F602A7005B5534 /* SettingsViewController.xib in Resources */,
+				49A45C5323FB488300474F8D /* CastTableViewCell.xib in Resources */,
 				4989F58323F34BD20058EF88 /* LaunchScreen.storyboard in Resources */,
 				49BAF2A323F60214005B5534 /* CastViewController.xib in Resources */,
 				49BAF2B023F60938005B5534 /* HouseViewController.xib in Resources */,
@@ -284,7 +294,9 @@
 				49BAF2A623F602A7005B5534 /* SettingsViewController.swift in Sources */,
 				49BAF29923F5F09D005B5534 /* EpisodeViewController.swift in Sources */,
 				49BAF29D23F5F419005B5534 /* Episode.swift in Sources */,
+				49A45C5223FB488300474F8D /* CastTableViewCell.swift in Sources */,
 				4989F57923F34BCE0058EF88 /* SceneDelegate.swift in Sources */,
+				49A45C5523FB4B4800474F8D /* Cast.swift in Sources */,
 				49BAF2A223F60214005B5534 /* CastViewController.swift in Sources */,
 				49BAF2AF23F60938005B5534 /* HouseViewController.swift in Sources */,
 			);

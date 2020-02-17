@@ -24,13 +24,21 @@ final class EpisodeTableViewCell: UITableViewCell {
         
         configureView()
     }
+
+    // MARK: Public functions
+
+    func setEpisode(_ episode: Episode) {
+        thumbImage.image = UIImage(named: episode.image ?? "")
+        titleLabel.text = episode.name
+        dateLabel.text = episode.date
+    }
     
     // MARK: Private functions
     
     private func configureView() {
         thumbImage.layer.cornerRadius = 1.0
-        thumbImage.layer.borderColor = UIColor.white.withAlphaComponent(0.2).cgColor
         thumbImage.layer.borderWidth = 1.0
+        thumbImage.layer.borderColor = UIColor.white.withAlphaComponent(0.2).cgColor
         
         rateButton.layer.cornerRadius = 15
     }

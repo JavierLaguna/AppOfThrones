@@ -16,7 +16,7 @@ final class EpisodeViewController: UIViewController {
     
     // MARK: Variables
     
-    var episodes: [Episode] = [Episode(id: 1, name: "Winter is Coming", date: "April 17, 2011", image: "episodeTest", episode: 1, season: 1, overview: "Jon Arryn, the Hand of the King, is dead. King Robert...")]
+    var episodes: [Episode] = [Episode(id: 1, name: "Winter is Coming", date: "April 17, 2011", image: "Stark", episode: 1, season: 1, overview: "Jon Arryn, the Hand of the King, is dead. King Robert...")]
     
     // MARK: LifeCycle
     
@@ -38,6 +38,8 @@ final class EpisodeViewController: UIViewController {
         episodesTable.delegate = self
         
         episodesTable.register(UINib(nibName: "EpisodeTableViewCell", bundle: nil), forCellReuseIdentifier: "EpisodeTableViewCell")
+        
+        episodesTable.tableFooterView = UIView()
     }
     
     // MARK: IBActions
@@ -47,8 +49,9 @@ final class EpisodeViewController: UIViewController {
 // MARK: UITableViewDataSource
 
 extension EpisodeViewController: UITableViewDataSource {
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return episodes.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -56,14 +59,16 @@ extension EpisodeViewController: UITableViewDataSource {
             return UITableViewCell()
         }
         
+        cell.setEpisode(episodes[indexPath.row])
         return cell
     }
-    
-
 }
 
 // MARK: UITableViewDelegate
 
 extension EpisodeViewController: UITableViewDelegate {
-
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 128
+    }
 }

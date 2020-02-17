@@ -19,7 +19,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Rnt-y4-hQ0">
-                    <rect key="frame" x="20" y="88" width="374" height="32"/>
+                    <rect key="frame" x="20" y="64" width="374" height="32"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="31" id="ZtO-Oa-CzP"/>
                     </constraints>
@@ -35,18 +35,18 @@
                     </segments>
                 </segmentedControl>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="6JX-bZ-eMg">
-                    <rect key="frame" x="0.0" y="143" width="414" height="719"/>
-                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <rect key="frame" x="0.0" y="115" width="414" height="747"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
                 </tableView>
             </subviews>
             <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
             <constraints>
-                <constraint firstItem="Rnt-y4-hQ0" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="44" id="2tC-10-Oyk"/>
+                <constraint firstItem="Rnt-y4-hQ0" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="20" id="2tC-10-Oyk"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="6JX-bZ-eMg" secondAttribute="bottom" id="Ikx-za-EqL"/>
                 <constraint firstItem="Rnt-y4-hQ0" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="JXt-In-u8L"/>
                 <constraint firstItem="6JX-bZ-eMg" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="NDa-4m-10f"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="6JX-bZ-eMg" secondAttribute="trailing" id="WXB-1Z-7b0"/>
-                <constraint firstItem="6JX-bZ-eMg" firstAttribute="top" secondItem="Rnt-y4-hQ0" secondAttribute="bottom" constant="24" id="fTY-2K-OJT"/>
+                <constraint firstItem="6JX-bZ-eMg" firstAttribute="top" secondItem="Rnt-y4-hQ0" secondAttribute="bottom" constant="20" id="fTY-2K-OJT"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Rnt-y4-hQ0" secondAttribute="trailing" constant="20" id="mGV-lW-6EU"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
