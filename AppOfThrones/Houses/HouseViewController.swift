@@ -8,23 +8,63 @@
 
 import UIKit
 
-class HouseViewController: UIViewController {
+final class HouseViewController: UIViewController {
+    
+    // MARK: IBOutlets
 
+    @IBOutlet private weak var housesTable: UITableView!
+    
+    // MARK: Variables
+    
+    var houses: [House] = [House(imageName: "Stark", name: "Stark", words: "Winter is coming!", seat: "Invernalia")]
+    
+    // MARK: LifeCycle
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        configureView()
+        configureTable()
     }
 
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    // MARK: Private functions
+    
+    private func configureView() {
     }
-    */
+    
+    private func configureTable() {
+        housesTable.dataSource = self
+        housesTable.delegate = self
+        
+        housesTable.register(UINib(nibName: "HouseTableViewCell", bundle: nil), forCellReuseIdentifier: "HouseTableViewCell")
+        
+        housesTable.tableFooterView = UIView()
+    }
+}
 
+// MARK: UITableViewDataSource
+
+extension HouseViewController: UITableViewDataSource {
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return houses.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "HouseTableViewCell", for: indexPath) as? HouseTableViewCell else {
+            return UITableViewCell()
+        }
+        
+        cell.setHouse(houses[indexPath.row])
+        return cell
+    }
+}
+
+// MARK: UITableViewDelegate
+
+extension HouseViewController: UITableViewDelegate {
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 174
+    }
 }
