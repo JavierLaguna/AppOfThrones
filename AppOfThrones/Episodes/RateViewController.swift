@@ -21,6 +21,26 @@ final class RateViewController: UIViewController {
     @IBOutlet private weak var confirmButton: UIButton!
     @IBOutlet private weak var rateSlider: UISlider!
     
+    // MARK: Variable
+    
+    private var episode: Episode?
+    
+    // MARK: Constructor
+    
+    convenience init(withEpisode episode: Episode) {
+        self.init()
+        
+        self.episode = episode
+        self.title = episode.name
+//        let rating = DataController.shared.ratingForEpisode(episode)
+//        switch rating?.rate {
+//        case .rated(let value):
+//            setRating(value)
+//        default:
+//            setRating(0)
+//        }
+    }
+    
     // MARK: LifeCycle
     
     override func viewDidLoad() {
@@ -50,7 +70,7 @@ final class RateViewController: UIViewController {
         
         if rating >= positionDouble + 1 && rating < positionDouble + 2 {
             imageView.image = UIImage(systemName: "star.lefthalf.fill")
-        } else if rating >= positionDouble {
+        } else if rating >= positionDouble + 2 {
             imageView.image = UIImage(systemName: "star.fill")
         } else {
             imageView.image = UIImage(systemName: "star")
@@ -65,11 +85,15 @@ final class RateViewController: UIViewController {
     
     @IBAction private func sliderChange(_ sender: Any) {
         let rate = Double(Int(rateSlider.value * 5) / 10)
-
         setRating(rate)
     }
     
     @IBAction private func tapConfirmButton(_ sender: Any) {
+        let rate = Double(Int(rateSlider.value * 5) / 10)
+        if let episode = self.episode {
+            DataController.shared.rateEpisode(episode, value: rate)
+        }
+        
         tapCloseButton(sender)
     }
 }

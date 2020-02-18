@@ -58,8 +58,13 @@ extension EpisodeViewController: UITableViewDataSource {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "EpisodeTableViewCell", for: indexPath) as? EpisodeTableViewCell else {
             return UITableViewCell()
         }
-        
-        cell.setEpisode(episodes[indexPath.row])
+    
+        let episode = episodes[indexPath.row]
+        cell.setEpisode(episode)
+        cell.rateBlock = { [weak self] in
+            let rateVC = UINavigationController(rootViewController: RateViewController(withEpisode: episode))
+            self?.navigationController?.present(rateVC, animated: true, completion: nil)
+            }
         return cell
     }
 }
@@ -70,10 +75,5 @@ extension EpisodeViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 128
-    }
-    
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let rateVC = RateViewController()
-        navigationController?.present(rateVC, animated: true, completion: nil)
     }
 }
