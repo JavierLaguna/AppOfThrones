@@ -71,4 +71,9 @@ extension EpisodeViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 128
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let rateVC = RateViewController()
+        navigationController?.present(rateVC, animated: true, completion: nil)
+    }
 }

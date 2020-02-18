@@ -35,15 +35,24 @@
                         <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kFm-bJ-qtK">
+                        <rect key="frame" x="160" y="107" width="153" height="20.5"/>
+                        <fontDescription key="fontDescription" type="italicSystem" pointSize="17"/>
+                        <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
                 </subviews>
                 <constraints>
                     <constraint firstItem="UT0-Tn-Zvc" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="2y8-Qm-cIk"/>
                     <constraint firstItem="UT0-Tn-Zvc" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="47v-3q-doY"/>
+                    <constraint firstItem="kFm-bJ-qtK" firstAttribute="trailing" secondItem="nUZ-7V-qaW" secondAttribute="trailing" id="4IM-Dc-LTp"/>
                     <constraint firstItem="4T6-9Z-YNN" firstAttribute="top" secondItem="nUZ-7V-qaW" secondAttribute="bottom" constant="12" id="B19-6o-gna"/>
+                    <constraint firstItem="kFm-bJ-qtK" firstAttribute="top" secondItem="4T6-9Z-YNN" secondAttribute="bottom" constant="40" id="IGv-Hb-xW3"/>
                     <constraint firstAttribute="trailing" secondItem="nUZ-7V-qaW" secondAttribute="trailing" constant="20" id="QRF-i8-4Xw"/>
                     <constraint firstItem="nUZ-7V-qaW" firstAttribute="leading" secondItem="UT0-Tn-Zvc" secondAttribute="trailing" constant="20" id="ZJg-5A-pEq"/>
                     <constraint firstItem="4T6-9Z-YNN" firstAttribute="trailing" secondItem="nUZ-7V-qaW" secondAttribute="trailing" id="hDN-Fl-f0Z"/>
                     <constraint firstItem="4T6-9Z-YNN" firstAttribute="leading" secondItem="nUZ-7V-qaW" secondAttribute="leading" id="lwK-iY-luQ"/>
+                    <constraint firstItem="kFm-bJ-qtK" firstAttribute="leading" secondItem="nUZ-7V-qaW" secondAttribute="leading" id="oTR-JX-mzA"/>
                     <constraint firstItem="nUZ-7V-qaW" firstAttribute="top" secondItem="UT0-Tn-Zvc" secondAttribute="top" id="yyD-4V-otN"/>
                 </constraints>
             </tableViewCellContentView>
@@ -52,7 +61,8 @@
             <connections>
                 <outlet property="houseImage" destination="UT0-Tn-Zvc" id="rOg-vM-jci"/>
                 <outlet property="nameLabel" destination="nUZ-7V-qaW" id="oEy-jA-DV7"/>
-                <outlet property="wordsLabel" destination="4T6-9Z-YNN" id="ZWu-yo-lDg"/>
+                <outlet property="seatLabel" destination="4T6-9Z-YNN" id="VOi-rF-S0E"/>
+                <outlet property="wordsLabel" destination="kFm-bJ-qtK" id="EdZ-ed-oY3"/>
             </connections>
             <point key="canvasLocation" x="147.10144927536234" y="166.40625"/>
         </tableViewCell>

@@ -13,4 +13,6 @@ final class DataController {
     static let shared = DataController()
     
     private init() {}
+    
+    var rating = [Rating]()
 }

@@ -30,6 +30,7 @@ final class HouseViewController: UIViewController {
     // MARK: Private functions
     
     private func configureView() {
+        
     }
     
     private func configureTable() {

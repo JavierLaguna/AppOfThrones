@@ -14,6 +14,7 @@ final class HouseTableViewCell: UITableViewCell {
 
     @IBOutlet weak var houseImage: UIImageView!
     @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var seatLabel: UILabel!
     @IBOutlet weak var wordsLabel: UILabel!
     
     // MARK: LifeCycle
@@ -29,6 +30,7 @@ final class HouseTableViewCell: UITableViewCell {
     func setHouse(_ house: House) {
         houseImage.image = UIImage(named: house.imageName ?? "")
         nameLabel.text = house.name
+        seatLabel.text = house.seat
         wordsLabel.text = house.words
     }
     
