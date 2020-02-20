@@ -61,6 +61,7 @@ extension EpisodeViewController: UITableViewDataSource {
     
         let episode = episodes[indexPath.row]
         cell.setEpisode(episode)
+        cell.delegate = self
         cell.rateBlock = { [weak self] in
             let rateVC = UINavigationController(rootViewController: RateViewController(withEpisode: episode))
             self?.navigationController?.present(rateVC, animated: true, completion: nil)
@@ -75,5 +76,14 @@ extension EpisodeViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 128
+    }
+}
+
+// MARK: EpisodeTableViewCellDelegate
+
+extension EpisodeViewController: EpisodeTableViewCellDelegate {
+    
+    func didFavoriteChanged() {
+        episodesTable.reloadData()
     }
 }

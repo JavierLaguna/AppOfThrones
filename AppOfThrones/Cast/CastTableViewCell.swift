@@ -8,6 +8,10 @@
 
 import UIKit
 
+protocol CastTableViewCellDelegate: AnyObject {
+    func didFavoriteChanged()
+}
+
 final class CastTableViewCell: UITableViewCell {
     
     // MARK: IBOutlet
@@ -17,6 +21,11 @@ final class CastTableViewCell: UITableViewCell {
     @IBOutlet weak var roleLabel: UILabel!
     @IBOutlet weak var episodesLabel: UILabel!
     @IBOutlet weak var favoriteButton: UIButton!
+    
+    // MARK: Variables
+    
+    weak var delegate: CastTableViewCellDelegate?
+    var cast: Cast?
     
     // MARK: LifeCycle
     
@@ -29,6 +38,11 @@ final class CastTableViewCell: UITableViewCell {
     // MARK: Public functions
     
     func setCast(_ cast: Cast) {
+        self.cast = cast
+        
+        let heartImagaNamed = DataController.shared.isFavoriteCast(cast) ? "heart.fill" : "heart"
+        
+        favoriteButton.setImage(UIImage(systemName: heartImagaNamed), for: .normal)
         avatarImage.image = UIImage(named: cast.avatar ?? "")
         nameLabel.text = cast.fullName
         roleLabel.text = cast.role
@@ -36,10 +50,21 @@ final class CastTableViewCell: UITableViewCell {
     }
     
     // MARK: Private functions
-
+    
     private func configureView() {
         avatarImage.layer.cornerRadius = 8
         avatarImage.layer.borderWidth = 1.0
         avatarImage.layer.borderColor = UIColor.white.withAlphaComponent(0.2).cgColor
+    }
+    
+    // MARK: IBActions
+    
+    @IBAction private func tapFavoriteButton(_ sender: Any) {
+        guard let cast = cast else {
+            return
+        }
+        
+        DataController.shared.toogleFavorite(cast)
+        delegate?.didFavoriteChanged()
     }
 }

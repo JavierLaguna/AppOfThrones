@@ -8,6 +8,10 @@
 
 import UIKit
 
+protocol EpisodeTableViewCellDelegate: AnyObject {
+    func didFavoriteChanged()
+}
+
 final class EpisodeTableViewCell: UITableViewCell {
     
     // MARK: IBOutlets
@@ -22,9 +26,12 @@ final class EpisodeTableViewCell: UITableViewCell {
     @IBOutlet private weak var stars03: UIImageView!
     @IBOutlet private weak var stars04: UIImageView!
     @IBOutlet private weak var stars05: UIImageView!
+    @IBOutlet private weak var favoriteButton: UIButton!
     
     // MARK: Variables
     
+    weak var delegate: EpisodeTableViewCellDelegate?
+    var episode: Episode?
     var rateBlock: (() -> Void)?
     
     // MARK: LifeCycle
@@ -38,6 +45,12 @@ final class EpisodeTableViewCell: UITableViewCell {
     // MARK: Public functions
 
     func setEpisode(_ episode: Episode) {
+        self.episode = episode
+        
+        let heartImagaNamed = DataController.shared.isFavoriteCast(episode) ? "heart.fill" : "heart"
+        
+        favoriteButton.setImage(UIImage(systemName: heartImagaNamed), for: .normal)
+        
         thumbImage.image = UIImage(named: episode.image ?? "")
         titleLabel.text = episode.name
         dateLabel.text = episode.date
@@ -94,5 +107,14 @@ final class EpisodeTableViewCell: UITableViewCell {
 
     @IBAction private func tapRateButton(_ sender: Any) {
         rateBlock?()
+    }
+    
+    @IBAction private func tapFavoriteButton(_ sender: Any) {
+        guard let episode = episode else {
+            return
+        }
+        
+        DataController.shared.toogleFavorite(episode)
+        delegate?.didFavoriteChanged()
     }
 }

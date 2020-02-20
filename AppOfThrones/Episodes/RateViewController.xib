@@ -40,7 +40,7 @@
                     </connections>
                 </button>
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Baratheon" translatesAutoresizingMaskIntoConstraints="NO" id="cj6-xa-mvN">
-                    <rect key="frame" x="20" y="110" width="335" height="260.00000000000023"/>
+                    <rect key="frame" x="20" y="110" width="335" height="260"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="260" id="LSR-Nf-132"/>
                     </constraints>
@@ -51,20 +51,6 @@
                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YLd-BC-Ggf">
-                    <rect key="frame" x="20" y="682" width="335" height="64"/>
-                    <color key="backgroundColor" red="0.92156862750000001" green="0.67450980390000004" blue="0.14901960780000001" alpha="1" colorSpace="calibratedRGB"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="64" id="lrb-Cy-Glc"/>
-                    </constraints>
-                    <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                    <state key="normal" title="Rate">
-                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    </state>
-                    <connections>
-                        <action selector="tapConfirmButton:" destination="-1" eventType="touchUpInside" id="8sn-SH-gn3"/>
-                    </connections>
-                </button>
                 <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="919-hD-v5U">
                     <rect key="frame" x="40" y="492.66666666666674" width="295" height="42"/>
                     <subviews>
@@ -73,19 +59,19 @@
                             <color key="tintColor" red="0.92156862750000001" green="0.67450980390000004" blue="0.14901960780000001" alpha="1" colorSpace="calibratedRGB"/>
                         </imageView>
                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="ksb-lt-dye">
-                            <rect key="frame" x="60.666666666666686" y="0.33333333333333215" width="52.666666666666671" height="41.666666666666671"/>
+                            <rect key="frame" x="60.666666666666671" y="0.33333333333333215" width="52.666666666666671" height="41.666666666666671"/>
                             <color key="tintColor" red="0.92156862750000001" green="0.67450980390000004" blue="0.14901960780000001" alpha="1" colorSpace="calibratedRGB"/>
                         </imageView>
                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star.lefthalf.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="2NO-Sx-Whp">
-                            <rect key="frame" x="121.33333333333331" y="0.33333333333333215" width="52.333333333333329" height="41.666666666666671"/>
+                            <rect key="frame" x="121.33333333333333" y="0.33333333333333215" width="52.333333333333329" height="41.666666666666671"/>
                             <color key="tintColor" red="0.92156862750000001" green="0.67450980390000004" blue="0.14901960780000001" alpha="1" colorSpace="calibratedRGB"/>
                         </imageView>
                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="vSl-Cg-w1H">
-                            <rect key="frame" x="181.66666666666663" y="0.33333333333333215" width="52.666666666666657" height="41.666666666666671"/>
+                            <rect key="frame" x="181.66666666666666" y="0.33333333333333215" width="52.666666666666657" height="41.666666666666671"/>
                             <color key="tintColor" red="0.92156862750000001" green="0.67450980390000004" blue="0.14901960780000001" alpha="1" colorSpace="calibratedRGB"/>
                         </imageView>
                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="jom-3h-hRC">
-                            <rect key="frame" x="242.33333333333326" y="0.33333333333333215" width="52.666666666666657" height="41.666666666666671"/>
+                            <rect key="frame" x="242.33333333333329" y="0.33333333333333215" width="52.666666666666657" height="41.666666666666671"/>
                             <color key="tintColor" red="0.92156862750000001" green="0.67450980390000004" blue="0.14901960780000001" alpha="1" colorSpace="calibratedRGB"/>
                         </imageView>
                     </subviews>
@@ -103,6 +89,20 @@
                         <action selector="sliderChange:" destination="-1" eventType="valueChanged" id="56j-v1-xIH"/>
                     </connections>
                 </slider>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YLd-BC-Ggf">
+                    <rect key="frame" x="20" y="682" width="335" height="64"/>
+                    <color key="backgroundColor" red="0.92156862750000001" green="0.67450980390000004" blue="0.14901960780000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="64" id="lrb-Cy-Glc"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                    <state key="normal" title="Rate">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="tapConfirmButton:" destination="-1" eventType="touchUpInside" id="8sn-SH-gn3"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
             <constraints>

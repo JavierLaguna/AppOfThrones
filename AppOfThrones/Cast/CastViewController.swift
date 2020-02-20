@@ -18,7 +18,7 @@ final class CastViewController: UIViewController {
     
     var cast = [
         Cast(id: 1, avatar: "Emilia Clarke", fullName: "Emilia Clarke", role: "Daenerys Targaryen", espisode: 73, birth: "1986-10-23", placeBirth: "London, England UK"),
-        Cast(id: 1, avatar: "Kit Harington", fullName: "Kit Harington", role: "Jon Snow", espisode: 73, birth: "1986-10-23", placeBirth: "London, England UK")]
+        Cast(id: 2, avatar: "Kit Harington", fullName: "Kit Harington", role: "Jon Snow", espisode: 73, birth: "1986-10-23", placeBirth: "London, England UK")]
     
     // MARK: LifeCycle
     
@@ -55,6 +55,7 @@ extension CastViewController: UITableViewDataSource {
         }
         
         cell.setCast(cast[indexPath.row])
+        cell.delegate = self
         return cell
     }
 }
@@ -65,5 +66,16 @@ extension CastViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 148
+    }
+}
+
+
+// MARK: CastTableViewCellDelegate
+
+
+extension CastViewController: CastTableViewCellDelegate {
+    
+    func didFavoriteChanged() {
+        castTable.reloadData()
     }
 }
