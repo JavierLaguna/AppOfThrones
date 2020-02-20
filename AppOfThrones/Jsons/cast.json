@@ -1,0 +1,119 @@
+[
+    {
+        "id": 1,
+        "avatar": "Emilia Clarke",
+        "fullname": "Emilia Clarke",
+        "role": "Daenerys Targaryen",
+        "episodes": 73,
+        "birth": "1986-10-23",
+        "placeBirth" : "London, England, UK"
+    },
+    {
+        "id": 2,
+        "avatar": "Kit Harington",
+        "fullname": "Kit Harington",
+        "role": "Jon Snow",
+        "episodes": 73,
+        "birth": "1986-12-26",
+        "placeBirth" : "Worcester, Worcestershire, England, UK"
+    },
+    {
+        "id": 3,
+        "avatar": "Peter Dinklage",
+        "fullname": "Peter Dinklage",
+        "role": "Tyrion Lannister",
+        "episodes": 73,
+        "birth": "1969-06-11",
+        "placeBirth" : "Morristown, New Jersey, USA"
+    },
+    {
+        "id": 4,
+        "avatar": "Lena Headey",
+        "fullname": "Lena Headey",
+        "role": "Cersei Lannister",
+        "episodes": 73,
+        "birth": "1973-10-03",
+        "placeBirth" : "Hamilton, Bermuda"
+    },
+    {
+        "id": 5,
+        "avatar": "Nikolaj Coster-Waldau",
+        "fullname": "Nikolaj Coster-Waldau",
+        "role": "Jaime Lannister",
+        "episodes": 73,
+        "birth": "1970-07-27",
+        "placeBirth" : "Rudkobing, Denmark"
+    },
+    {
+        "id": 6,
+        "avatar": "Sophie Turner",
+        "fullname": "Sophie Turner",
+        "role": "Sansa Stark",
+        "episodes": 73,
+        "birth": "1996-02-21",
+        "placeBirth" : "Northampton, Northamptonshire, England"
+    },
+    {
+        "id": 7,
+        "avatar": "Maisie Williams",
+        "fullname": "Maisie Williams",
+        "role": "Arya Stark",
+        "episodes": 73,
+        "birth": "1997-04-15",
+        "placeBirth" : "Bristol, England, United Kingdom"
+    },
+    {
+        "id": 8,
+        "avatar": "EJohn Bradley",
+        "fullname": "John Bradley",
+        "role": "Samwell Tarly",
+        "episodes": 73,
+        "birth": "1988-09-15",
+        "placeBirth" : "Manchester, England"
+    },
+    {
+        "id": 9,
+        "avatar": "Conleth Hill",
+        "fullname": "Conleth Hill",
+        "role": "Varys",
+        "episodes": 73,
+        "birth": "1964-11-24",
+        "placeBirth" : "Ballycastle, County Antrim, Northern Ireland, UK"
+    },
+    {
+        "id": 10,
+        "avatar": "Rory McCann",
+        "fullname": "Rory McCann",
+        "role": "Sandor Clegane",
+        "episodes": 73,
+        "birth": "1969-04-24",
+        "placeBirth" : "Glasgow, Scotland, UK"
+    },
+    {
+        "id": 11,
+        "avatar": "Aidan Gillen",
+        "fullname": "Aidan Gillen",
+        "role": "Petyr Baelish",
+        "episodes": 67,
+        "birth": "1968-04-24",
+        "placeBirth" : "Dublin, Ireland"
+    },
+    {
+        "id": 12,
+        "avatar": "Iain Glen",
+        "fullname": "Iain Glen",
+        "role": "Jorah Mormont",
+        "episodes": 70,
+        "birth": "1961-06-24",
+        "placeBirth" : "Edinburgh, Scotland, UK"
+    },
+    {
+        "id": 13,
+        "avatar": "Alfie Allen",
+        "fullname": "Alfie Allen",
+        "role": "Theon Greyjoy",
+        "episodes": 70,
+        "birth": "1986-09-12",
+        "placeBirth" : "Hammersmith, London, England, UK"
+    }
+]

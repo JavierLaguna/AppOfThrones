@@ -44,9 +44,9 @@ final class CastTableViewCell: UITableViewCell {
         
         favoriteButton.setImage(UIImage(systemName: heartImagaNamed), for: .normal)
         avatarImage.image = UIImage(named: cast.avatar ?? "")
-        nameLabel.text = cast.fullName
+        nameLabel.text = cast.fullname
         roleLabel.text = cast.role
-        episodesLabel.text = "\(cast.espisode ?? 0) episodes"
+        episodesLabel.text = "\(cast.espisodes ?? 0) episodes"
     }
     
     // MARK: Private functions

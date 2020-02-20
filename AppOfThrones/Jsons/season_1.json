@@ -1,0 +1,92 @@
+[
+    {
+        "id": 1,
+        "name": "Winter Is Coming",
+        "date": "April 17, 2011",
+        "image": "wrGWeW4WKxnaeA8sxJb2T9O6ryo",
+        "season": 1,
+        "episode": 1,
+        "overview" : "Jon Arryn, the Hand of the King, is dead. King Robert Baratheon plans to ask his oldest friend, Eddard Stark, to take Jon's place. Across the sea, Viserys Targaryen plans to wed his sister to a nomadic warlord in exchange for an army."
+    },
+    {
+        "id": 2,
+        "name": "The Kingsroad",
+        "date": "April 24, 2011",
+        "image": "icjOgl5F9DhysOEo6Six2Qfwcu2",
+        "season": 1,
+        "episode": 2,
+        "overview" : "While Bran recovers from his fall, Ned takes only his daughters to Kings Landing. Jon Snow goes with his uncle Benjen to The Wall. Tyrion joins them."
+    },
+    {
+        "id": 3,
+        "name": "Lord Snow",
+        "date": "May 1, 2011",
+        "image": "4vCYVtIhiYSUry1lviA7CKPUB5Z",
+        "season": 1,
+        "episode": 3,
+        "overview" : "Lord Stark and his daughters arrive at King's Landing to discover the intrigues of the king's realm."
+    },
+    {
+        "id": 4,
+        "name": "Cripples, Bastards, and Broken Things",
+        "date": "May 8, 2011",
+        "image": "Ai2UPMWv38xGjOgNBuA1o8w8dUI",
+        "season": 1,
+        "episode": 4,
+        "overview" : "Eddard investigates Jon Arryn's murder. Jon befriends Samwell Tarly, a coward who has come to join the Night's Watch."
+    },
+    {
+        "id": 5,
+        "name": "The Wolf and the Lion",
+        "date": "May 15, 2011",
+        "image": "5fDE2RqYXySfvYNdOOhOsdFl8ZA",
+        "season": 1,
+        "episode": 5,
+        "overview" : "Catelyn has captured Tyrion and plans to bring him to her sister, Lysa Arryn, at The Vale, to be tried for his, supposed, crimes against Bran. Robert plans to have Daenerys killed, but Eddard refuses to be a part of it and quits."
+    },
+    {
+        "id": 6,
+        "name": "A Golden Crown",
+        "date": "May 22, 2011",
+        "image": "6FcfWGFlDyWZ2JvQi8uvkxbDx1z",
+        "season": 1,
+        "episode": 6,
+        "overview" : "While recovering from his battle with Jamie, Eddard is forced to run the kingdom while Robert goes hunting. Tyrion demands a trial by combat for his freedom. Viserys is losing his patience with Drogo."
+    },
+    {
+        "id": 7,
+        "name": "You Win or You Die",
+        "date": "May 29, 2011",
+        "image": "5ZNrAvoNAG9scYHgxLVyozypOmV",
+        "season": 1,
+        "episode": 7,
+        "overview" : "Robert has been injured while hunting and is dying. Jon and the others finally take their vows to the Night's Watch. A man, sent by Robert, is captured for trying to poison Daenerys. Furious, Drogo vows to attack the Seven Kingdoms."
+    },
+    {
+        "id": 8,
+        "name": "The Pointy End",
+        "date": "June 5, 2011",
+        "image": "9ZvT1IZPcC11eiCByOzqQvC3CCR",
+        "season": 1,
+        "episode": 8,
+        "overview" : "Eddard and his men are betrayed and captured by the Lannisters. When word reaches Robb, he plans to go to war to rescue them. The White Walkers attack The Wall. Tyrion returns to his father with some new friends."
+    },
+    {
+        "id": 9,
+        "name": "Baelor",
+        "date": "June 12, 2011",
+        "image": "3pcFXQOKHnZhRkGCQ7Y8HRB1v8V",
+        "season": 1,
+        "episode": 9,
+        "overview" : "Robb goes to war against the Lannisters. Jon finds himself struggling on deciding if his place is with Robb or the Night's Watch. Drogo has fallen ill from a fresh battle wound. Daenerys is desperate to save him."
+    },
+    {
+        "id": 10,
+        "name": "Fire and Blood",
+        "date": "June 19, 2011",
+        "image": "7GhSiFhXOg81AevNQWrX6DOEL1U",
+        "season": 1,
+        "episode": 10,
+        "overview" : "With Ned dead, Robb vows to get revenge on the Lannisters. Jon must officially decide if his place is with Robb or the Night's Watch. Daenerys says her final goodbye to Drogo."
+    }
+]

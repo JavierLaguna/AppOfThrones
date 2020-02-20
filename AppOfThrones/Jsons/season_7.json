@@ -1,0 +1,65 @@
+[
+    {
+        "id": 59,
+        "name": "Dragonstone",
+        "date": "July 16, 2017",
+        "image": "3SB4PUzZAnY6HnZbVbktIZoopGs",
+        "season": 7,
+        "episode": 1,
+        "overview" : "Jon organizes the defense of the North. Cersei tries to even the odds. Daenerys comes home."
+    },
+    {
+        "id": 60,
+        "name": "Stormborn",
+        "date": "July 23, 2017",
+        "image": "dVf1gfi80js9qyxm78479o4RNUr",
+        "season": 7,
+        "episode": 2,
+        "overview" : "Daenerys receives an unexpected visitor. Jon faces a revolt. Tyrion plans the conquest of Westeros."
+    },
+    {
+        "id": 61,
+        "name": "The Queen's Justice",
+        "date": "July 30, 2017",
+        "image": "fnSJ2l2lPl7RVQuiftiL90QZG7l",
+        "season": 7,
+        "episode": 3,
+        "overview" : "Daenerys holds court. Tyrion backchannels. Cersei returns a gift. Jaime learns from his mistakes."
+    },
+    {
+        "id": 62,
+        "name": "The Spoils of War",
+        "date": "August 6, 2017",
+        "image": "dVhIfcaonwROdVJH93tZDjFOtlM",
+        "season": 7,
+        "episode": 4,
+        "overview" : "Daenerys fights back. Jaime faces an unexpected situation. Arya comes home."
+    },
+    {
+        "id": 63,
+        "name": "Eastwatch",
+        "date": "August 13, 2017",
+        "image": "3iaJDPtj75z1YpLDMKR17JRXQdP",
+        "season": 7,
+        "episode": 5,
+        "overview" : "Tyrion tries to find a way to make Daenerys listen to reason while Jon plans a dangerous new mission."
+    },
+    {
+        "id": 64,
+        "name": "Beyond the Wall",
+        "date": "August 20, 2017",
+        "image": "odrg1ren7j3HnggIKuKuSMfyOsg",
+        "season": 7,
+        "episode": 6,
+        "overview" : "Jon and his team go beyond the wall to capture a wight. Daenerys has to make a tough decision."
+    },
+    {
+        "id": 65,
+        "name": "The Dragon and the Wolf",
+        "date": "August 27, 2017",
+        "image": "4AkiRsZDWjX1Udot25EDsGROu9E",
+        "season": 7,
+        "episode": 7,
+        "overview" : "A meeting is held in King's Landing. Problems arise in the North."
+    }
+]

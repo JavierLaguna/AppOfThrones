@@ -8,7 +8,7 @@
 
 import Foundation
 
-class Episode {
+class Episode: Decodable {
     
     let id: Int
     let name: String?
@@ -34,5 +34,4 @@ class Episode {
         self.season = season
         self.overview = overview
     }
-    
 }

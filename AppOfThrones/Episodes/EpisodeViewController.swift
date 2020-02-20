@@ -16,7 +16,7 @@ final class EpisodeViewController: UIViewController {
     
     // MARK: Variables
     
-    var episodes: [Episode] = [Episode(id: 1, name: "Winter is Coming", date: "April 17, 2011", image: "Stark", episode: 1, season: 1, overview: "Jon Arryn, the Hand of the King, is dead. King Robert...")]
+    var episodes = [Episode]()
     
     // MARK: LifeCycle
     
@@ -25,6 +25,7 @@ final class EpisodeViewController: UIViewController {
         
         configureView()
         configureTable()
+        getData()
     }
     
     // MARK: Private functions
@@ -40,6 +41,21 @@ final class EpisodeViewController: UIViewController {
         episodesTable.register(UINib(nibName: "EpisodeTableViewCell", bundle: nil), forCellReuseIdentifier: "EpisodeTableViewCell")
         
         episodesTable.tableFooterView = UIView()
+    }
+    
+    private func getData() {
+        guard let pathURL = Bundle.main.url(forResource: "season_1", withExtension: "json") else {
+            return
+        }
+        
+        do {
+            let data = try Data(contentsOf: pathURL)
+            let decoder = JSONDecoder()
+            episodes = try decoder.decode([Episode].self, from: data)
+            episodesTable.reloadData()
+        } catch {
+            fatalError(error.localizedDescription)
+        }
     }
     
     // MARK: IBActions
@@ -58,14 +74,14 @@ extension EpisodeViewController: UITableViewDataSource {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "EpisodeTableViewCell", for: indexPath) as? EpisodeTableViewCell else {
             return UITableViewCell()
         }
-    
+        
         let episode = episodes[indexPath.row]
         cell.setEpisode(episode)
         cell.delegate = self
         cell.rateBlock = { [weak self] in
             let rateVC = UINavigationController(rootViewController: RateViewController(withEpisode: episode))
             self?.navigationController?.present(rateVC, animated: true, completion: nil)
-            }
+        }
         return cell
     }
 }

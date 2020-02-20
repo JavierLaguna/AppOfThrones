@@ -1,0 +1,74 @@
+[
+    {
+        "id": 11,
+        "name": "The North Remembers",
+        "date": "April 1, 2012",
+        "image": "psRgsLrTrEKS0YGuP1H3BCfhzhh",
+        "season": 2,
+        "episode": 1,
+        "overview" : "As Robb Stark and his northern army continue the war against the Lannisters, Tyrion arrives in King’s Landing to counsel Joffrey and temper the young king’s excesses. On the island of Dragonstone, Stannis Baratheon plots an invasion to claim his late brother’s throne, allying himself with the fiery Melisandre, a strange priestess of a stranger god. Across the sea, Daenerys, her three young dragons, and the khalasar trek through the Red Waste in search of allies, or water. In the North, Bran presides over a threadbare Winterfell, while beyond the Wall, Jon Snow and the Night’s Watch must shelter with a devious wildling."
+    },
+    {
+        "id": 12,
+        "name": "The Night Lands",
+        "date": "April 8, 2012",
+        "image": "de0UTpqFcGaVVO13sHqbjQ19c6I",
+        "season": 2,
+        "episode": 2,
+        "overview" : "In the wake of a bloody purge in the capital, Tyrion chastens Cersei for alienating the king’s subjects. On the road north, Arya shares a secret with Gendry, a Night’s Watch recruit. With supplies dwindling, one of Dany’s scouts returns with news of their position. After nine years as a Stark ward, Theon Greyjoy reunites with his father Balon, who wants to restore the ancient Kingdom of the Iron Islands. Davos enlists Salladhor Saan, a pirate, to join forces with Stannis and Melisandre for a naval invasion of King’s Landing."
+    },
+    {
+        "id": 13,
+        "name": "What is Dead May Never Die",
+        "date": "April 15, 2012",
+        "image": "neKkHgfX7dgi4E47GKT7bYciq93",
+        "season": 2,
+        "episode": 3,
+        "overview" : "At the Red Keep, Tyrion plots three alliances through the promise of marriage. Catelyn arrives in the Stormlands to forge an alliance of her own, but King Renly, his new wife Margaery, and her brother Loras Tyrell have other plans. At Winterfell, Luwin tries to decipher Bran’s dreams."
+    },
+    {
+        "id": 14,
+        "name": "Garden of Bones",
+        "date": "April 22, 2012",
+        "image": "4j2j97GFao2NX4uAtMbr0Qhx2K2",
+        "season": 2,
+        "episode": 4,
+        "overview" : "Joffrey punishes Sansa for Robb’s victories, and Tyrion scrambles to temper the king’s cruelty. Catelyn entreats Stannis and Renly to unite against the Lannisters. Dany and her khalasar arrive at the prosperous city of Qarth. Tyrion coerces a relative into being his eyes and ears. Arya and Gendry are taken to Harrenhal, where their lives are in the hands of Ser Gregor Clegane. Stannis orders Davos to smuggle Melisandre into a secret cove."
+    },
+    {
+        "id": 15,
+        "name": "The Ghost of Harrenhal",
+        "date": "April 29, 2012",
+        "image": "mNGiYtGMALX8I6ceSjCBjlBzc49",
+        "season": 2,
+        "episode": 5,
+        "overview" : "The Baratheon rivalry ends, driving Catelyn to flee and Littlefinger to act. At King’s Landing, Tyrion’s source alerts him to Joffrey’s defense plan - and a mysterious secret weapon. Theon sails to the Stony Shore to prove he’s worthy to be called Ironborn. At Harrenhal, Arya receives a promise from Jaqen H’ghar, one of the prisoners she saved from the Gold Cloaks. The Night’s Watch arrive at the Fist of the First Men, an ancient ringfort where they hope to stem the wildings' advance."
+    },
+    {
+        "id": 16,
+        "name": "The Old Gods and the New",
+        "date": "May 6, 2012",
+        "image": "bxToPOtlk77Wkxsas0mMgtjvzXS",
+        "season": 2,
+        "episode": 6,
+        "overview" : "Theon completes his master stroke. In King's Landing, the Lannisters send Myrcella off to be married. Arya comes face to face with a surprise visitor. Dany vows to take what is hers. Robb and Catelyn receive crucial news. Qhorin gives Jon a chance to prove himself."
+    },
+    {
+        "id": 17,
+        "name": "A Man Without Honor",
+        "date": "May 13, 2012",
+        "image": "d7hTn2ltWb9RMXLycP1TSQTIPG8",
+        "season": 2,
+        "episode": 7,
+        "overview" : "Jamie meets a distant relative. Daenerys receives an invitation to the House of the Undying. Theon leads a search party. Jon loses his way in the wilderness. Cersei counsels Sansa."
+    },
+    {
+        "id": 18,
+        "name": "The Prince of Winterfell",
+        "date": "May 20, 2012",
+        "image": "4W90HbZcVG54m8HoxaZmXc8rzjy",
+        "season": 2,
+        "episode": 8,
+        "overview" : "Theon receives a visitor. Arya asks her third and last death from Jaqen. While Stannis' army is reaching its destination, Davos is offered a reward. Betrayal befalls Robb."
+    }
+]

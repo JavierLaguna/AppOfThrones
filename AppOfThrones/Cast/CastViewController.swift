@@ -16,9 +16,7 @@ final class CastViewController: UIViewController {
     
     // MARK: Variables
     
-    var cast = [
-        Cast(id: 1, avatar: "Emilia Clarke", fullName: "Emilia Clarke", role: "Daenerys Targaryen", espisode: 73, birth: "1986-10-23", placeBirth: "London, England UK"),
-        Cast(id: 2, avatar: "Kit Harington", fullName: "Kit Harington", role: "Jon Snow", espisode: 73, birth: "1986-10-23", placeBirth: "London, England UK")]
+    var cast = [Cast]()
     
     // MARK: LifeCycle
     
@@ -26,6 +24,7 @@ final class CastViewController: UIViewController {
         super.viewDidLoad()
         
         configureTable()
+        getData()
     }
     
     // MARK: Private functions
@@ -37,6 +36,21 @@ final class CastViewController: UIViewController {
         castTable.register(UINib(nibName: "CastTableViewCell", bundle: nil), forCellReuseIdentifier: "CastTableViewCell")
         
         castTable.tableFooterView = UIView()
+    }
+    
+    private func getData() {
+        guard let pathURL = Bundle.main.url(forResource: "cast", withExtension: "json") else {
+            return
+        }
+        
+        do {
+            let data = try Data(contentsOf: pathURL)
+            let decoder = JSONDecoder()
+            cast = try decoder.decode([Cast].self, from: data)
+            castTable.reloadData()
+        } catch {
+            fatalError(error.localizedDescription)
+        }
     }
     
 }

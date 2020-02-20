@@ -1,0 +1,92 @@
+[
+    {
+        "id": 49,
+        "name": "The Red Woman",
+        "date": "April 24, 2016",
+        "image": "wUT1usesyneAJee4wzxxu6pfOKY",
+        "season": 6,
+        "episode": 1,
+        "overview" : "The fate of Jon Snow is revealed. Daenerys meets a strong man. Cersei sees her daughter once again."
+    },
+    {
+        "id": 50,
+        "name": "Home",
+        "date": "May 1, 2016",
+        "image": "9JlZ6sOXf4nodwWYvoM5zCJIGm9",
+        "season": 6,
+        "episode": 2,
+        "overview" : "Bran trains with the Three-Eyed Raven. In King’s Landing, Jaime advises Tommen. Tyrion demands good news, but has to make his own. At Castle Black, the Night’s Watch stands behind Thorne. Ramsay Bolton proposes a plan, and Balon Greyjoy entertains other proposals."
+    },
+    {
+        "id": 51,
+        "name": "Oathbreaker",
+        "date": "May 8, 2016",
+        "image": "hTRefrtVbPvTP7xA1e0EjU5ioVf",
+        "season": 6,
+        "episode": 3,
+        "overview" : "Daenerys meets her future. Bran meets the past. Tommen confronts the High Sparrow. Arya trains to be No One. Varys finds an answer. Ramsay gets a gift."
+    },
+    {
+        "id": 52,
+        "name": "Book of the Stranger",
+        "date": "May 15, 2016",
+        "image": "ieuk4jZv1vFi8yxrGiL1wrtRT7P",
+        "season": 6,
+        "episode": 4,
+        "overview" : "Tyrion strikes a deal. Jorah and Daario undertake a difficult task. Jaime and Cersei try to improve their situation."
+    },
+    {
+        "id": 53,
+        "name": "The Door",
+        "date": "May 22, 2016",
+        "image": "5513iUxanL6LmgVM12jkkFaWBqJ",
+        "season": 6,
+        "episode": 5,
+        "overview" : "Tyrion seeks a strange ally. Bran learns a great deal. Brienne goes on a mission. Arya is given a chance to prove herself."
+    },
+    {
+        "id": 54,
+        "name": "Blood of My Blood",
+        "date": "May 29, 2016",
+        "image": "k01MUth8Xm2y79nvsQ3UF25SN9w",
+        "season": 6,
+        "episode": 6,
+        "overview" : "An old foe comes back into the picture. Gilly meets Sam’s family. Arya faces a difficult choice. Jaime faces off against the High Sparrow."
+    },
+    {
+        "id": 55,
+        "name": "The Broken Man",
+        "date": "June 5, 2016",
+        "image": "pGYURx0nKsYcSNrRpmnJ5BaHcKs",
+        "season": 6,
+        "episode": 7,
+        "overview" : "The High Sparrow eyes another target. Jaime confronts a hero. Arya makes a plan. The North is reminded."
+    },
+    {
+        "id": 56,
+        "name": "No One",
+        "date": "June 12, 2016",
+        "image": "7CrDDELasQYT2gienzYAPRjYbL9",
+        "season": 6,
+        "episode": 8,
+        "overview" : "While Jaime weighs his options, Cersei answers a request. Tyrion's plans bear fruit. Arya faces a new test."
+    },
+    {
+        "id": 57,
+        "name": "Battle of the Bastards",
+        "date": "June 19, 2016",
+        "image": "m0hIejSC1W82IjNg4hTfIDN4jd9",
+        "season": 6,
+        "episode": 9,
+        "overview" : "As the Starks prepare to fight, Davos loses something dear. Ramsay plays a game. Daenerys faces a choice."
+    },
+    {
+        "id": 58,
+        "name": "The Winds of Winter",
+        "date": "June 26, 2016",
+        "image": "8qgIcKTOKeAHlJMjGyPHl3IHjcU",
+        "season": 6,
+        "episode": 10,
+        "overview" : "Tyrion counsels Daenerys on the upcoming campaign. Jon and Sansa discuss their future. Trials begin in King's Landing."
+    }
+]

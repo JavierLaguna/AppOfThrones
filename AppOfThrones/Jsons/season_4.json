@@ -1,0 +1,92 @@
+[
+    {
+        "id": 29,
+        "name": "Two Swords",
+        "date": "April 6, 2014",
+        "image": "5g2n9uGbEJKGn5SgO1se5kVoevR",
+        "season": 4,
+        "episode": 1,
+        "overview" : "Tyrion welcomes a guest to King’s Landing. At Castle Black, Jon Snow finds himself unwelcome. Dany is pointed to Meereen, the mother of all slave cities. Arya runs into an old friend."
+    },
+    {
+        "id": 30,
+        "name": "The Lion and the Rose",
+        "date": "April 13, 2014",
+        "image": "fIyK75aaNngpbXLJWDEJYhwtzDj",
+        "season": 4,
+        "episode": 2,
+        "overview" : "Tyrion lends Jaime a hand. Joffrey and Margaery host a breakfast. At Dragonstone, Stannis loses patience with Davos. Ramsay finds a purpose for his pet. North of the Wall, Bran sees where they must go."
+    },
+    {
+        "id": 31,
+        "name": "Breaker of Chains",
+        "date": "April 20, 2014",
+        "image": "pgwGxEDIv1XyB5TcJcJM7EMLWiX",
+        "season": 4,
+        "episode": 3,
+        "overview" : "Tyrion ponders his options. Tywin extends an olive branch. Sam realizes Castle Black isn’t safe, and Jon proposes a bold plan. The Hound teaches Arya the way things are. Dany chooses her champion."
+    },
+    {
+        "id": 32,
+        "name": "Oathkeeper",
+        "date": "April 27, 2014",
+        "image": "2h2dtlA6U0Imc3VSq5YlpAif9Qz",
+        "season": 4,
+        "episode": 4,
+        "overview" : "Dany balances justice and mercy. Jaime tasks Brienne with his honor. Jon secures volunteers while Bran, Jojen, Meera and Hodor stumble on shelter."
+    },
+    {
+        "id": 33,
+        "name": "First of His Name",
+        "date": "May 4, 2014",
+        "image": "uy0NEqbooqrk1qCVLPZRzMyP9Pw",
+        "season": 4,
+        "episode": 5,
+        "overview" : "Cersei and Tywin plan the Crown's next move; Dany discusses future plans; Jon Snow begins a new mission."
+    },
+    {
+        "id": 34,
+        "name": "The Laws of Gods and Men",
+        "date": "May 11, 2014",
+        "image": "vKt9b7HNYhwM91C7S53zPsAWfT3",
+        "season": 4,
+        "episode": 6,
+        "overview" : "Stannis and Davos set sail; Dany meets with supplicants; Tyrion faces down his father."
+    },
+    {
+        "id": 35,
+        "name": "Mockingbird",
+        "date": "May 18, 2014",
+        "image": "r7u0uELPyDkNnBZzAFVvw1XJKo5",
+        "season": 4,
+        "episode": 7,
+        "overview" : "Tyrion gains an unlikely ally; Daario asks Dany to allow him to do what he does best; Jon's warnings about the vulnerability of the Wall are ignored; Brienne follows a new lead."
+    },
+    {
+        "id": 36,
+        "name": "The Mountain and the Viper",
+        "date": "June 1, 2014",
+        "image": "exdPjUiilNFUV8uUSiBBhsanAwa",
+        "season": 4,
+        "episode": 8,
+        "overview" : "Unexpected visitors arrive in Mole's Town. Littlefinger's motives are questioned. Ramsay tries to prove himself to his father. Tyrion's fate is decided."
+    },
+    {
+        "id": 37,
+        "name": "The Watchers on the Wall",
+        "date": "June 8, 2014",
+        "image": "90jIL7o1zVMWNiXUUFDQnisgEq7",
+        "season": 4,
+        "episode": 9,
+        "overview" : "Jon Snow and the Night's Watch face a big challenge."
+    },
+    {
+        "id": 38,
+        "name": "The Children",
+        "date": "June 15, 2014",
+        "image": "dEvyoz6NrUGH3nyphu43hAzT1VE",
+        "season": 4,
+        "episode": 10,
+        "overview" : "Circumstances change after an unexpected arrival from north of the Wall. Dany must face harsh realities. Bran learns more about his destiny. Tyrion sees the truth about his situation."
+    }
+]

@@ -1,0 +1,56 @@
+[
+    {
+        "id": 66,
+        "name": "Winterfell",
+        "date": "April 14, 2019",
+        "image": "aeLFDgp0J9140lS4nWUgZZRK6Rp",
+        "season": 8,
+        "episode": 1,
+        "overview" : "Arriving at Winterfell, Jon and Daenerys struggle to unite a divided North. Jon Snow gets some big news."
+    },
+    {
+        "id": 67,
+        "name": "A Knight of the Seven Kingdoms",
+        "date": "April 21, 2019",
+        "image": "vJ8H9WtzbJGfArfdycc4nagQVRU",
+        "season": 8,
+        "episode": 2,
+        "overview" : "The battle at Winterfell is approaching. Jaime is confronted with the consequences of the past. A tense interaction between Sansa and Daenerys follows."
+    },
+    {
+        "id": 68,
+        "name": "The Long Night",
+        "date": "April 28, 2019",
+        "image": "k69MmmwXIy1ywEQDZME4des9aRJ",
+        "season": 8,
+        "episode": 3,
+        "overview" : "The Night King and his army have arrived at Winterfell and the great battle begins. Arya looks to prove her worth as a fighter."
+    },
+    {
+        "id": 69,
+        "name": "The Last of the Starks",
+        "date": "May 5, 2019",
+        "image": "qe508xwVVO7cF2oWzfJp52StkTk",
+        "season": 8,
+        "episode": 4,
+        "overview" : "In the wake of a costly victory, Jon and Daenerys look to the south as Tyrion eyes a compromise that could save countless lives."
+    },
+    {
+        "id": 70,
+        "name": "The Bells",
+        "date": "May 12, 2019",
+        "image": "xF9hOs5h9sc37oWdtF4RPHq8dXA",
+        "season": 8,
+        "episode": 5,
+        "overview" : "Daenerys brings her forces to King's Landing."
+    },
+    {
+        "id": 71,
+        "name": "The Iron Throne",
+        "date": "May 19, 2019",
+        "image": "3x8tJon5jXFa1ziAM93hPKNyW7i",
+        "season": 8,
+        "episode": 6,
+        "overview" : "In the aftermath of the devastating attack on King's Landing, Daenerys must face the survivors."
+    }
+]

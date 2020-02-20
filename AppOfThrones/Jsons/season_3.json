@@ -1,0 +1,92 @@
+[
+    {
+        "id": 19,
+        "name": "Valar Dohaeris",
+        "date": "March 31, 2013",
+        "image": "3ZerJvXQXcM3tygHRkPTDbbK0hw",
+        "season": 3,
+        "episode": 1,
+        "overview" : "Jon meets the King-Beyond-the-Wall while his Night Watch Brothers flee south. In King's Landing, Tyrion wants a reward, Margaery shows her charitable nature, Cersei arranges a dinner party, and Littlefinger offers to help Sansa. Across the Narrow Sea, Daenerys starts her journey west."
+    },
+    {
+        "id": 20,
+        "name": "Dark Wings, Dark Words",
+        "date": "April 7, 2013",
+        "image": "o8yL7mNZenG9W8398AcfH7veRB4",
+        "season": 3,
+        "episode": 2,
+        "overview" : "Sansa says too much. Shae asks Tyrion for a favor. Jaime finds a way to pass the time, while Arya encounters the Brotherhood Without Banners."
+    },
+    {
+        "id": 21,
+        "name": "Walk of Punishment",
+        "date": "April 14, 2013",
+        "image": "u2DZ4uvnM46KpAb2RPc5TM9tZJq",
+        "season": 3,
+        "episode": 3,
+        "overview" : "Tyrion shoulders new responsibilities. Jon is taken to the Fist of the First Men. Daenerys meets with the slavers. Jaime strikes a deal with his captors."
+    },
+    {
+        "id": 22,
+        "name": "And Now His Watch Is Ended",
+        "date": "April 21, 2013",
+        "image": "jPlIqgPG2PQET2CMfz297Et0Fbb",
+        "season": 3,
+        "episode": 4,
+        "overview" : "Trouble brews among the Night's Watch at Craster's. Margaery takes Joffrey out of his comfort zone. Arya meets the leader of the Brotherhood. Varys plots revenge on an old foe. Theon mournfully recalls his missteps. Daenerys deftly orchestrates her exit from Astapor."
+    },
+    {
+        "id": 23,
+        "name": "Kissed by Fire",
+        "date": "April 28, 2013",
+        "image": "d2b1CWsWCKMt5IpNXKgJfE4fjxj",
+        "season": 3,
+        "episode": 5,
+        "overview" : "The Hound is judged by the gods. Jaime is judged by men. Jon proves himself. Robb is betrayed. Tyrion learns the cost of weddings."
+    },
+    {
+        "id": 24,
+        "name": "The Climb",
+        "date": "May 5, 2013",
+        "image": "a5ifsts2r9znJO1xQ1NnuYqdbM2",
+        "season": 3,
+        "episode": 6,
+        "overview" : "Tywin plans strategic unions for the Lannisters. Melisandre pays a visit to the Riverlands. Robb weighs a compromise to repair his alliance with House Frey. Roose Bolton decides what to do with Jaime Lannister. Jon, Ygritte, and the Wildlings face a daunting climb."
+    },
+    {
+        "id": 25,
+        "name": "The Bear and the Maiden Fair",
+        "date": "May 12, 2013",
+        "image": "27NIMz6XTGcZM0jsI1gk0BNjHvM",
+        "season": 3,
+        "episode": 7,
+        "overview" : "Daenerys exchanges gifts with a slave lord outside of Yunkai. As Sansa frets about her prospects, Shae chafes at Tyrion’s new situation. Tywin counsels the king, and Melisandre reveals a secret to Gendry. Brienne faces a formidable foe in Harrenhal."
+    },
+    {
+        "id": 26,
+        "name": "Second Sons",
+        "date": "May 19, 2013",
+        "image": "m4Fs1dVNux8wgdSpLokaFHtmOCR",
+        "season": 3,
+        "episode": 8,
+        "overview" : "King’s Landing hosts a wedding, and Tyrion and Sansa spend the night together. Daenerys meets the Titan’s Bastard. Davos demands proof from Melisandre. Sam and Gilly meet an older gentleman."
+    },
+    {
+        "id": 27,
+        "name": "The Rains of Castamere",
+        "date": "June 2, 2013",
+        "image": "27NyMAUv5Yfb3pyd3kFy9Ge7n8s",
+        "season": 3,
+        "episode": 9,
+        "overview" : "Robb presents himself to Walder Frey, and Edmure meets his bride. Jon faces his harshest test yet. Bran discovers a new gift. Daario and Jorah debate how to take Yunkai. House Frey joins with House Tully."
+    },
+    {
+        "id": 28,
+        "name": "Mhysa",
+        "date": "June 9, 2013",
+        "image": "yeQwl3ZN8ZMqGvifMGWz2oCEPZ5",
+        "season": 3,
+        "episode": 10,
+        "overview" : "Joffrey challenges Tywin. Bran tells a ghost story. In Dragonstone, mercy comes from strange quarters. Daenerys waits to see if she is a conqueror or a liberator."
+    }
+]

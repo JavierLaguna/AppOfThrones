@@ -8,13 +8,13 @@
 
 import Foundation
 
-struct Cast {
+struct Cast: Decodable {
     
     let id: Int
     let avatar: String?
-    let fullName: String?
+    let fullname: String?
     let role: String?
-    let espisode: Int?
+    let espisodes: Int?
     let birth: String?
     let placeBirth: String?
 }
