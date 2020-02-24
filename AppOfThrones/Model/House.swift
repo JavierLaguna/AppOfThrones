@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct House {
+struct House: Decodable {
     
     var imageName: String?
     var name: String?

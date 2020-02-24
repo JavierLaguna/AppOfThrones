@@ -16,7 +16,7 @@ final class HouseViewController: UIViewController {
     
     // MARK: Variables
     
-    var houses: [House] = [House(imageName: "Stark", name: "Stark", words: "Winter is coming!", seat: "Invernalia")]
+    var houses = [House]()
     
     // MARK: LifeCycle
     
@@ -25,12 +25,13 @@ final class HouseViewController: UIViewController {
         
         configureView()
         configureTable()
+        getData()
     }
 
     // MARK: Private functions
     
     private func configureView() {
-        
+        title = "Houses"
     }
     
     private func configureTable() {
@@ -40,6 +41,21 @@ final class HouseViewController: UIViewController {
         housesTable.register(UINib(nibName: HouseTableViewCell.nibName, bundle: nil), forCellReuseIdentifier: HouseTableViewCell.defaultReuseIdentifier)
         
         housesTable.tableFooterView = UIView()
+    }
+    
+    private func getData() {
+        guard let pathURL = Bundle.main.url(forResource: "houses", withExtension: "json") else {
+            return
+        }
+        
+        do {
+            let data = try Data(contentsOf: pathURL)
+            let decoder = JSONDecoder()
+            houses = try decoder.decode([House].self, from: data)
+            housesTable.reloadData()
+        } catch {
+            fatalError(error.localizedDescription)
+        }
     }
 }
 

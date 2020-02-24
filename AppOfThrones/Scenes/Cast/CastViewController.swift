@@ -23,11 +23,16 @@ final class CastViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        configureView()
         configureTable()
         getData()
     }
     
     // MARK: Private functions
+    
+    private func configureView() {
+        title = "Cast"
+    }
     
     private func configureTable() {
         castTable.dataSource = self

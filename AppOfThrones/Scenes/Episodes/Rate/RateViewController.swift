@@ -24,8 +24,8 @@ final class RateViewController: UIViewController {
     
     // MARK: Variable
     
-    private var episode: Episode?
     var onRate: (() -> Void)?
+    private var episode: Episode?
     
     // MARK: Constructor
     
