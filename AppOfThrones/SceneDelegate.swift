@@ -20,32 +20,9 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
             return
         }
         
-        let episodesVC = EpisodesViewController()
-        let castVC = CastViewController()
-        let houseVC = HouseViewController()
-        let settingsVC = SettingsViewController()
-        
-        episodesVC.tabBarItem = UITabBarItem(title: "Seasons", image: UIImage(systemName: "film.fill"), tag: 0)
-        castVC.tabBarItem = UITabBarItem(title: "Cast", image: UIImage(systemName: "person.3.fill"), tag: 1)
-        houseVC.tabBarItem = UITabBarItem(title: "Houses", image: UIImage(systemName: "shield.lefthalf.fill"), tag: 2)
-        settingsVC.tabBarItem = UITabBarItem(title: "Settings", image: UIImage(systemName: "gear"), tag: 3)
-        
-        UINavigationBar.appearance().overrideUserInterfaceStyle = .dark
-        UINavigationBar.appearance().tintColor = UIColor(red: 235/255, green: 172/255, blue: 38/255, alpha: 1)
-        
-        let navBarEpisodesVC = UINavigationController(rootViewController: episodesVC)
-        let navBarCastVC = UINavigationController(rootViewController: castVC)
-        let navBarHouseVC = UINavigationController(rootViewController: houseVC)
-        let navBarSettingsVC = UINavigationController(rootViewController: settingsVC)
-        
-        let tabBarVC = UITabBarController()
-        tabBarVC.viewControllers = [navBarEpisodesVC, navBarCastVC, navBarHouseVC, navBarSettingsVC]
-        tabBarVC.tabBar.barStyle = .black
-        tabBarVC.tabBar.tintColor = .orangeMain
-        
         window = UIWindow.init(frame: windowScene.coordinateSpace.bounds)
         window?.windowScene = windowScene
-        window?.rootViewController = tabBarVC
+        window?.rootViewController = MainTabBarController()
         window?.makeKeyAndVisible()
     }
     

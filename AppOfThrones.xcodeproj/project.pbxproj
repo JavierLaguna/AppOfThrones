@@ -46,6 +46,7 @@
 		49BAF2AF23F60938005B5534 /* HouseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49BAF2AD23F60938005B5534 /* HouseViewController.swift */; };
 		49BAF2B023F60938005B5534 /* HouseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49BAF2AE23F60938005B5534 /* HouseViewController.xib */; };
 		49BCA10F24046CB600498F29 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49BCA10E24046CB600498F29 /* Constants.swift */; };
+		49BCA112240471C600498F29 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49BCA111240471C600498F29 /* MainTabBarController.swift */; };
 		49D0379023FC6B7100B80379 /* HouseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D0378E23FC6B7100B80379 /* HouseTableViewCell.swift */; };
 		49D0379123FC6B7100B80379 /* HouseTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49D0378F23FC6B7100B80379 /* HouseTableViewCell.xib */; };
 		49F8AFE124045319009E4BD3 /* EpisodesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F8AFE024045319009E4BD3 /* EpisodesViewController.swift */; };
@@ -105,6 +106,7 @@
 		49BAF2AD23F60938005B5534 /* HouseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseViewController.swift; sourceTree = "<group>"; };
 		49BAF2AE23F60938005B5534 /* HouseViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HouseViewController.xib; sourceTree = "<group>"; };
 		49BCA10E24046CB600498F29 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		49BCA111240471C600498F29 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		49D0378E23FC6B7100B80379 /* HouseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseTableViewCell.swift; sourceTree = "<group>"; };
 		49D0378F23FC6B7100B80379 /* HouseTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HouseTableViewCell.xib; sourceTree = "<group>"; };
 		49F8AFE024045319009E4BD3 /* EpisodesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodesViewController.swift; sourceTree = "<group>"; };
@@ -151,6 +153,7 @@
 				49BAF29E23F601DD005B5534 /* Cast */,
 				49BAF29623F5F07A005B5534 /* Episodes */,
 				49BAF2AC23F6082A005B5534 /* Houses */,
+				49BCA1102404716600498F29 /* Main */,
 				49BAF29F23F601F7005B5534 /* Settings */,
 			);
 			path = Scenes;
@@ -324,6 +327,14 @@
 			path = Houses;
 			sourceTree = "<group>";
 		};
+		49BCA1102404716600498F29 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				49BCA111240471C600498F29 /* MainTabBarController.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -460,6 +471,7 @@
 				49A45C5723FB54F700474F8D /* House.swift in Sources */,
 				49BCA10F24046CB600498F29 /* Constants.swift in Sources */,
 				49A45C5923FB556500474F8D /* DataController.swift in Sources */,
+				49BCA112240471C600498F29 /* MainTabBarController.swift in Sources */,
 				4956F8EA24044B7C00E3F0D5 /* Identifiable.swift in Sources */,
 				49D0379023FC6B7100B80379 /* HouseTableViewCell.swift in Sources */,
 				49BAF2AF23F60938005B5534 /* HouseViewController.swift in Sources */,
