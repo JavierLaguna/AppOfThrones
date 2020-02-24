@@ -37,7 +37,7 @@ final class HouseViewController: UIViewController {
         housesTable.dataSource = self
         housesTable.delegate = self
         
-        housesTable.register(UINib(nibName: "HouseTableViewCell", bundle: nil), forCellReuseIdentifier: "HouseTableViewCell")
+        housesTable.register(UINib(nibName: HouseTableViewCell.nibName, bundle: nil), forCellReuseIdentifier: HouseTableViewCell.defaultReuseIdentifier)
         
         housesTable.tableFooterView = UIView()
     }
@@ -52,7 +52,7 @@ extension HouseViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: "HouseTableViewCell", for: indexPath) as? HouseTableViewCell else {
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: HouseTableViewCell.defaultReuseIdentifier, for: indexPath) as? HouseTableViewCell else {
             return UITableViewCell()
         }
         

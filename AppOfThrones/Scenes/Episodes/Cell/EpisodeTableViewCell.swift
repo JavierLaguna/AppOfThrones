@@ -12,7 +12,7 @@ protocol EpisodeTableViewCellDelegate: AnyObject {
     func didFavoriteChanged()
 }
 
-final class EpisodeTableViewCell: UITableViewCell {
+final class EpisodeTableViewCell: UITableViewCell, NibLoadableView, ReusableView {
     
     // MARK: IBOutlets
     

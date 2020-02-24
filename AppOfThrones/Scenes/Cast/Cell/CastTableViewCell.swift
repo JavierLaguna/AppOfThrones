@@ -12,7 +12,7 @@ protocol CastTableViewCellDelegate: AnyObject {
     func didFavoriteChanged()
 }
 
-final class CastTableViewCell: UITableViewCell {
+final class CastTableViewCell: UITableViewCell, NibLoadableView, ReusableView {
     
     // MARK: IBOutlet
     

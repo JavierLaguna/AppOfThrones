@@ -43,7 +43,7 @@ final class EpisodesViewController: UIViewController {
         episodesTable.dataSource = self
         episodesTable.delegate = self
         
-        episodesTable.register(UINib(nibName: "EpisodeTableViewCell", bundle: nil), forCellReuseIdentifier: "EpisodeTableViewCell")
+        episodesTable.register(UINib(nibName: EpisodeTableViewCell.nibName, bundle: nil), forCellReuseIdentifier: EpisodeTableViewCell.defaultReuseIdentifier)
         
         episodesTable.tableFooterView = UIView()
     }
@@ -80,7 +80,7 @@ extension EpisodesViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: "EpisodeTableViewCell", for: indexPath) as? EpisodeTableViewCell else {
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: EpisodeTableViewCell.defaultReuseIdentifier, for: indexPath) as? EpisodeTableViewCell else {
             return UITableViewCell()
         }
         

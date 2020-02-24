@@ -33,7 +33,7 @@ final class CastViewController: UIViewController {
         castTable.dataSource = self
         castTable.delegate = self
         
-        castTable.register(UINib(nibName: "CastTableViewCell", bundle: nil), forCellReuseIdentifier: "CastTableViewCell")
+        castTable.register(UINib(nibName: CastTableViewCell.nibName, bundle: nil), forCellReuseIdentifier: CastTableViewCell.defaultReuseIdentifier)
         
         castTable.tableFooterView = UIView()
     }
@@ -64,7 +64,7 @@ extension CastViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: "CastTableViewCell", for: indexPath) as? CastTableViewCell else {
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: CastTableViewCell.defaultReuseIdentifier, for: indexPath) as? CastTableViewCell else {
             return UITableViewCell()
         }
         
