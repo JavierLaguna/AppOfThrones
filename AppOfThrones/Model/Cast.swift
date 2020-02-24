@@ -14,7 +14,7 @@ struct Cast: Decodable, Identifiable {
     let avatar: String?
     let fullname: String?
     let role: String?
-    let espisodes: Int?
+    let episodes: Int?
     let birth: String?
     let placeBirth: String?
 }

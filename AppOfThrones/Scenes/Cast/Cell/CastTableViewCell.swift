@@ -19,7 +19,6 @@ final class CastTableViewCell: UITableViewCell, NibLoadableView, ReusableView {
     @IBOutlet weak var avatarImage: UIImageView!
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var roleLabel: UILabel!
-    @IBOutlet weak var episodesLabel: UILabel!
     @IBOutlet weak var favoriteButton: UIButton!
     
     // MARK: Variables
@@ -46,7 +45,6 @@ final class CastTableViewCell: UITableViewCell, NibLoadableView, ReusableView {
         avatarImage.image = UIImage(named: cast.avatar ?? "")
         nameLabel.text = cast.fullname
         roleLabel.text = cast.role
-        episodesLabel.text = "\(cast.espisodes ?? 0) episodes"
     }
     
     // MARK: Private functions

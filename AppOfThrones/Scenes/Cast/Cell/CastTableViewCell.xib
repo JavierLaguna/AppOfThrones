@@ -32,13 +32,7 @@
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JBL-jc-rIb">
                         <rect key="frame" x="146" y="50.5" width="157" height="20.5"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                        <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <nil key="highlightedColor"/>
-                    </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4H2-qc-Dtk">
-                        <rect key="frame" x="146" y="115" width="157" height="20.5"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <fontDescription key="fontDescription" type="italicSystem" pointSize="17"/>
                         <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <nil key="highlightedColor"/>
                     </label>
@@ -62,19 +56,15 @@
                     <constraint firstItem="s5q-9s-riN" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="GeN-FO-qrK"/>
                     <constraint firstItem="JBL-jc-rIb" firstAttribute="leading" secondItem="qoz-bw-f4u" secondAttribute="leading" id="JM9-Ec-zs9"/>
                     <constraint firstItem="s5q-9s-riN" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" constant="20" id="SRp-4F-84m"/>
-                    <constraint firstItem="4H2-qc-Dtk" firstAttribute="leading" secondItem="qoz-bw-f4u" secondAttribute="leading" id="Tb7-Ok-2NO"/>
-                    <constraint firstItem="4H2-qc-Dtk" firstAttribute="trailing" secondItem="qoz-bw-f4u" secondAttribute="trailing" id="eWi-Zl-kIM"/>
                     <constraint firstItem="qoz-bw-f4u" firstAttribute="top" secondItem="PTp-5j-9CR" secondAttribute="top" id="fyX-Gb-zZE"/>
                     <constraint firstItem="PTp-5j-9CR" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="hUj-NY-NeJ"/>
                     <constraint firstItem="JBL-jc-rIb" firstAttribute="trailing" secondItem="qoz-bw-f4u" secondAttribute="trailing" id="qBN-E9-6q1"/>
-                    <constraint firstItem="4H2-qc-Dtk" firstAttribute="bottom" secondItem="PTp-5j-9CR" secondAttribute="bottom" id="sR7-On-495"/>
                 </constraints>
             </tableViewCellContentView>
             <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
                 <outlet property="avatarImage" destination="PTp-5j-9CR" id="Jhy-Ea-8Zy"/>
-                <outlet property="episodesLabel" destination="4H2-qc-Dtk" id="ura-kD-6fJ"/>
                 <outlet property="favoriteButton" destination="s5q-9s-riN" id="UFw-Xz-P9q"/>
                 <outlet property="nameLabel" destination="qoz-bw-f4u" id="flI-oJ-oFv"/>
                 <outlet property="roleLabel" destination="JBL-jc-rIb" id="nbK-sI-HLa"/>
