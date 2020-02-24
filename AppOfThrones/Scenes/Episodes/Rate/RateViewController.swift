@@ -12,6 +12,7 @@ final class RateViewController: UIViewController {
     
     // MARK: IBOutlets
     
+    @IBOutlet private weak var episodeImage: UIImageView!
     @IBOutlet private weak var rateLabel: UILabel!
     @IBOutlet private weak var star01: UIImageView!
     @IBOutlet private weak var star02: UIImageView!
@@ -31,28 +32,36 @@ final class RateViewController: UIViewController {
         self.init()
         
         self.episode = episode
-        self.title = episode.name
-//        let rating = DataController.shared.ratingForEpisode(episode)
-//        switch rating?.rate {
-//        case .rated(let value):
-//            setRating(value)
-//        default:
-//            setRating(0)
-//        }
     }
     
     // MARK: LifeCycle
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
         configureView()
+        setEpisodeInfo()
     }
     
     // MARK: Private functions
     
     private func configureView() {
         confirmButton.layer.cornerRadius = 4.0
+    }
+    
+    private func setEpisodeInfo() {
+        guard let episode = episode else { return }
+        
+        title = episode.name
+        episodeImage.image = UIImage(named: episode.image ?? "")
+        
+        let rating = DataController.shared.ratingForEpisode(episode)
+        switch rating?.rate {
+        case .rated(let value):
+            setRating(value)
+        default:
+            setRating(0)
+        }
     }
     
     private func setRating(_ rating: Double) {

@@ -11,6 +11,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RateViewController" customModule="AppOfThrones" customModuleProvider="target">
             <connections>
                 <outlet property="confirmButton" destination="YLd-BC-Ggf" id="UM5-cf-S1R"/>
+                <outlet property="episodeImage" destination="cj6-xa-mvN" id="by6-Cu-OpB"/>
                 <outlet property="rateLabel" destination="TCT-G5-Hl4" id="YYh-uu-o4L"/>
                 <outlet property="rateSlider" destination="kvO-Xe-xFm" id="SgF-ag-ccd"/>
                 <outlet property="star01" destination="f9Y-Oy-tF8" id="yv9-0e-btx"/>
@@ -41,7 +42,7 @@
                     </connections>
                 </button>
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Baratheon" translatesAutoresizingMaskIntoConstraints="NO" id="cj6-xa-mvN">
-                    <rect key="frame" x="20" y="110" width="335" height="260"/>
+                    <rect key="frame" x="20" y="110" width="335" height="260.00000000000023"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="260" id="LSR-Nf-132"/>
                     </constraints>
