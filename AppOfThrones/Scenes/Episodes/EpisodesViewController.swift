@@ -88,8 +88,9 @@ extension EpisodesViewController: UITableViewDataSource {
         cell.setEpisode(episode)
         cell.delegate = self
         cell.rateBlock = { [weak self] in
-            let rateVC = UINavigationController(rootViewController: RateViewController(withEpisode: episode))
-            self?.navigationController?.present(rateVC, animated: true, completion: nil)
+            let rateVC = RateViewController(withEpisode: episode)
+            rateVC.onRate = self?.episodesTable.reloadData
+            self?.navigationController?.present(UINavigationController(rootViewController: rateVC), animated: true, completion: nil)
         }
         return cell
     }
@@ -112,3 +113,4 @@ extension EpisodesViewController: EpisodeTableViewCellDelegate {
         episodesTable.reloadData()
     }
 }
+
