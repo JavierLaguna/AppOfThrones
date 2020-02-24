@@ -3,6 +3,7 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -37,7 +38,7 @@
                     </label>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VEC-MQ-Z1t">
                         <rect key="frame" x="176" y="88.5" width="83" height="30"/>
-                        <color key="backgroundColor" red="0.92156862750000001" green="0.67450980390000004" blue="0.14901960780000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" name="OrangeMain"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="83" id="0pP-ur-Tn6"/>
                         </constraints>
@@ -53,23 +54,23 @@
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="bs2-2o-z7e">
                                 <rect key="frame" x="0.0" y="0.0" width="22" height="42"/>
-                                <color key="tintColor" red="0.92156862750000001" green="0.67450980390000004" blue="0.14901960780000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" name="OrangeMain"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="CS8-s6-xpU">
                                 <rect key="frame" x="30" y="0.0" width="22" height="42"/>
-                                <color key="tintColor" red="0.92156862750000001" green="0.67450980390000004" blue="0.14901960780000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" name="OrangeMain"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star.lefthalf.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="ggp-65-aEk">
                                 <rect key="frame" x="60" y="0.0" width="22" height="42"/>
-                                <color key="tintColor" red="0.92156862750000001" green="0.67450980390000004" blue="0.14901960780000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" name="OrangeMain"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="dOB-TP-Tga">
                                 <rect key="frame" x="90" y="0.0" width="22" height="42"/>
-                                <color key="tintColor" red="0.92156862750000001" green="0.67450980390000004" blue="0.14901960780000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" name="OrangeMain"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="3et-Nh-2Vo">
                                 <rect key="frame" x="120" y="0.0" width="22" height="42"/>
-                                <color key="tintColor" red="0.92156862750000001" green="0.67450980390000004" blue="0.14901960780000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" name="OrangeMain"/>
                             </imageView>
                         </subviews>
                         <constraints>
@@ -81,7 +82,7 @@
                         <constraints>
                             <constraint firstAttribute="width" constant="50" id="BNY-d5-Dbl"/>
                         </constraints>
-                        <color key="tintColor" red="0.92156862750000001" green="0.67450980390000004" blue="0.14901960780000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="tintColor" name="OrangeMain"/>
                         <state key="normal" image="heart" catalog="system"/>
                         <connections>
                             <action selector="tapFavoriteButton:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="cOy-pV-fkv"/>
@@ -128,5 +129,8 @@
         <image name="star" catalog="system" width="64" height="58"/>
         <image name="star.fill" catalog="system" width="64" height="58"/>
         <image name="star.lefthalf.fill" catalog="system" width="64" height="58"/>
+        <namedColor name="OrangeMain">
+            <color red="0.92156862745098034" green="0.67450980392156867" blue="0.14901960784313725" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
     </resources>
 </document>

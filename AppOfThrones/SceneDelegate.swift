@@ -20,7 +20,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
             return
         }
         
-        let episodesVC = EpisodeViewController()
+        let episodesVC = EpisodesViewController()
         let castVC = CastViewController()
         let houseVC = HouseViewController()
         let settingsVC = SettingsViewController()
@@ -41,7 +41,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let tabBarVC = UITabBarController()
         tabBarVC.viewControllers = [navBarEpisodesVC, navBarCastVC, navBarHouseVC, navBarSettingsVC]
         tabBarVC.tabBar.barStyle = .black
-        tabBarVC.tabBar.tintColor = UIColor(red: 235/255, green: 172/255, blue: 38/255, alpha: 1)
+        tabBarVC.tabBar.tintColor = .orangeMain
         
         window = UIWindow.init(frame: windowScene.coordinateSpace.bounds)
         window?.windowScene = windowScene

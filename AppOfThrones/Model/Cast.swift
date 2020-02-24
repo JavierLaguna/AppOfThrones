@@ -8,9 +8,9 @@
 
 import Foundation
 
-struct Cast: Decodable {
+struct Cast: Decodable, Identifiable {
     
-    let id: Int
+    var id: Int
     let avatar: String?
     let fullname: String?
     let role: String?

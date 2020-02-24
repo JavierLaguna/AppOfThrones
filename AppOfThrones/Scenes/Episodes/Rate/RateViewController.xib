@@ -3,6 +3,7 @@
     <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -31,7 +32,7 @@
                         <constraint firstAttribute="width" constant="46" id="bMB-Ao-0G4"/>
                         <constraint firstAttribute="height" constant="46" id="dCP-aD-ghU"/>
                     </constraints>
-                    <color key="tintColor" red="0.92156862750000001" green="0.67450980390000004" blue="0.14901960780000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="tintColor" name="OrangeMain"/>
                     <state key="normal" image="xmark.circle.fill" catalog="system">
                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </state>
@@ -56,23 +57,23 @@
                     <subviews>
                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="f9Y-Oy-tF8">
                             <rect key="frame" x="0.0" y="0.33333333333333215" width="52.666666666666664" height="41.666666666666671"/>
-                            <color key="tintColor" red="0.92156862750000001" green="0.67450980390000004" blue="0.14901960780000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="tintColor" name="OrangeMain"/>
                         </imageView>
                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="ksb-lt-dye">
                             <rect key="frame" x="60.666666666666671" y="0.33333333333333215" width="52.666666666666671" height="41.666666666666671"/>
-                            <color key="tintColor" red="0.92156862750000001" green="0.67450980390000004" blue="0.14901960780000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="tintColor" name="OrangeMain"/>
                         </imageView>
                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star.lefthalf.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="2NO-Sx-Whp">
                             <rect key="frame" x="121.33333333333333" y="0.33333333333333215" width="52.333333333333329" height="41.666666666666671"/>
-                            <color key="tintColor" red="0.92156862750000001" green="0.67450980390000004" blue="0.14901960780000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="tintColor" name="OrangeMain"/>
                         </imageView>
                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="vSl-Cg-w1H">
                             <rect key="frame" x="181.66666666666666" y="0.33333333333333215" width="52.666666666666657" height="41.666666666666671"/>
-                            <color key="tintColor" red="0.92156862750000001" green="0.67450980390000004" blue="0.14901960780000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="tintColor" name="OrangeMain"/>
                         </imageView>
                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="jom-3h-hRC">
                             <rect key="frame" x="242.33333333333329" y="0.33333333333333215" width="52.666666666666657" height="41.666666666666671"/>
-                            <color key="tintColor" red="0.92156862750000001" green="0.67450980390000004" blue="0.14901960780000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="tintColor" name="OrangeMain"/>
                         </imageView>
                     </subviews>
                     <constraints>
@@ -81,7 +82,7 @@
                 </stackView>
                 <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="10" minValue="0.0" maxValue="20" translatesAutoresizingMaskIntoConstraints="NO" id="kvO-Xe-xFm">
                     <rect key="frame" x="18" y="554.66666666666663" width="339" height="31"/>
-                    <color key="tintColor" red="0.92156862750000001" green="0.67450980390000004" blue="0.14901960780000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="tintColor" name="OrangeMain"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="30" id="ijZ-Cd-Rwf"/>
                     </constraints>
@@ -91,7 +92,7 @@
                 </slider>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YLd-BC-Ggf">
                     <rect key="frame" x="20" y="682" width="335" height="64"/>
-                    <color key="backgroundColor" red="0.92156862750000001" green="0.67450980390000004" blue="0.14901960780000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="backgroundColor" name="OrangeMain"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="64" id="lrb-Cy-Glc"/>
                     </constraints>
@@ -134,5 +135,8 @@
         <image name="star.fill" catalog="system" width="64" height="58"/>
         <image name="star.lefthalf.fill" catalog="system" width="64" height="58"/>
         <image name="xmark.circle.fill" catalog="system" width="64" height="60"/>
+        <namedColor name="OrangeMain">
+            <color red="0.92156862745098034" green="0.67450980392156867" blue="0.14901960784313725" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
     </resources>
 </document>

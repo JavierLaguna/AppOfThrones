@@ -8,7 +8,7 @@
 
 import UIKit
 
-final class EpisodeViewController: UIViewController {
+final class EpisodesViewController: UIViewController {
     
     // MARK: IBOutlets
     
@@ -64,7 +64,7 @@ final class EpisodeViewController: UIViewController {
 
 // MARK: UITableViewDataSource
 
-extension EpisodeViewController: UITableViewDataSource {
+extension EpisodesViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return episodes.count
@@ -88,7 +88,7 @@ extension EpisodeViewController: UITableViewDataSource {
 
 // MARK: UITableViewDelegate
 
-extension EpisodeViewController: UITableViewDelegate {
+extension EpisodesViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 128
@@ -97,7 +97,7 @@ extension EpisodeViewController: UITableViewDelegate {
 
 // MARK: EpisodeTableViewCellDelegate
 
-extension EpisodeViewController: EpisodeTableViewCellDelegate {
+extension EpisodesViewController: EpisodeTableViewCellDelegate {
     
     func didFavoriteChanged() {
         episodesTable.reloadData()

@@ -18,6 +18,11 @@
 		4942DBB523FF32ED00ECC72D /* season_1.json in Resources */ = {isa = PBXBuildFile; fileRef = 4942DBAB23FF32ED00ECC72D /* season_1.json */; };
 		4942DBB623FF32ED00ECC72D /* season_6.json in Resources */ = {isa = PBXBuildFile; fileRef = 4942DBAC23FF32ED00ECC72D /* season_6.json */; };
 		4942DBB723FF32ED00ECC72D /* season_7.json in Resources */ = {isa = PBXBuildFile; fileRef = 4942DBAD23FF32ED00ECC72D /* season_7.json */; };
+		4956F8EA24044B7C00E3F0D5 /* Identifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4956F8E924044B7C00E3F0D5 /* Identifiable.swift */; };
+		4956F8F024044E1900E3F0D5 /* ReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4956F8EF24044E1900E3F0D5 /* ReusableView.swift */; };
+		4956F8F224044E2F00E3F0D5 /* NibLoadableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4956F8F124044E2F00E3F0D5 /* NibLoadableView.swift */; };
+		4956F8F724044F6200E3F0D5 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4956F8F624044F6200E3F0D5 /* UIColor.swift */; };
+		4956F8FA24044FD200E3F0D5 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4956F8F924044FD200E3F0D5 /* Colors.xcassets */; };
 		4989F57723F34BCE0058EF88 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4989F57623F34BCE0058EF88 /* AppDelegate.swift */; };
 		4989F57923F34BCE0058EF88 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4989F57823F34BCE0058EF88 /* SceneDelegate.swift */; };
 		4989F58023F34BD20058EF88 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4989F57F23F34BD20058EF88 /* Assets.xcassets */; };
@@ -32,8 +37,8 @@
 		49A45C5523FB4B4800474F8D /* Cast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A45C5423FB4B4800474F8D /* Cast.swift */; };
 		49A45C5723FB54F700474F8D /* House.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A45C5623FB54F700474F8D /* House.swift */; };
 		49A45C5923FB556500474F8D /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A45C5823FB556500474F8D /* DataController.swift */; };
-		49BAF29923F5F09D005B5534 /* EpisodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49BAF29723F5F09D005B5534 /* EpisodeViewController.swift */; };
-		49BAF29A23F5F09D005B5534 /* EpisodeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49BAF29823F5F09D005B5534 /* EpisodeViewController.xib */; };
+		49BAF29923F5F09D005B5534 /* EpisodesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49BAF29723F5F09D005B5534 /* EpisodesViewController.swift */; };
+		49BAF29A23F5F09D005B5534 /* EpisodesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49BAF29823F5F09D005B5534 /* EpisodesViewController.xib */; };
 		49BAF29D23F5F419005B5534 /* Episode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49BAF29C23F5F419005B5534 /* Episode.swift */; };
 		49BAF2A223F60214005B5534 /* CastViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49BAF2A023F60214005B5534 /* CastViewController.swift */; };
 		49BAF2A323F60214005B5534 /* CastViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49BAF2A123F60214005B5534 /* CastViewController.xib */; };
@@ -67,6 +72,11 @@
 		4942DBAB23FF32ED00ECC72D /* season_1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = season_1.json; sourceTree = "<group>"; };
 		4942DBAC23FF32ED00ECC72D /* season_6.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = season_6.json; sourceTree = "<group>"; };
 		4942DBAD23FF32ED00ECC72D /* season_7.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = season_7.json; sourceTree = "<group>"; };
+		4956F8E924044B7C00E3F0D5 /* Identifiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Identifiable.swift; sourceTree = "<group>"; };
+		4956F8EF24044E1900E3F0D5 /* ReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableView.swift; sourceTree = "<group>"; };
+		4956F8F124044E2F00E3F0D5 /* NibLoadableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibLoadableView.swift; sourceTree = "<group>"; };
+		4956F8F624044F6200E3F0D5 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		4956F8F924044FD200E3F0D5 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		4989F57323F34BCE0058EF88 /* AppOfThrones.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppOfThrones.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4989F57623F34BCE0058EF88 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4989F57823F34BCE0058EF88 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -85,8 +95,8 @@
 		49A45C5423FB4B4800474F8D /* Cast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cast.swift; sourceTree = "<group>"; };
 		49A45C5623FB54F700474F8D /* House.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = House.swift; sourceTree = "<group>"; };
 		49A45C5823FB556500474F8D /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
-		49BAF29723F5F09D005B5534 /* EpisodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeViewController.swift; sourceTree = "<group>"; };
-		49BAF29823F5F09D005B5534 /* EpisodeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EpisodeViewController.xib; sourceTree = "<group>"; };
+		49BAF29723F5F09D005B5534 /* EpisodesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodesViewController.swift; sourceTree = "<group>"; };
+		49BAF29823F5F09D005B5534 /* EpisodesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EpisodesViewController.xib; sourceTree = "<group>"; };
 		49BAF29C23F5F419005B5534 /* Episode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Episode.swift; sourceTree = "<group>"; };
 		49BAF2A023F60214005B5534 /* CastViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CastViewController.swift; sourceTree = "<group>"; };
 		49BAF2A123F60214005B5534 /* CastViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CastViewController.xib; sourceTree = "<group>"; };
@@ -133,6 +143,90 @@
 			path = Jsons;
 			sourceTree = "<group>";
 		};
+		4956F8E524044B2100E3F0D5 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				49BAF29E23F601DD005B5534 /* Cast */,
+				49BAF29623F5F07A005B5534 /* Episodes */,
+				49BAF2AC23F6082A005B5534 /* Houses */,
+				49BAF29F23F601F7005B5534 /* Settings */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		4956F8E624044B3C00E3F0D5 /* Commons */ = {
+			isa = PBXGroup;
+			children = (
+				4956F8E824044B5F00E3F0D5 /* Extensions */,
+				4956F8E724044B5700E3F0D5 /* Protocols */,
+				49A45C5823FB556500474F8D /* DataController.swift */,
+			);
+			path = Commons;
+			sourceTree = "<group>";
+		};
+		4956F8E724044B5700E3F0D5 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				4956F8E924044B7C00E3F0D5 /* Identifiable.swift */,
+				4956F8F124044E2F00E3F0D5 /* NibLoadableView.swift */,
+				4956F8EF24044E1900E3F0D5 /* ReusableView.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		4956F8E824044B5F00E3F0D5 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				4956F8F624044F6200E3F0D5 /* UIColor.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		4956F8F324044EF600E3F0D5 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				49A45C5023FB488300474F8D /* CastTableViewCell.swift */,
+				49A45C5123FB488300474F8D /* CastTableViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		4956F8F424044F0200E3F0D5 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				49A45C4C23FB31D100474F8D /* EpisodeTableViewCell.swift */,
+				49A45C4D23FB31D100474F8D /* EpisodeTableViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		4956F8F524044F1000E3F0D5 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				49D0378E23FC6B7100B80379 /* HouseTableViewCell.swift */,
+				49D0378F23FC6B7100B80379 /* HouseTableViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		4956F8F824044FA700E3F0D5 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4989F57F23F34BD20058EF88 /* Assets.xcassets */,
+				4956F8F924044FD200E3F0D5 /* Colors.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		4956F8FB2404509500E3F0D5 /* Rate */ = {
+			isa = PBXGroup;
+			children = (
+				4989F59823F35E430058EF88 /* RateViewController.swift */,
+				4989F59A23F35E890058EF88 /* RateViewController.xib */,
+			);
+			path = Rate;
+			sourceTree = "<group>";
+		};
 		4989F56A23F34BCE0058EF88 = {
 			isa = PBXGroup;
 			children = (
@@ -154,17 +248,14 @@
 		4989F57523F34BCE0058EF88 /* AppOfThrones */ = {
 			isa = PBXGroup;
 			children = (
-				4989F57F23F34BD20058EF88 /* Assets.xcassets */,
+				4956F8E624044B3C00E3F0D5 /* Commons */,
 				49BAF29B23F5F3E7005B5534 /* Model */,
-				49BAF29E23F601DD005B5534 /* Cast */,
-				49BAF29623F5F07A005B5534 /* Episodes */,
-				49BAF2AC23F6082A005B5534 /* Houses */,
-				49BAF29F23F601F7005B5534 /* Settings */,
+				4956F8E524044B2100E3F0D5 /* Scenes */,
+				4956F8F824044FA700E3F0D5 /* Resources */,
 				4942DBA323FF32ED00ECC72D /* Jsons */,
 				4989F57623F34BCE0058EF88 /* AppDelegate.swift */,
 				4989F57823F34BCE0058EF88 /* SceneDelegate.swift */,
 				4989F58123F34BD20058EF88 /* LaunchScreen.storyboard */,
-				49A45C5823FB556500474F8D /* DataController.swift */,
 				4989F58423F34BD20058EF88 /* Info.plist */,
 			);
 			path = AppOfThrones;
@@ -182,12 +273,10 @@
 		49BAF29623F5F07A005B5534 /* Episodes */ = {
 			isa = PBXGroup;
 			children = (
-				49BAF29723F5F09D005B5534 /* EpisodeViewController.swift */,
-				49BAF29823F5F09D005B5534 /* EpisodeViewController.xib */,
-				4989F59823F35E430058EF88 /* RateViewController.swift */,
-				4989F59A23F35E890058EF88 /* RateViewController.xib */,
-				49A45C4C23FB31D100474F8D /* EpisodeTableViewCell.swift */,
-				49A45C4D23FB31D100474F8D /* EpisodeTableViewCell.xib */,
+				4956F8F424044F0200E3F0D5 /* Cell */,
+				4956F8FB2404509500E3F0D5 /* Rate */,
+				49BAF29723F5F09D005B5534 /* EpisodesViewController.swift */,
+				49BAF29823F5F09D005B5534 /* EpisodesViewController.xib */,
 			);
 			path = Episodes;
 			sourceTree = "<group>";
@@ -206,10 +295,9 @@
 		49BAF29E23F601DD005B5534 /* Cast */ = {
 			isa = PBXGroup;
 			children = (
+				4956F8F324044EF600E3F0D5 /* Cell */,
 				49BAF2A023F60214005B5534 /* CastViewController.swift */,
 				49BAF2A123F60214005B5534 /* CastViewController.xib */,
-				49A45C5023FB488300474F8D /* CastTableViewCell.swift */,
-				49A45C5123FB488300474F8D /* CastTableViewCell.xib */,
 			);
 			path = Cast;
 			sourceTree = "<group>";
@@ -226,10 +314,9 @@
 		49BAF2AC23F6082A005B5534 /* Houses */ = {
 			isa = PBXGroup;
 			children = (
+				4956F8F524044F1000E3F0D5 /* Cell */,
 				49BAF2AD23F60938005B5534 /* HouseViewController.swift */,
 				49BAF2AE23F60938005B5534 /* HouseViewController.xib */,
-				49D0378E23FC6B7100B80379 /* HouseTableViewCell.swift */,
-				49D0378F23FC6B7100B80379 /* HouseTableViewCell.xib */,
 			);
 			path = Houses;
 			sourceTree = "<group>";
@@ -321,6 +408,7 @@
 				49BAF2A723F602A7005B5534 /* SettingsViewController.xib in Resources */,
 				4942DBB523FF32ED00ECC72D /* season_1.json in Resources */,
 				4942DBB123FF32ED00ECC72D /* season_2.json in Resources */,
+				4956F8FA24044FD200E3F0D5 /* Colors.xcassets in Resources */,
 				49A45C5323FB488300474F8D /* CastTableViewCell.xib in Resources */,
 				4989F58323F34BD20058EF88 /* LaunchScreen.storyboard in Resources */,
 				4942DBB423FF32ED00ECC72D /* houses.json in Resources */,
@@ -333,7 +421,7 @@
 				49D0379123FC6B7100B80379 /* HouseTableViewCell.xib in Resources */,
 				4942DBB723FF32ED00ECC72D /* season_7.json in Resources */,
 				49A45C4F23FB31D100474F8D /* EpisodeTableViewCell.xib in Resources */,
-				49BAF29A23F5F09D005B5534 /* EpisodeViewController.xib in Resources */,
+				49BAF29A23F5F09D005B5534 /* EpisodesViewController.xib in Resources */,
 				4989F58023F34BD20058EF88 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -353,18 +441,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				49A45C4E23FB31D100474F8D /* EpisodeTableViewCell.swift in Sources */,
+				4956F8F024044E1900E3F0D5 /* ReusableView.swift in Sources */,
 				4989F59923F35E430058EF88 /* RateViewController.swift in Sources */,
 				4989F57723F34BCE0058EF88 /* AppDelegate.swift in Sources */,
 				490EA46523FC827100953123 /* Rating.swift in Sources */,
 				49BAF2A623F602A7005B5534 /* SettingsViewController.swift in Sources */,
-				49BAF29923F5F09D005B5534 /* EpisodeViewController.swift in Sources */,
+				49BAF29923F5F09D005B5534 /* EpisodesViewController.swift in Sources */,
 				49BAF29D23F5F419005B5534 /* Episode.swift in Sources */,
+				4956F8F724044F6200E3F0D5 /* UIColor.swift in Sources */,
 				49A45C5223FB488300474F8D /* CastTableViewCell.swift in Sources */,
 				4989F57923F34BCE0058EF88 /* SceneDelegate.swift in Sources */,
 				49A45C5523FB4B4800474F8D /* Cast.swift in Sources */,
 				49BAF2A223F60214005B5534 /* CastViewController.swift in Sources */,
+				4956F8F224044E2F00E3F0D5 /* NibLoadableView.swift in Sources */,
 				49A45C5723FB54F700474F8D /* House.swift in Sources */,
 				49A45C5923FB556500474F8D /* DataController.swift in Sources */,
+				4956F8EA24044B7C00E3F0D5 /* Identifiable.swift in Sources */,
 				49D0379023FC6B7100B80379 /* HouseTableViewCell.swift in Sources */,
 				49BAF2AF23F60938005B5534 /* HouseViewController.swift in Sources */,
 			);

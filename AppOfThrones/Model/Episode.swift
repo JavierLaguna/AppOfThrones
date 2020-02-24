@@ -8,9 +8,9 @@
 
 import Foundation
 
-class Episode: Decodable {
+class Episode: Decodable, Identifiable {
     
-    let id: Int
+    var id: Int
     let name: String?
     let date: String?
     let image: String?
