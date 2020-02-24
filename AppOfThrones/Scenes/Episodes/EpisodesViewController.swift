@@ -26,14 +26,19 @@ final class EpisodesViewController: UIViewController {
         
         configureView()
         configureTable()
+        addObservers()
         getData(of: 1)
+    }
+    
+    deinit {
+        removeObservers()
     }
     
     // MARK: Private functions
     
     private func configureView() {
         title = "Seasons"
-
+        
         episodesSegmentedControl.setTitleTextAttributes([.foregroundColor: UIColor.orangeMain], for: .normal)
         episodesSegmentedControl.setTitleTextAttributes([.foregroundColor: UIColor.black], for: .selected)
         episodesSegmentedControl.selectedSegmentTintColor = .orangeMain;
@@ -46,6 +51,16 @@ final class EpisodesViewController: UIViewController {
         episodesTable.register(UINib(nibName: EpisodeTableViewCell.nibName, bundle: nil), forCellReuseIdentifier: EpisodeTableViewCell.defaultReuseIdentifier)
         
         episodesTable.tableFooterView = UIView()
+    }
+    
+    private func addObservers() {
+        NotificationCenter.default.addObserver(self, selector: #selector(didFavoriteChanged), name: Constants.NotificationCenter.favoritesChanged, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(onRateChanged), name: Constants.NotificationCenter.ratesChanged, object: nil)
+    }
+    
+    private func removeObservers() {
+        NotificationCenter.default.removeObserver(self, name: Constants.NotificationCenter.favoritesChanged, object: nil)
+        NotificationCenter.default.removeObserver(self, name: Constants.NotificationCenter.ratesChanged, object: nil)
     }
     
     private func getData(of seasonNumber: Int) {
@@ -62,6 +77,10 @@ final class EpisodesViewController: UIViewController {
         } catch {
             fatalError(error.localizedDescription)
         }
+    }
+    
+    @objc private func onRateChanged() {
+        episodesTable.reloadData()
     }
     
     // MARK: IBActions
@@ -89,7 +108,7 @@ extension EpisodesViewController: UITableViewDataSource {
         cell.delegate = self
         cell.rateBlock = { [weak self] in
             let rateVC = RateViewController(withEpisode: episode)
-            rateVC.onRate = self?.episodesTable.reloadData
+            rateVC.onRate = self?.onRateChanged
             self?.navigationController?.present(UINavigationController(rootViewController: rateVC), animated: true, completion: nil)
         }
         return cell
@@ -109,7 +128,7 @@ extension EpisodesViewController: UITableViewDelegate {
 
 extension EpisodesViewController: EpisodeTableViewCellDelegate {
     
-    func didFavoriteChanged() {
+    @objc func didFavoriteChanged() {
         episodesTable.reloadData()
     }
 }

@@ -25,7 +25,12 @@ final class CastViewController: UIViewController {
         
         configureView()
         configureTable()
+        addObservers()
         getData()
+    }
+    
+    deinit {
+        removeObservers()
     }
     
     // MARK: Private functions
@@ -41,6 +46,14 @@ final class CastViewController: UIViewController {
         castTable.register(UINib(nibName: CastTableViewCell.nibName, bundle: nil), forCellReuseIdentifier: CastTableViewCell.defaultReuseIdentifier)
         
         castTable.tableFooterView = UIView()
+    }
+    
+    private func addObservers() {
+        NotificationCenter.default.addObserver(self, selector: #selector(didFavoriteChanged), name: Constants.NotificationCenter.favoritesChanged, object: nil)
+    }
+    
+    private func removeObservers() {
+        NotificationCenter.default.removeObserver(self, name: Constants.NotificationCenter.favoritesChanged, object: nil)
     }
     
     private func getData() {
@@ -94,7 +107,7 @@ extension CastViewController: UITableViewDelegate {
 
 extension CastViewController: CastTableViewCellDelegate {
     
-    func didFavoriteChanged() {
+    @objc func didFavoriteChanged() {
         castTable.reloadData()
     }
 }

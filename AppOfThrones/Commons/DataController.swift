@@ -43,6 +43,10 @@ extension DataController {
     func ratingForEpisode(_ episode: Episode) -> Rating? {
         rating.filter { $0.id == episode.id }.first
     }
+    
+    func cleanRating() {
+        rating.removeAll()
+    }
 }
 
 // MARK: Favorite
