@@ -26,7 +26,7 @@ final class EpisodesViewController: UIViewController {
         
         configureView()
         configureTable()
-        getData()
+        getData(of: 1)
     }
     
     // MARK: Private functions
@@ -48,8 +48,9 @@ final class EpisodesViewController: UIViewController {
         episodesTable.tableFooterView = UIView()
     }
     
-    private func getData() {
-        guard let pathURL = Bundle.main.url(forResource: "season_1", withExtension: "json") else {
+    private func getData(of seasonNumber: Int) {
+        let season = "season_\(seasonNumber)"
+        guard let pathURL = Bundle.main.url(forResource: season, withExtension: "json") else {
             return
         }
         
@@ -65,6 +66,9 @@ final class EpisodesViewController: UIViewController {
     
     // MARK: IBActions
     
+    @IBAction private func onChangeSeason(_ sender: UISegmentedControl) {
+        getData(of: sender.selectedSegmentIndex + 1)
+    }
 }
 
 // MARK: UITableViewDataSource
