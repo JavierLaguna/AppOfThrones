@@ -7,9 +7,9 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EpisodeDetailViewController" customModule="AppOfThrones" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CastDetailViewController" customModule="AppOfThrones" customModuleProvider="target">
             <connections>
-                <outlet property="episodeTable" destination="bDs-D5-LVi" id="1fx-AW-Y4w"/>
+                <outlet property="castDetailTable" destination="SQk-XK-OzU" id="7C3-Qq-1ev"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -18,16 +18,16 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <tableView contentMode="scaleToFill" bounces="NO" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="bDs-D5-LVi">
+                <tableView contentMode="scaleToFill" bounces="NO" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="SQk-XK-OzU">
                     <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                     <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
                 </tableView>
             </subviews>
             <constraints>
-                <constraint firstItem="bDs-D5-LVi" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="gTo-sR-In3"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="bDs-D5-LVi" secondAttribute="bottom" id="kml-AV-xIY"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="bDs-D5-LVi" secondAttribute="trailing" id="nu7-A8-SO9"/>
-                <constraint firstItem="bDs-D5-LVi" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="qUa-Jd-e0C"/>
+                <constraint firstItem="SQk-XK-OzU" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="NPv-dG-Gw3"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="SQk-XK-OzU" secondAttribute="bottom" id="Rzt-el-D83"/>
+                <constraint firstItem="SQk-XK-OzU" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="fbS-sa-5j8"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="SQk-XK-OzU" secondAttribute="trailing" id="tdC-TN-roD"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <point key="canvasLocation" x="139" y="153"/>

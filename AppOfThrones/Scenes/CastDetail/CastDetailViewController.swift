@@ -1,5 +1,5 @@
 //
-//  EpisodeDetailViewController.swift
+//  CastDetailViewController.swift
 //  AppOfThrones
 //
 //  Created by Javier Laguna on 25/02/2020.
@@ -8,23 +8,23 @@
 
 import UIKit
 
-final class EpisodeDetailViewController: UIViewController {
+final class CastDetailViewController: UIViewController {
     
     // MARK: IBOutlets
     
-    @IBOutlet private weak var episodeTable: UITableView!
+    @IBOutlet weak var castDetailTable: UITableView!
     
     // MARK: Variables
     
-    var episode: Episode?
+    var cast: Cast?
     
     // MARK: LifeCycle
     
-    convenience init(withEpisode episode: Episode) {
+    convenience init(withCast cast: Cast) {
         self.init()
         
-        self.episode = episode
-        print(episode.description)
+        self.cast = cast
+        print(cast.description)
     }
     
     override func viewDidLoad() {
@@ -38,33 +38,33 @@ final class EpisodeDetailViewController: UIViewController {
     // MARK: Private functions
     
     private func configureView() {
-        title = episode?.name
+        title = cast?.fullname
     }
     
     private func configureTable() {
-        episodeTable.dataSource = self
-        episodeTable.delegate = self
+        castDetailTable.dataSource = self
+        castDetailTable.delegate = self
         
-        episodeTable.register(UINib(nibName: ImageCell.nibName, bundle: nil), forCellReuseIdentifier: ImageCell.defaultReuseIdentifier)
-        episodeTable.register(UINib(nibName: EpisodeDetailCell.nibName, bundle: nil), forCellReuseIdentifier: EpisodeDetailCell.defaultReuseIdentifier)
+        castDetailTable.register(UINib(nibName: ImageCell.nibName, bundle: nil), forCellReuseIdentifier: ImageCell.defaultReuseIdentifier)
+        castDetailTable.register(UINib(nibName: ActorDetailCell.nibName, bundle: nil), forCellReuseIdentifier: ActorDetailCell.defaultReuseIdentifier)
         
-        episodeTable.tableFooterView = UIView()
+        castDetailTable.tableFooterView = UIView()
     }
     
 }
 
 // MARK: UITableViewDataSource
 
-extension EpisodeDetailViewController: UITableViewDataSource {
+extension CastDetailViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return episode != nil ? 2 : 0
+        return cast != nil ? 2 : 0
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         return indexPath.row == 0 ?
             getImageCell(tableView, cellForRowAt: indexPath)
-            : getDetailEpisodeCell(tableView, cellForRowAt: indexPath)
+            : getActorDetailCell(tableView, cellForRowAt: indexPath)
     }
     
     private func getImageCell(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -73,25 +73,25 @@ extension EpisodeDetailViewController: UITableViewDataSource {
             return UITableViewCell()
         }
         
-        let episodeImage = UIImage(named: episode?.image ?? "")
-        cell.setImage(episodeImage, with: .scaleAspectFill)
+        let episodeImage = UIImage(named: cast?.avatar ?? "")
+        cell.setImage(episodeImage)
         return cell
     }
     
-    private func getDetailEpisodeCell(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    private func getActorDetailCell(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        guard let episode = episode, let cell = tableView.dequeueReusableCell(withIdentifier: EpisodeDetailCell.defaultReuseIdentifier, for: indexPath) as? EpisodeDetailCell else {
+        guard let cast = cast, let cell = tableView.dequeueReusableCell(withIdentifier: ActorDetailCell.defaultReuseIdentifier, for: indexPath) as? ActorDetailCell else {
             return UITableViewCell()
         }
         
-        cell.setEpisode(episode)
+        cell.setCast(cast)
         return cell
     }
 }
 
 // MARK: UITableViewDelegate
 
-extension EpisodeDetailViewController: UITableViewDelegate {
+extension CastDetailViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return UITableView.automaticDimension

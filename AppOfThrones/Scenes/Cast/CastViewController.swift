@@ -99,6 +99,13 @@ extension CastViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 148
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let actor = cast[indexPath.row]
+        let detailVC = CastDetailViewController(withCast: actor)
+        
+        self.navigationController?.present(UINavigationController(rootViewController: detailVC), animated: true, completion: nil)
+    }
 }
 
 

@@ -16,8 +16,9 @@ final class ImageCell: UITableViewCell, NibLoadableView, ReusableView {
     
     // MARK: Public func
     
-    func setImage(_ image: UIImage?) {
+    func setImage(_ image: UIImage?, with contentMode: UIView.ContentMode = .scaleAspectFill) {
         episodeImage.image = image
+        episodeImage.contentMode = contentMode
     }
     
 }

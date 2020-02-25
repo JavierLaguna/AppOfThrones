@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		490EA46523FC827100953123 /* Rating.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490EA46423FC827100953123 /* Rating.swift */; };
+		49325D7C2405B05400D7F9DD /* ActorDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49325D7A2405B05400D7F9DD /* ActorDetailCell.swift */; };
+		49325D7D2405B05400D7F9DD /* ActorDetailCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49325D7B2405B05400D7F9DD /* ActorDetailCell.xib */; };
+		49325D812405B2B200D7F9DD /* CastDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49325D7F2405B2B200D7F9DD /* CastDetailViewController.swift */; };
+		49325D822405B2B200D7F9DD /* CastDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49325D802405B2B200D7F9DD /* CastDetailViewController.xib */; };
 		4942DBAE23FF32ED00ECC72D /* season_4.json in Resources */ = {isa = PBXBuildFile; fileRef = 4942DBA423FF32ED00ECC72D /* season_4.json */; };
 		4942DBAF23FF32ED00ECC72D /* season_8.json in Resources */ = {isa = PBXBuildFile; fileRef = 4942DBA523FF32ED00ECC72D /* season_8.json */; };
 		4942DBB023FF32ED00ECC72D /* season_5.json in Resources */ = {isa = PBXBuildFile; fileRef = 4942DBA623FF32ED00ECC72D /* season_5.json */; };
@@ -70,6 +74,10 @@
 
 /* Begin PBXFileReference section */
 		490EA46423FC827100953123 /* Rating.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rating.swift; sourceTree = "<group>"; };
+		49325D7A2405B05400D7F9DD /* ActorDetailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActorDetailCell.swift; sourceTree = "<group>"; };
+		49325D7B2405B05400D7F9DD /* ActorDetailCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ActorDetailCell.xib; sourceTree = "<group>"; };
+		49325D7F2405B2B200D7F9DD /* CastDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CastDetailViewController.swift; sourceTree = "<group>"; };
+		49325D802405B2B200D7F9DD /* CastDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CastDetailViewController.xib; sourceTree = "<group>"; };
 		4942DBA423FF32ED00ECC72D /* season_4.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = season_4.json; sourceTree = "<group>"; };
 		4942DBA523FF32ED00ECC72D /* season_8.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = season_8.json; sourceTree = "<group>"; };
 		4942DBA623FF32ED00ECC72D /* season_5.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = season_5.json; sourceTree = "<group>"; };
@@ -142,6 +150,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		49325D792405B03700D7F9DD /* ActorDetailCell */ = {
+			isa = PBXGroup;
+			children = (
+				49325D7A2405B05400D7F9DD /* ActorDetailCell.swift */,
+				49325D7B2405B05400D7F9DD /* ActorDetailCell.xib */,
+			);
+			path = ActorDetailCell;
+			sourceTree = "<group>";
+		};
+		49325D7E2405B29300D7F9DD /* CastDetail */ = {
+			isa = PBXGroup;
+			children = (
+				49325D7F2405B2B200D7F9DD /* CastDetailViewController.swift */,
+				49325D802405B2B200D7F9DD /* CastDetailViewController.xib */,
+			);
+			path = CastDetail;
+			sourceTree = "<group>";
+		};
 		4942DBA323FF32ED00ECC72D /* Jsons */ = {
 			isa = PBXGroup;
 			children = (
@@ -162,6 +188,7 @@
 		4956F8E524044B2100E3F0D5 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				49325D7E2405B29300D7F9DD /* CastDetail */,
 				49BAF29E23F601DD005B5534 /* Cast */,
 				49BCA1192405955000498F29 /* EpisodeDetail */,
 				49BAF29623F5F07A005B5534 /* Episodes */,
@@ -360,6 +387,7 @@
 		49BCA1142405940100498F29 /* TableCell */ = {
 			isa = PBXGroup;
 			children = (
+				49325D792405B03700D7F9DD /* ActorDetailCell */,
 				49BCA11F2405A50700498F29 /* EpisodeDetailCell */,
 				49BCA11E2405A4F700498F29 /* ImageCell */,
 			);
@@ -491,6 +519,8 @@
 				49BAF2B023F60938005B5534 /* HouseViewController.xib in Resources */,
 				4942DBB623FF32ED00ECC72D /* season_6.json in Resources */,
 				4942DBB023FF32ED00ECC72D /* season_5.json in Resources */,
+				49325D7D2405B05400D7F9DD /* ActorDetailCell.xib in Resources */,
+				49325D822405B2B200D7F9DD /* CastDetailViewController.xib in Resources */,
 				49D0379123FC6B7100B80379 /* HouseTableViewCell.xib in Resources */,
 				49BCA11D2405957800498F29 /* EpisodeDetailViewController.xib in Resources */,
 				49BCA1182405942C00498F29 /* ImageCell.xib in Resources */,
@@ -522,6 +552,7 @@
 				49BCA11C2405957800498F29 /* EpisodeDetailViewController.swift in Sources */,
 				490EA46523FC827100953123 /* Rating.swift in Sources */,
 				49BCA1222405A52C00498F29 /* EpisodeDetailCell.swift in Sources */,
+				49325D7C2405B05400D7F9DD /* ActorDetailCell.swift in Sources */,
 				49BAF2A623F602A7005B5534 /* SettingsViewController.swift in Sources */,
 				49BAF29D23F5F419005B5534 /* Episode.swift in Sources */,
 				4956F8F724044F6200E3F0D5 /* UIColor.swift in Sources */,
@@ -530,6 +561,7 @@
 				4989F57923F34BCE0058EF88 /* SceneDelegate.swift in Sources */,
 				49A45C5523FB4B4800474F8D /* Cast.swift in Sources */,
 				49BAF2A223F60214005B5534 /* CastViewController.swift in Sources */,
+				49325D812405B2B200D7F9DD /* CastDetailViewController.swift in Sources */,
 				49BCA1172405942C00498F29 /* ImageCell.swift in Sources */,
 				4956F8F224044E2F00E3F0D5 /* NibLoadableView.swift in Sources */,
 				49A45C5723FB54F700474F8D /* House.swift in Sources */,
