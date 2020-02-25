@@ -103,6 +103,7 @@
                     <constraint firstItem="sor-ZT-nJm" firstAttribute="top" secondItem="qYE-T2-kfp" secondAttribute="top" id="eLh-r6-OYf"/>
                     <constraint firstItem="waW-fr-L94" firstAttribute="leading" secondItem="sor-ZT-nJm" secondAttribute="trailing" constant="8" symbolic="YES" id="ewY-5J-70u"/>
                     <constraint firstItem="qYE-T2-kfp" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="ie3-AN-I2G"/>
+                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="CoF-n0-LdX" secondAttribute="trailing" constant="16" id="nWk-Vv-xuk"/>
                     <constraint firstItem="nrJ-5w-EAy" firstAttribute="trailing" secondItem="sor-ZT-nJm" secondAttribute="trailing" id="oje-lf-SIS"/>
                 </constraints>
             </tableViewCellContentView>

@@ -89,10 +89,6 @@ final class RateViewController: UIViewController {
     
     // MARK: IBActions
     
-    @IBAction private func tapCloseButton(_ sender: Any) {
-        self.dismiss(animated: true, completion: nil)
-    }
-    
     @IBAction private func sliderChange(_ sender: Any) {
         let rate = Double(Int(rateSlider.value * 5) / 10)
         setRating(rate)
@@ -105,6 +101,6 @@ final class RateViewController: UIViewController {
             onRate?()
         }
         
-        tapCloseButton(sender)
+        self.dismiss(animated: true, completion: nil)
     }
 }

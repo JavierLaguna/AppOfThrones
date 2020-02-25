@@ -27,34 +27,20 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5TI-su-1kt">
-                    <rect key="frame" x="20" y="44" width="46" height="46"/>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="27NyMAUv5Yfb3pyd3kFy9Ge7n8s" translatesAutoresizingMaskIntoConstraints="NO" id="cj6-xa-mvN">
+                    <rect key="frame" x="0.0" y="44" width="375" height="220"/>
                     <constraints>
-                        <constraint firstAttribute="width" constant="46" id="bMB-Ao-0G4"/>
-                        <constraint firstAttribute="height" constant="46" id="dCP-aD-ghU"/>
-                    </constraints>
-                    <color key="tintColor" name="OrangeMain"/>
-                    <state key="normal" image="xmark.circle.fill" catalog="system">
-                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    </state>
-                    <connections>
-                        <action selector="tapCloseButton:" destination="-1" eventType="touchUpInside" id="zrF-14-9Fn"/>
-                    </connections>
-                </button>
-                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Baratheon" translatesAutoresizingMaskIntoConstraints="NO" id="cj6-xa-mvN">
-                    <rect key="frame" x="20" y="110" width="335" height="260"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="260" id="LSR-Nf-132"/>
+                        <constraint firstAttribute="height" constant="220" id="LSR-Nf-132"/>
                     </constraints>
                 </imageView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TCT-G5-Hl4">
-                    <rect key="frame" x="20" y="434" width="335" height="28.666666666666686"/>
+                    <rect key="frame" x="20" y="284" width="335" height="28.666666666666686"/>
                     <fontDescription key="fontDescription" type="system" pointSize="24"/>
                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="919-hD-v5U">
-                    <rect key="frame" x="40" y="492.66666666666674" width="295" height="42"/>
+                    <rect key="frame" x="40" y="332.66666666666669" width="295" height="42"/>
                     <subviews>
                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="f9Y-Oy-tF8">
                             <rect key="frame" x="0.0" y="0.33333333333333215" width="52.666666666666664" height="41.666666666666671"/>
@@ -82,7 +68,7 @@
                     </constraints>
                 </stackView>
                 <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="10" minValue="0.0" maxValue="20" translatesAutoresizingMaskIntoConstraints="NO" id="kvO-Xe-xFm">
-                    <rect key="frame" x="18" y="554.66666666666663" width="339" height="31"/>
+                    <rect key="frame" x="18" y="394.66666666666669" width="339" height="31"/>
                     <color key="tintColor" name="OrangeMain"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="30" id="ijZ-Cd-Rwf"/>
@@ -92,10 +78,10 @@
                     </connections>
                 </slider>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YLd-BC-Ggf">
-                    <rect key="frame" x="20" y="682" width="335" height="64"/>
+                    <rect key="frame" x="20" y="708" width="335" height="50"/>
                     <color key="backgroundColor" name="OrangeMain"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="64" id="lrb-Cy-Glc"/>
+                        <constraint firstAttribute="height" constant="50" id="lrb-Cy-Glc"/>
                     </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="24"/>
                     <state key="normal" title="Rate">
@@ -111,31 +97,29 @@
                 <constraint firstItem="kvO-Xe-xFm" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="0wD-Lf-c0X"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="TCT-G5-Hl4" secondAttribute="trailing" constant="20" id="2pE-X7-R5e"/>
                 <constraint firstItem="YLd-BC-Ggf" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="5zp-ty-Cu3"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="cj6-xa-mvN" secondAttribute="trailing" constant="20" id="Jue-5f-i8a"/>
-                <constraint firstItem="cj6-xa-mvN" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="LMV-RX-w5P"/>
-                <constraint firstItem="TCT-G5-Hl4" firstAttribute="top" secondItem="cj6-xa-mvN" secondAttribute="bottom" constant="64" id="NF3-9h-W33"/>
-                <constraint firstItem="919-hD-v5U" firstAttribute="top" secondItem="TCT-G5-Hl4" secondAttribute="bottom" constant="30" id="Opw-qr-Qkr"/>
-                <constraint firstItem="5TI-su-1kt" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="Rha-Yd-hHL"/>
+                <constraint firstItem="cj6-xa-mvN" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="ABM-HJ-ZbI"/>
+                <constraint firstAttribute="trailing" secondItem="cj6-xa-mvN" secondAttribute="trailing" id="Aos-T8-rpH"/>
+                <constraint firstItem="YLd-BC-Ggf" firstAttribute="top" relation="greaterThanOrEqual" secondItem="kvO-Xe-xFm" secondAttribute="bottom" constant="20" id="LSB-Ws-PQk"/>
+                <constraint firstItem="TCT-G5-Hl4" firstAttribute="top" secondItem="cj6-xa-mvN" secondAttribute="bottom" constant="20" id="NF3-9h-W33"/>
+                <constraint firstItem="919-hD-v5U" firstAttribute="top" secondItem="TCT-G5-Hl4" secondAttribute="bottom" constant="20" id="Opw-qr-Qkr"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="919-hD-v5U" secondAttribute="trailing" constant="40" id="YfA-be-Gvo"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="YLd-BC-Ggf" secondAttribute="bottom" constant="32" id="axY-eO-hcL"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="YLd-BC-Ggf" secondAttribute="bottom" constant="20" id="axY-eO-hcL"/>
                 <constraint firstItem="919-hD-v5U" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="40" id="b9y-Gb-cgA"/>
+                <constraint firstItem="cj6-xa-mvN" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="cJz-7h-DfX"/>
                 <constraint firstItem="kvO-Xe-xFm" firstAttribute="top" secondItem="919-hD-v5U" secondAttribute="bottom" constant="20" id="dkX-5D-dRJ"/>
-                <constraint firstItem="5TI-su-1kt" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="eO8-6J-58e"/>
                 <constraint firstItem="TCT-G5-Hl4" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="jA7-LA-ReB"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="YLd-BC-Ggf" secondAttribute="trailing" constant="20" id="kMD-Bd-nMa"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="kvO-Xe-xFm" secondAttribute="trailing" constant="20" id="lIy-CE-z1N"/>
-                <constraint firstItem="cj6-xa-mvN" firstAttribute="top" secondItem="5TI-su-1kt" secondAttribute="bottom" constant="20" id="t0s-rU-NNp"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <point key="canvasLocation" x="138.40000000000001" y="131.52709359605913"/>
         </view>
     </objects>
     <resources>
-        <image name="Baratheon" width="950" height="1425"/>
+        <image name="27NyMAUv5Yfb3pyd3kFy9Ge7n8s" width="454" height="254"/>
         <image name="star" catalog="system" width="64" height="58"/>
         <image name="star.fill" catalog="system" width="64" height="58"/>
         <image name="star.lefthalf.fill" catalog="system" width="64" height="58"/>
-        <image name="xmark.circle.fill" catalog="system" width="64" height="60"/>
         <namedColor name="OrangeMain">
             <color red="0.92156862745098034" green="0.67450980392156867" blue="0.14901960784313725" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

@@ -188,9 +188,10 @@
 		4956F8E524044B2100E3F0D5 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
-				49325D7E2405B29300D7F9DD /* CastDetail */,
 				49BAF29E23F601DD005B5534 /* Cast */,
+				49325D7E2405B29300D7F9DD /* CastDetail */,
 				49BCA1192405955000498F29 /* EpisodeDetail */,
+				4956F8FB2404509500E3F0D5 /* EpisodeRate */,
 				49BAF29623F5F07A005B5534 /* Episodes */,
 				49BAF2AC23F6082A005B5534 /* Houses */,
 				49BCA1102404716600498F29 /* Main */,
@@ -265,13 +266,13 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
-		4956F8FB2404509500E3F0D5 /* Rate */ = {
+		4956F8FB2404509500E3F0D5 /* EpisodeRate */ = {
 			isa = PBXGroup;
 			children = (
 				4989F59823F35E430058EF88 /* RateViewController.swift */,
 				4989F59A23F35E890058EF88 /* RateViewController.xib */,
 			);
-			path = Rate;
+			path = EpisodeRate;
 			sourceTree = "<group>";
 		};
 		4989F56A23F34BCE0058EF88 = {
@@ -321,7 +322,6 @@
 			isa = PBXGroup;
 			children = (
 				4956F8F424044F0200E3F0D5 /* Cell */,
-				4956F8FB2404509500E3F0D5 /* Rate */,
 				49F8AFE024045319009E4BD3 /* EpisodesViewController.swift */,
 				49BAF29823F5F09D005B5534 /* EpisodesViewController.xib */,
 			);
