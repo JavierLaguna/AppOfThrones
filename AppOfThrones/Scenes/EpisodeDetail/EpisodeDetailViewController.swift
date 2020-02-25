@@ -12,7 +12,7 @@ final class EpisodeDetailViewController: UIViewController {
     
     // MARK: IBOutlets
     
-    @IBOutlet weak var episodeTable: UITableView!
+    @IBOutlet private weak var episodeTable: UITableView!
     
     // MARK: Variables
     
@@ -46,6 +46,7 @@ final class EpisodeDetailViewController: UIViewController {
         episodeTable.delegate = self
         
         episodeTable.register(UINib(nibName: ImageCell.nibName, bundle: nil), forCellReuseIdentifier: ImageCell.defaultReuseIdentifier)
+        episodeTable.register(UINib(nibName: EpisodeDetailCell.nibName, bundle: nil), forCellReuseIdentifier: EpisodeDetailCell.defaultReuseIdentifier)
         
         episodeTable.tableFooterView = UIView()
     }
@@ -57,16 +58,33 @@ final class EpisodeDetailViewController: UIViewController {
 extension EpisodeDetailViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return episode != nil ? 1 : 0
+        return episode != nil ? 2 : 0
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        return indexPath.row == 0 ?
+            getImageCell(tableView, cellForRowAt: indexPath)
+            : getDetailEpisodeCell(tableView, cellForRowAt: indexPath)
+    }
+    
+    private func getImageCell(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
         guard let cell = tableView.dequeueReusableCell(withIdentifier: ImageCell.defaultReuseIdentifier, for: indexPath) as? ImageCell else {
             return UITableViewCell()
         }
         
         let episodeImage = UIImage(named: episode?.image ?? "")
         cell.setImage(episodeImage)
+        return cell
+    }
+    
+    private func getDetailEpisodeCell(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        guard let episode = episode, let cell = tableView.dequeueReusableCell(withIdentifier: EpisodeDetailCell.defaultReuseIdentifier, for: indexPath) as? EpisodeDetailCell else {
+            return UITableViewCell()
+        }
+        
+        cell.setEpisode(episode)
         return cell
     }
 }

@@ -12,7 +12,7 @@ final class ImageCell: UITableViewCell, NibLoadableView, ReusableView {
     
     // MARK: IBOutlet
 
-    @IBOutlet weak var episodeImage: UIImageView!
+    @IBOutlet private weak var episodeImage: UIImageView!
     
     // MARK: Public func
     

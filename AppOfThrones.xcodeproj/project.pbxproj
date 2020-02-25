@@ -51,6 +51,8 @@
 		49BCA1182405942C00498F29 /* ImageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49BCA1162405942C00498F29 /* ImageCell.xib */; };
 		49BCA11C2405957800498F29 /* EpisodeDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49BCA11A2405957800498F29 /* EpisodeDetailViewController.swift */; };
 		49BCA11D2405957800498F29 /* EpisodeDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49BCA11B2405957800498F29 /* EpisodeDetailViewController.xib */; };
+		49BCA1222405A52C00498F29 /* EpisodeDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49BCA1202405A52C00498F29 /* EpisodeDetailCell.swift */; };
+		49BCA1232405A52C00498F29 /* EpisodeDetailCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49BCA1212405A52C00498F29 /* EpisodeDetailCell.xib */; };
 		49D0379023FC6B7100B80379 /* HouseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D0378E23FC6B7100B80379 /* HouseTableViewCell.swift */; };
 		49D0379123FC6B7100B80379 /* HouseTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49D0378F23FC6B7100B80379 /* HouseTableViewCell.xib */; };
 		49F8AFE124045319009E4BD3 /* EpisodesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F8AFE024045319009E4BD3 /* EpisodesViewController.swift */; };
@@ -115,6 +117,8 @@
 		49BCA1162405942C00498F29 /* ImageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageCell.xib; sourceTree = "<group>"; };
 		49BCA11A2405957800498F29 /* EpisodeDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeDetailViewController.swift; sourceTree = "<group>"; };
 		49BCA11B2405957800498F29 /* EpisodeDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EpisodeDetailViewController.xib; sourceTree = "<group>"; };
+		49BCA1202405A52C00498F29 /* EpisodeDetailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeDetailCell.swift; sourceTree = "<group>"; };
+		49BCA1212405A52C00498F29 /* EpisodeDetailCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EpisodeDetailCell.xib; sourceTree = "<group>"; };
 		49D0378E23FC6B7100B80379 /* HouseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseTableViewCell.swift; sourceTree = "<group>"; };
 		49D0378F23FC6B7100B80379 /* HouseTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HouseTableViewCell.xib; sourceTree = "<group>"; };
 		49F8AFE024045319009E4BD3 /* EpisodesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodesViewController.swift; sourceTree = "<group>"; };
@@ -356,8 +360,8 @@
 		49BCA1142405940100498F29 /* TableCell */ = {
 			isa = PBXGroup;
 			children = (
-				49BCA1152405942C00498F29 /* ImageCell.swift */,
-				49BCA1162405942C00498F29 /* ImageCell.xib */,
+				49BCA11F2405A50700498F29 /* EpisodeDetailCell */,
+				49BCA11E2405A4F700498F29 /* ImageCell */,
 			);
 			path = TableCell;
 			sourceTree = "<group>";
@@ -369,6 +373,24 @@
 				49BCA11B2405957800498F29 /* EpisodeDetailViewController.xib */,
 			);
 			path = EpisodeDetail;
+			sourceTree = "<group>";
+		};
+		49BCA11E2405A4F700498F29 /* ImageCell */ = {
+			isa = PBXGroup;
+			children = (
+				49BCA1152405942C00498F29 /* ImageCell.swift */,
+				49BCA1162405942C00498F29 /* ImageCell.xib */,
+			);
+			path = ImageCell;
+			sourceTree = "<group>";
+		};
+		49BCA11F2405A50700498F29 /* EpisodeDetailCell */ = {
+			isa = PBXGroup;
+			children = (
+				49BCA1202405A52C00498F29 /* EpisodeDetailCell.swift */,
+				49BCA1212405A52C00498F29 /* EpisodeDetailCell.xib */,
+			);
+			name = EpisodeDetailCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -454,6 +476,7 @@
 			files = (
 				4942DBB323FF32ED00ECC72D /* season_3.json in Resources */,
 				4989F59B23F35E890058EF88 /* RateViewController.xib in Resources */,
+				49BCA1232405A52C00498F29 /* EpisodeDetailCell.xib in Resources */,
 				4942DBAF23FF32ED00ECC72D /* season_8.json in Resources */,
 				49BAF2A723F602A7005B5534 /* SettingsViewController.xib in Resources */,
 				4942DBB523FF32ED00ECC72D /* season_1.json in Resources */,
@@ -498,6 +521,7 @@
 				4989F57723F34BCE0058EF88 /* AppDelegate.swift in Sources */,
 				49BCA11C2405957800498F29 /* EpisodeDetailViewController.swift in Sources */,
 				490EA46523FC827100953123 /* Rating.swift in Sources */,
+				49BCA1222405A52C00498F29 /* EpisodeDetailCell.swift in Sources */,
 				49BAF2A623F602A7005B5534 /* SettingsViewController.swift in Sources */,
 				49BAF29D23F5F419005B5534 /* Episode.swift in Sources */,
 				4956F8F724044F6200E3F0D5 /* UIColor.swift in Sources */,

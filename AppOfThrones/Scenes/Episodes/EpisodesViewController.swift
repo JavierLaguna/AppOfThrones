@@ -125,8 +125,8 @@ extension EpisodesViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let episode = episodes[indexPath.row]
-        
         let detailVC = EpisodeDetailViewController(withEpisode: episode)
+        
         self.navigationController?.present(UINavigationController(rootViewController: detailVC), animated: true, completion: nil)
     }
 }
