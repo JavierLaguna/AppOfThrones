@@ -122,6 +122,13 @@ extension EpisodesViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 128
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let episode = episodes[indexPath.row]
+        
+        let detailVC = EpisodeDetailViewController(withEpisode: episode)
+        self.navigationController?.present(UINavigationController(rootViewController: detailVC), animated: true, completion: nil)
+    }
 }
 
 // MARK: EpisodeTableViewCellDelegate
