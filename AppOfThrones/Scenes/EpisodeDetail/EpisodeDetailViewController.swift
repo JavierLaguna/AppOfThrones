@@ -24,6 +24,7 @@ final class EpisodeDetailViewController: UIViewController {
         self.init()
         
         self.episode = episode
+        print(episode)
     }
     
     override func viewDidLoad() {

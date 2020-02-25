@@ -8,11 +8,25 @@
 
 import Foundation
 
-struct House: Decodable {
+struct House: Decodable, Equatable {
     
-    var imageName: String?
-    var name: String?
-    var words: String?
-    var seat: String?
+    let imageName: String?
+    let name: String?
+    let words: String?
+    let seat: String?
+}
+
+// MARK: CustomStringConvertible
+
+extension House: CustomStringConvertible {
     
+    var description: String {
+        return """
+        Casa: \(name ?? "")
+            Lema -> \(words ?? "")
+            Lugar -> \(seat ?? "")
+            Imagen -> \(imageName ?? "")
+        
+        """
+    }
 }

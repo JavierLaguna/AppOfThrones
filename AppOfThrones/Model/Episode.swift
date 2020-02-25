@@ -8,30 +8,30 @@
 
 import Foundation
 
-class Episode: Decodable, Identifiable {
+struct Episode: Identifiable, Decodable, Equatable {
     
-    var id: Int
+    let id: Int
     let name: String?
     let date: String?
     let image: String?
     let episode: Int
     let season: Int
     let overview: String
+}
+
+// MARK: CustomStringConvertible
+
+extension Episode: CustomStringConvertible {
     
-    init(id: Int,
-         name: String?,
-         date: String?,
-         image: String?,
-         episode: Int,
-         season: Int,
-         overview: String) {
+    var description: String {
+        return """
+        Episodio: \(episode)-\(season) \(name ?? "")
+            Id -> \(id)
+            Fecha -> \(date ?? "")
+            Imagen -> \(image ?? "")
+            Descripción ->
+                \(overview)
         
-        self.id = id
-        self.name = name
-        self.date = date
-        self.image = image
-        self.episode = episode
-        self.season = season
-        self.overview = overview
+        """
     }
 }

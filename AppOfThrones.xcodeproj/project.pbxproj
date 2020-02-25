@@ -300,8 +300,8 @@
 		49BAF29B23F5F3E7005B5534 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				49BAF29C23F5F419005B5534 /* Episode.swift */,
 				49A45C5423FB4B4800474F8D /* Cast.swift */,
+				49BAF29C23F5F419005B5534 /* Episode.swift */,
 				49A45C5623FB54F700474F8D /* House.swift */,
 				490EA46423FC827100953123 /* Rating.swift */,
 			);
