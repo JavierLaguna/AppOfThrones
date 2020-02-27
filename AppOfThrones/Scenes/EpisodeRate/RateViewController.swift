@@ -24,7 +24,6 @@ final class RateViewController: UIViewController {
     
     // MARK: Variable
     
-    var onRate: (() -> Void)?
     private var episode: Episode?
     
     // MARK: Constructor
@@ -98,7 +97,6 @@ final class RateViewController: UIViewController {
         let rate = Double(Int(rateSlider.value * 5) / 10)
         if let episode = self.episode {
             DataController.shared.rateEpisode(episode, value: rate)
-            onRate?()
         }
         
         self.dismiss(animated: true, completion: nil)

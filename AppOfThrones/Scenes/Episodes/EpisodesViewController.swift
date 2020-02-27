@@ -100,7 +100,6 @@ extension EpisodesViewController: UITableViewDataSource {
         cell.delegate = self
         cell.rateBlock = { [weak self] in
             let rateVC = RateViewController(withEpisode: episode)
-            rateVC.onRate = self?.onRateChanged
             self?.navigationController?.present(UINavigationController(rootViewController: rateVC), animated: true, completion: nil)
         }
         return cell

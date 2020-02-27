@@ -44,7 +44,6 @@ final class SettingsViewController: UIViewController {
     @objc private func emptyRates() {
         displayDeleteAdvice(title: "Borrar Favoritos") {
             DataController.shared.cleanRating()
-            NotificationCenter.default.post(name: Constants.NotificationCenter.ratesChanged, object: nil)
         }
     }
     

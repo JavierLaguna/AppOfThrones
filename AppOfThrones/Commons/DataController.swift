@@ -18,7 +18,11 @@ final class DataController {
     // MARK: Private Variables
     
     lazy private var decoder = JSONDecoder()
-    private var rating = [Rating]()
+    private var rating = [Rating]() {
+        didSet {
+            notifyRatingDidChanged()
+        }
+    }
     private var favorite = [Int]() {
         didSet {
             notifyFavoriteDidChanged()
@@ -109,6 +113,12 @@ extension DataController {
     
     func cleanRating() {
         rating.removeAll()
+    }
+    
+    // MARK: Rating - Private functions
+    
+    private func notifyRatingDidChanged() {
+        NotificationCenter.default.post(name: Constants.NotificationCenter.ratesChanged, object: nil)
     }
 }
 
