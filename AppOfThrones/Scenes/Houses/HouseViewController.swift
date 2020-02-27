@@ -44,18 +44,8 @@ final class HouseViewController: UIViewController {
     }
     
     private func getData() {
-        guard let pathURL = Bundle.main.url(forResource: "houses", withExtension: "json") else {
-            return
-        }
-        
-        do {
-            let data = try Data(contentsOf: pathURL)
-            let decoder = JSONDecoder()
-            houses = try decoder.decode([House].self, from: data)
-            housesTable.reloadData()
-        } catch {
-            fatalError(error.localizedDescription)
-        }
+        houses = DataController.shared.getHouses()
+        housesTable.reloadData()
     }
 }
 

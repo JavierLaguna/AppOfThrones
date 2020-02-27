@@ -64,19 +64,8 @@ final class EpisodesViewController: UIViewController {
     }
     
     private func getData(of seasonNumber: Int) {
-        let season = "season_\(seasonNumber)"
-        guard let pathURL = Bundle.main.url(forResource: season, withExtension: "json") else {
-            return
-        }
-        
-        do {
-            let data = try Data(contentsOf: pathURL)
-            let decoder = JSONDecoder()
-            episodes = try decoder.decode([Episode].self, from: data)
-            episodesTable.reloadData()
-        } catch {
-            fatalError(error.localizedDescription)
-        }
+        episodes = DataController.shared.getEpisodes(of: seasonNumber)
+        episodesTable.reloadData()
     }
     
     @objc private func onRateChanged() {

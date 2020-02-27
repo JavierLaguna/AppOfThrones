@@ -10,12 +10,61 @@ import Foundation
 
 final class DataController {
     
+    // MARK: Singleton
     static let shared = DataController()
     
     private init() {}
     
+    // MARK: Private Variables
+    
     private var rating = [Rating]()
     private var favorite = [Int]()
+    lazy private var decoder = JSONDecoder()
+}
+
+// MARK: GetData
+
+extension DataController {
+    
+    func getEpisodes(of seasonNumber: Int) -> [Episode] {
+        let season = "season_\(seasonNumber)"
+        guard let pathURL = Bundle.main.url(forResource: season, withExtension: "json") else {
+            return [Episode]()
+        }
+        
+        do {
+            let data = try Data(contentsOf: pathURL)
+            return try decoder.decode([Episode].self, from: data)
+        } catch {
+            fatalError(error.localizedDescription)
+        }
+    }
+    
+    func getCast() -> [Cast] {
+        guard let pathURL = Bundle.main.url(forResource: "cast", withExtension: "json") else {
+            return [Cast]()
+        }
+        
+        do {
+            let data = try Data(contentsOf: pathURL)
+            return try decoder.decode([Cast].self, from: data)
+        } catch {
+            fatalError(error.localizedDescription)
+        }
+    }
+    
+    func getHouses() -> [House] {
+        guard let pathURL = Bundle.main.url(forResource: "houses", withExtension: "json") else {
+            return [House]()
+        }
+        
+        do {
+            let data = try Data(contentsOf: pathURL)
+            return try decoder.decode([House].self, from: data)
+        } catch {
+            fatalError(error.localizedDescription)
+        }
+    }
 }
 
 // MARK: Rating

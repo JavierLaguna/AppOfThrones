@@ -57,18 +57,8 @@ final class CastViewController: UIViewController {
     }
     
     private func getData() {
-        guard let pathURL = Bundle.main.url(forResource: "cast", withExtension: "json") else {
-            return
-        }
-        
-        do {
-            let data = try Data(contentsOf: pathURL)
-            let decoder = JSONDecoder()
-            cast = try decoder.decode([Cast].self, from: data)
-            castTable.reloadData()
-        } catch {
-            fatalError(error.localizedDescription)
-        }
+        cast = DataController.shared.getCast()
+        castTable.reloadData()
     }
     
 }
