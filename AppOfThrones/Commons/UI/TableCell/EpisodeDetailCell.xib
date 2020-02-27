@@ -18,7 +18,7 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="cVp-Vb-sDy">
-                        <rect key="frame" x="20" y="20" width="366" height="224"/>
+                        <rect key="frame" x="20" y="20" width="366" height="228"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IzU-hW-sWB">
                                 <rect key="frame" x="0.0" y="0.0" width="366" height="56"/>
@@ -105,18 +105,18 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8jB-4H-TbX">
-                                <rect key="frame" x="0.0" y="168" width="366" height="56"/>
+                                <rect key="frame" x="0.0" y="168" width="366" height="60"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="text.quote" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="BNv-iB-DPd">
                                         <rect key="frame" x="0.0" y="11.5" width="36" height="32.5"/>
                                         <color key="tintColor" name="OrangeMain"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="36" id="Esk-Xn-dEp"/>
-                                            <constraint firstAttribute="height" constant="36" id="a9y-kX-xXK"/>
+                                            <constraint firstAttribute="height" constant="36" id="pxw-cU-z25"/>
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="316" placeholderIntrinsicHeight="20" text="Label" lineBreakMode="tailTruncation" numberOfLines="9" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pd2-e1-e0k">
-                                        <rect key="frame" x="50" y="18" width="316" height="20"/>
+                                        <rect key="frame" x="50" y="18" width="316" height="24"/>
                                         <fontDescription key="fontDescription" type="italicSystem" pointSize="15"/>
                                         <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -130,7 +130,6 @@
                                     <constraint firstItem="Pd2-e1-e0k" firstAttribute="leading" secondItem="BNv-iB-DPd" secondAttribute="trailing" constant="14" id="XvB-fk-nph"/>
                                     <constraint firstItem="BNv-iB-DPd" firstAttribute="top" secondItem="8jB-4H-TbX" secondAttribute="top" constant="10" id="gAi-1D-EmV"/>
                                     <constraint firstItem="BNv-iB-DPd" firstAttribute="leading" secondItem="8jB-4H-TbX" secondAttribute="leading" id="td0-YU-LsH"/>
-                                    <constraint firstAttribute="bottom" secondItem="BNv-iB-DPd" secondAttribute="bottom" constant="10" id="xE0-f0-PUI"/>
                                 </constraints>
                             </view>
                         </subviews>
