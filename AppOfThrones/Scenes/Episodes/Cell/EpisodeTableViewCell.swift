@@ -8,10 +8,6 @@
 
 import UIKit
 
-protocol EpisodeTableViewCellDelegate: AnyObject {
-    func didFavoriteChanged()
-}
-
 final class EpisodeTableViewCell: UITableViewCell, NibLoadableView, ReusableView {
     
     // MARK: IBOutlets
@@ -30,21 +26,21 @@ final class EpisodeTableViewCell: UITableViewCell, NibLoadableView, ReusableView
     
     // MARK: Variables
     
-    weak var delegate: EpisodeTableViewCellDelegate?
+    weak var delegate: FavoriteDelegate?
     var episode: Episode?
     var rateBlock: (() -> Void)?
     
     // MARK: LifeCycle
-
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         
         configureView()
     }
-
+    
     // MARK: Public functions
-
-    func setEpisode(_ episode: Episode) {
+    
+    func setEpisode(_ episode: Episode, rateHidden: Bool = false) {
         self.episode = episode
         
         let heartImagaNamed = DataController.shared.isFavorite(episode) ? "heart.fill" : "heart"
@@ -55,15 +51,19 @@ final class EpisodeTableViewCell: UITableViewCell, NibLoadableView, ReusableView
         titleLabel.text = episode.name
         dateLabel.text = episode.date
         
-        let rating = DataController.shared.ratingForEpisode(episode)
-        modeRated(rating != nil)
-        if let rate = rating?.rate {
-            switch rate {
-            case .rated(value: let rateValue):
-                modeRated(true)
-                setRating(rateValue)
-            default:
-                modeRated(false)
+        if rateHidden {
+            hideRateFeature(true)
+        } else {
+            let rating = DataController.shared.ratingForEpisode(episode)
+            modeRated(rating != nil)
+            if let rate = rating?.rate {
+                switch rate {
+                case .rated(value: let rateValue):
+                    modeRated(true)
+                    setRating(rateValue)
+                default:
+                    modeRated(false)
+                }
             }
         }
     }
@@ -76,6 +76,11 @@ final class EpisodeTableViewCell: UITableViewCell, NibLoadableView, ReusableView
         thumbImage.layer.borderColor = UIColor.white.withAlphaComponent(0.2).cgColor
         
         rateButton.layer.cornerRadius = 15
+    }
+    
+    private func hideRateFeature(_ hidden: Bool) {
+        rateButton.isHidden = hidden
+        starsStack.isHidden = hidden
     }
     
     private func modeRated(_ isRated: Bool) {
@@ -104,7 +109,7 @@ final class EpisodeTableViewCell: UITableViewCell, NibLoadableView, ReusableView
     }
     
     // MARK: IBActions
-
+    
     @IBAction private func tapRateButton(_ sender: Any) {
         rateBlock?()
     }

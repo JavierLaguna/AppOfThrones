@@ -101,11 +101,9 @@ extension CastViewController: UITableViewDelegate {
     }
 }
 
-
 // MARK: CastTableViewCellDelegate
 
-
-extension CastViewController: CastTableViewCellDelegate {
+extension CastViewController: FavoriteDelegate {
     
     @objc func didFavoriteChanged() {
         castTable.reloadData()

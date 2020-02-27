@@ -14,6 +14,7 @@
 		49325D822405B2B200D7F9DD /* CastDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49325D802405B2B200D7F9DD /* CastDetailViewController.xib */; };
 		49325D872405BAD700D7F9DD /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49325D852405BAD700D7F9DD /* FavoritesViewController.swift */; };
 		49325D882405BAD700D7F9DD /* FavoritesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49325D862405BAD700D7F9DD /* FavoritesViewController.xib */; };
+		49325D8B24084E0200D7F9DD /* FavoriteDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49325D8A24084E0200D7F9DD /* FavoriteDelegate.swift */; };
 		4942DBAE23FF32ED00ECC72D /* season_4.json in Resources */ = {isa = PBXBuildFile; fileRef = 4942DBA423FF32ED00ECC72D /* season_4.json */; };
 		4942DBAF23FF32ED00ECC72D /* season_8.json in Resources */ = {isa = PBXBuildFile; fileRef = 4942DBA523FF32ED00ECC72D /* season_8.json */; };
 		4942DBB023FF32ED00ECC72D /* season_5.json in Resources */ = {isa = PBXBuildFile; fileRef = 4942DBA623FF32ED00ECC72D /* season_5.json */; };
@@ -82,6 +83,7 @@
 		49325D802405B2B200D7F9DD /* CastDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CastDetailViewController.xib; sourceTree = "<group>"; };
 		49325D852405BAD700D7F9DD /* FavoritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
 		49325D862405BAD700D7F9DD /* FavoritesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavoritesViewController.xib; sourceTree = "<group>"; };
+		49325D8A24084E0200D7F9DD /* FavoriteDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteDelegate.swift; sourceTree = "<group>"; };
 		4942DBA423FF32ED00ECC72D /* season_4.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = season_4.json; sourceTree = "<group>"; };
 		4942DBA523FF32ED00ECC72D /* season_8.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = season_8.json; sourceTree = "<group>"; };
 		4942DBA623FF32ED00ECC72D /* season_5.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = season_5.json; sourceTree = "<group>"; };
@@ -181,6 +183,14 @@
 			path = Favorites;
 			sourceTree = "<group>";
 		};
+		49325D8924084DCD00D7F9DD /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				49325D8A24084E0200D7F9DD /* FavoriteDelegate.swift */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
 		4942DBA323FF32ED00ECC72D /* Jsons */ = {
 			isa = PBXGroup;
 			children = (
@@ -229,6 +239,7 @@
 		4956F8E724044B5700E3F0D5 /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
+				49325D8924084DCD00D7F9DD /* Delegates */,
 				4956F8E924044B7C00E3F0D5 /* Identifiable.swift */,
 				4956F8F124044E2F00E3F0D5 /* NibLoadableView.swift */,
 				4956F8EF24044E1900E3F0D5 /* ReusableView.swift */,
@@ -580,6 +591,7 @@
 				49325D812405B2B200D7F9DD /* CastDetailViewController.swift in Sources */,
 				49BCA1172405942C00498F29 /* ImageCell.swift in Sources */,
 				4956F8F224044E2F00E3F0D5 /* NibLoadableView.swift in Sources */,
+				49325D8B24084E0200D7F9DD /* FavoriteDelegate.swift in Sources */,
 				49A45C5723FB54F700474F8D /* House.swift in Sources */,
 				49BCA10F24046CB600498F29 /* Constants.swift in Sources */,
 				49A45C5923FB556500474F8D /* DataController.swift in Sources */,

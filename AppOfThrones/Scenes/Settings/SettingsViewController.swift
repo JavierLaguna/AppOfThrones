@@ -38,7 +38,6 @@ final class SettingsViewController: UIViewController {
     @objc private func emptyFavorites() {
         displayDeleteAdvice(title: "Borrar Favoritos") {
             DataController.shared.cleanFavorites()
-            NotificationCenter.default.post(name: Constants.NotificationCenter.favoritesChanged, object: nil)
         }
     }
     

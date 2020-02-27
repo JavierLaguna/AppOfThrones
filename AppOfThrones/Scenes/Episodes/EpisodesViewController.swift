@@ -125,7 +125,7 @@ extension EpisodesViewController: UITableViewDelegate {
 
 // MARK: EpisodeTableViewCellDelegate
 
-extension EpisodesViewController: EpisodeTableViewCellDelegate {
+extension EpisodesViewController: FavoriteDelegate {
     
     @objc func didFavoriteChanged() {
         episodesTable.reloadData()

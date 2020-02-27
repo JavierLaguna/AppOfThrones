@@ -17,9 +17,13 @@ final class DataController {
     
     // MARK: Private Variables
     
-    private var rating = [Rating]()
-    private var favorite = [Int]()
     lazy private var decoder = JSONDecoder()
+    private var rating = [Rating]()
+    private var favorite = [Int]() {
+        didSet {
+            notifyFavoriteDidChanged()
+        }
+    }
 }
 
 // MARK: GetData
@@ -140,6 +144,12 @@ extension DataController {
     
     func cleanFavorites() {
         favorite.removeAll()
+    }
+    
+    // MARK: Favorite - Private functions
+    
+    private func notifyFavoriteDidChanged() {
+        NotificationCenter.default.post(name: Constants.NotificationCenter.favoritesChanged, object: nil)
     }
 }
 

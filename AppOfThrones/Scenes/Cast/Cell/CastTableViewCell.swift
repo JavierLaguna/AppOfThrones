@@ -8,10 +8,6 @@
 
 import UIKit
 
-protocol CastTableViewCellDelegate: AnyObject {
-    func didFavoriteChanged()
-}
-
 final class CastTableViewCell: UITableViewCell, NibLoadableView, ReusableView {
     
     // MARK: IBOutlet
@@ -23,7 +19,7 @@ final class CastTableViewCell: UITableViewCell, NibLoadableView, ReusableView {
     
     // MARK: Variables
     
-    weak var delegate: CastTableViewCellDelegate?
+    weak var delegate: FavoriteDelegate?
     var cast: Cast?
     
     // MARK: LifeCycle

@@ -83,7 +83,7 @@ extension FavoritesViewController: UITableViewDataSource {
         }
         
         let episode = favoriteEpisodes[indexPath.row]
-        cell.setEpisode(episode)
+        cell.setEpisode(episode, rateHidden: true)
         cell.delegate = self
         return cell
     }
@@ -107,7 +107,7 @@ extension FavoritesViewController: UITableViewDelegate {
 
 // MARK: EpisodeTableViewCellDelegate
 
-extension FavoritesViewController: EpisodeTableViewCellDelegate {
+extension FavoritesViewController: FavoriteDelegate {
     
     @objc func didFavoriteChanged() {
         favoritesTable.reloadData()
