@@ -16,7 +16,11 @@ final class HouseViewController: UIViewController {
     
     // MARK: Variables
     
-    var houses = [House]()
+    var houses = [House]() {
+        didSet {
+            housesTable.reloadData()
+        }
+    }
     
     // MARK: LifeCycle
     
@@ -45,7 +49,6 @@ final class HouseViewController: UIViewController {
     
     private func getData() {
         houses = DataController.shared.getHouses()
-        housesTable.reloadData()
     }
 }
 

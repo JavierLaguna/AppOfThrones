@@ -12,6 +12,8 @@
 		49325D7D2405B05400D7F9DD /* ActorDetailCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49325D7B2405B05400D7F9DD /* ActorDetailCell.xib */; };
 		49325D812405B2B200D7F9DD /* CastDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49325D7F2405B2B200D7F9DD /* CastDetailViewController.swift */; };
 		49325D822405B2B200D7F9DD /* CastDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49325D802405B2B200D7F9DD /* CastDetailViewController.xib */; };
+		49325D872405BAD700D7F9DD /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49325D852405BAD700D7F9DD /* FavoritesViewController.swift */; };
+		49325D882405BAD700D7F9DD /* FavoritesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49325D862405BAD700D7F9DD /* FavoritesViewController.xib */; };
 		4942DBAE23FF32ED00ECC72D /* season_4.json in Resources */ = {isa = PBXBuildFile; fileRef = 4942DBA423FF32ED00ECC72D /* season_4.json */; };
 		4942DBAF23FF32ED00ECC72D /* season_8.json in Resources */ = {isa = PBXBuildFile; fileRef = 4942DBA523FF32ED00ECC72D /* season_8.json */; };
 		4942DBB023FF32ED00ECC72D /* season_5.json in Resources */ = {isa = PBXBuildFile; fileRef = 4942DBA623FF32ED00ECC72D /* season_5.json */; };
@@ -78,6 +80,8 @@
 		49325D7B2405B05400D7F9DD /* ActorDetailCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ActorDetailCell.xib; sourceTree = "<group>"; };
 		49325D7F2405B2B200D7F9DD /* CastDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CastDetailViewController.swift; sourceTree = "<group>"; };
 		49325D802405B2B200D7F9DD /* CastDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CastDetailViewController.xib; sourceTree = "<group>"; };
+		49325D852405BAD700D7F9DD /* FavoritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
+		49325D862405BAD700D7F9DD /* FavoritesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavoritesViewController.xib; sourceTree = "<group>"; };
 		4942DBA423FF32ED00ECC72D /* season_4.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = season_4.json; sourceTree = "<group>"; };
 		4942DBA523FF32ED00ECC72D /* season_8.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = season_8.json; sourceTree = "<group>"; };
 		4942DBA623FF32ED00ECC72D /* season_5.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = season_5.json; sourceTree = "<group>"; };
@@ -168,6 +172,15 @@
 			path = CastDetail;
 			sourceTree = "<group>";
 		};
+		49325D842405BAAC00D7F9DD /* Favorites */ = {
+			isa = PBXGroup;
+			children = (
+				49325D852405BAD700D7F9DD /* FavoritesViewController.swift */,
+				49325D862405BAD700D7F9DD /* FavoritesViewController.xib */,
+			);
+			path = Favorites;
+			sourceTree = "<group>";
+		};
 		4942DBA323FF32ED00ECC72D /* Jsons */ = {
 			isa = PBXGroup;
 			children = (
@@ -193,6 +206,7 @@
 				49BCA1192405955000498F29 /* EpisodeDetail */,
 				4956F8FB2404509500E3F0D5 /* EpisodeRate */,
 				49BAF29623F5F07A005B5534 /* Episodes */,
+				49325D842405BAAC00D7F9DD /* Favorites */,
 				49BAF2AC23F6082A005B5534 /* Houses */,
 				49BCA1102404716600498F29 /* Main */,
 				49BAF29F23F601F7005B5534 /* Settings */,
@@ -515,6 +529,7 @@
 				4942DBB423FF32ED00ECC72D /* houses.json in Resources */,
 				49BAF2A323F60214005B5534 /* CastViewController.xib in Resources */,
 				4942DBB223FF32ED00ECC72D /* cast.json in Resources */,
+				49325D882405BAD700D7F9DD /* FavoritesViewController.xib in Resources */,
 				4942DBAE23FF32ED00ECC72D /* season_4.json in Resources */,
 				49BAF2B023F60938005B5534 /* HouseViewController.xib in Resources */,
 				4942DBB623FF32ED00ECC72D /* season_6.json in Resources */,
@@ -546,6 +561,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				49A45C4E23FB31D100474F8D /* EpisodeTableViewCell.swift in Sources */,
+				49325D872405BAD700D7F9DD /* FavoritesViewController.swift in Sources */,
 				4956F8F024044E1900E3F0D5 /* ReusableView.swift in Sources */,
 				4989F59923F35E430058EF88 /* RateViewController.swift in Sources */,
 				4989F57723F34BCE0058EF88 /* AppDelegate.swift in Sources */,

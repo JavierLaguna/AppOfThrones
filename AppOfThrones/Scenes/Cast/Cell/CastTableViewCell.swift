@@ -39,7 +39,7 @@ final class CastTableViewCell: UITableViewCell, NibLoadableView, ReusableView {
     func setCast(_ cast: Cast) {
         self.cast = cast
         
-        let heartImagaNamed = DataController.shared.isFavoriteCast(cast) ? "heart.fill" : "heart"
+        let heartImagaNamed = DataController.shared.isFavorite(cast) ? "heart.fill" : "heart"
         
         favoriteButton.setImage(UIImage(systemName: heartImagaNamed), for: .normal)
         avatarImage.image = UIImage(named: cast.avatar ?? "")

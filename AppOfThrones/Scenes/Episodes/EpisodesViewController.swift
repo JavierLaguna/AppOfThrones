@@ -17,7 +17,11 @@ final class EpisodesViewController: UIViewController {
     
     // MARK: Variables
     
-    var episodes = [Episode]()
+    var episodes = [Episode]() {
+        didSet {
+            episodesTable.reloadData()
+        }
+    }
     
     // MARK: LifeCycle
     
@@ -65,7 +69,6 @@ final class EpisodesViewController: UIViewController {
     
     private func getData(of seasonNumber: Int) {
         episodes = DataController.shared.getEpisodes(of: seasonNumber)
-        episodesTable.reloadData()
     }
     
     @objc private func onRateChanged() {

@@ -9,6 +9,10 @@
 import UIKit
 
 struct Constants {
+    struct Episodes {
+        static let numberOfSeasons = 8
+    }
+    
     struct NotificationCenter {
         static let favoritesChanged = Notification.Name("NCFavoritesChanged")
         static let ratesChanged = Notification.Name("NCRatesChanged")

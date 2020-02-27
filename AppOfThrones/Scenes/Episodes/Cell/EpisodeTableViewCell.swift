@@ -47,7 +47,7 @@ final class EpisodeTableViewCell: UITableViewCell, NibLoadableView, ReusableView
     func setEpisode(_ episode: Episode) {
         self.episode = episode
         
-        let heartImagaNamed = DataController.shared.isFavoriteCast(episode) ? "heart.fill" : "heart"
+        let heartImagaNamed = DataController.shared.isFavorite(episode) ? "heart.fill" : "heart"
         
         favoriteButton.setImage(UIImage(systemName: heartImagaNamed), for: .normal)
         

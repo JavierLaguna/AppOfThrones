@@ -26,6 +26,16 @@ final class DataController {
 
 extension DataController {
     
+    func getAllEpisodes() -> [Episode] {
+        var episodes = [Episode]()
+        
+        for n in 1...Constants.Episodes.numberOfSeasons {
+            episodes.append(contentsOf: getEpisodes(of: n))
+        }
+        
+        return episodes
+    }
+    
     func getEpisodes(of seasonNumber: Int) -> [Episode] {
         let season = "season_\(seasonNumber)"
         guard let pathURL = Bundle.main.url(forResource: season, withExtension: "json") else {
@@ -102,17 +112,17 @@ extension DataController {
 
 extension DataController {
     
-    func isFavoriteCast<T: Identifiable>(_ value: T) -> Bool {
+    func isFavorite<T: Identifiable>(_ value: T) -> Bool {
         favorite.contains(value.id)
     }
     
-    func addFavoriteCast<T: Identifiable>(_ value: T) {
-        if !isFavoriteCast(value) {
+    func addFavorite<T: Identifiable>(_ value: T) {
+        if !isFavorite(value) {
             favorite.append(value.id)
         }
     }
     
-    func removeFavoriteCast<T: Identifiable>(_ value: T) {
+    func removeFavorite<T: Identifiable>(_ value: T) {
         guard let index = favorite.firstIndex(where: { $0 == value.id }) else {
             return
         }
@@ -121,10 +131,10 @@ extension DataController {
     }
     
     func toogleFavorite<T: Identifiable>(_ value: T) {
-        if isFavoriteCast(value) {
-            removeFavoriteCast(value)
+        if isFavorite(value) {
+            removeFavorite(value)
         } else {
-            addFavoriteCast(value)
+            addFavorite(value)
         }
     }
     

@@ -1,25 +1,28 @@
 //
-//  CastViewController.swift
+//  FavoritesViewController.swift
 //  AppOfThrones
 //
-//  Created by Javier Laguna on 13/02/2020.
+//  Created by Javier Laguna on 25/02/2020.
 //  Copyright © 2020 Javier Laguna. All rights reserved.
 //
 
 import UIKit
 
-final class CastViewController: UIViewController {
+final class FavoritesViewController: UIViewController {
     
     // MARK: IBOutlet
     
-    @IBOutlet private weak var castTable: UITableView!
+    @IBOutlet private weak var favoritesTable: UITableView!
     
     // MARK: Variables
     
-    var cast = [Cast]() {
+    var allEpisodes = [Episode]() {
         didSet {
-            castTable.reloadData()
+            favoritesTable.reloadData()
         }
+    }
+    var favoriteEpisodes: [Episode] {
+        return allEpisodes.filter { DataController.shared.isFavorite($0) }
     }
     
     // MARK: LifeCycle
@@ -40,16 +43,16 @@ final class CastViewController: UIViewController {
     // MARK: Private functions
     
     private func configureView() {
-        title = "Cast"
+        title = "Favorites"
     }
     
     private func configureTable() {
-        castTable.dataSource = self
-        castTable.delegate = self
+        favoritesTable.dataSource = self
+        favoritesTable.delegate = self
         
-        castTable.register(UINib(nibName: CastTableViewCell.nibName, bundle: nil), forCellReuseIdentifier: CastTableViewCell.defaultReuseIdentifier)
+        favoritesTable.register(UINib(nibName: EpisodeTableViewCell.nibName, bundle: nil), forCellReuseIdentifier: EpisodeTableViewCell.defaultReuseIdentifier)
         
-        castTable.tableFooterView = UIView()
+        favoritesTable.tableFooterView = UIView()
     }
     
     private func addObservers() {
@@ -61,25 +64,26 @@ final class CastViewController: UIViewController {
     }
     
     private func getData() {
-        cast = DataController.shared.getCast()
+        allEpisodes = DataController.shared.getAllEpisodes()
     }
     
 }
 
 // MARK: UITableViewDataSource
 
-extension CastViewController: UITableViewDataSource {
+extension FavoritesViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return cast.count
+        return favoriteEpisodes.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: CastTableViewCell.defaultReuseIdentifier, for: indexPath) as? CastTableViewCell else {
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: EpisodeTableViewCell.defaultReuseIdentifier, for: indexPath) as? EpisodeTableViewCell else {
             return UITableViewCell()
         }
         
-        cell.setCast(cast[indexPath.row])
+        let episode = favoriteEpisodes[indexPath.row]
+        cell.setEpisode(episode)
         cell.delegate = self
         return cell
     }
@@ -87,27 +91,25 @@ extension CastViewController: UITableViewDataSource {
 
 // MARK: UITableViewDelegate
 
-extension CastViewController: UITableViewDelegate {
+extension FavoritesViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 148
+        return 128
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let actor = cast[indexPath.row]
-        let detailVC = CastDetailViewController(withCast: actor)
+        let episode = favoriteEpisodes[indexPath.row]
+        let detailVC = EpisodeDetailViewController(withEpisode: episode)
         
         self.navigationController?.present(UINavigationController(rootViewController: detailVC), animated: true, completion: nil)
     }
 }
 
+// MARK: EpisodeTableViewCellDelegate
 
-// MARK: CastTableViewCellDelegate
-
-
-extension CastViewController: CastTableViewCellDelegate {
+extension FavoritesViewController: EpisodeTableViewCellDelegate {
     
     @objc func didFavoriteChanged() {
-        castTable.reloadData()
+        favoritesTable.reloadData()
     }
 }
