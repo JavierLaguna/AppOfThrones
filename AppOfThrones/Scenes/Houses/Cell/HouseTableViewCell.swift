@@ -12,10 +12,12 @@ final class HouseTableViewCell: UITableViewCell, NibLoadableView, ReusableView {
     
     // MARK: IBOutlets
 
-    @IBOutlet weak var houseImage: UIImageView!
-    @IBOutlet weak var nameLabel: UILabel!
-    @IBOutlet weak var seatLabel: UILabel!
-    @IBOutlet weak var wordsLabel: UILabel!
+    @IBOutlet private weak var nameLabel: UILabel!
+    @IBOutlet private weak var houseImage: UIImageView!
+    @IBOutlet private weak var favoriteButton: UIButton!
+    @IBOutlet private weak var wordsButton: UIButton!
+    @IBOutlet private weak var locationButton: UIButton!
+    @IBOutlet private weak var descriptionLabel: UILabel!
     
     // MARK: LifeCycle
 
@@ -30,8 +32,6 @@ final class HouseTableViewCell: UITableViewCell, NibLoadableView, ReusableView {
     func setHouse(_ house: House) {
         houseImage.image = UIImage(named: house.imageName ?? "")
         nameLabel.text = house.name
-        seatLabel.text = house.seat
-        wordsLabel.text = house.words
     }
     
     // MARK: Private functions

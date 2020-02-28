@@ -75,6 +75,6 @@ extension HouseViewController: UITableViewDataSource {
 extension HouseViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 174
+        return UITableView.automaticDimension
     }
 }
