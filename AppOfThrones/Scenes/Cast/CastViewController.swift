@@ -8,7 +8,7 @@
 
 import UIKit
 
-final class CastViewController: UIViewController {
+final class CastViewController: UIViewController, TabBarItemable {
     
     // MARK: IBOutlet
     
@@ -16,7 +16,9 @@ final class CastViewController: UIViewController {
     
     // MARK: Variables
     
-    var cast = [Cast]() {
+    var tbTitle: String { "Cast" }
+    var tbImage: UIImage? { UIImage(systemName: "person.3.fill") }
+    private var cast = [Cast]() {
         didSet {
             castTable.reloadData()
         }
@@ -27,7 +29,6 @@ final class CastViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        configureView()
         configureTable()
         addObservers()
         getData()
@@ -38,10 +39,6 @@ final class CastViewController: UIViewController {
     }
     
     // MARK: Private functions
-    
-    private func configureView() {
-        title = "Cast"
-    }
     
     private func configureTable() {
         castTable.dataSource = self

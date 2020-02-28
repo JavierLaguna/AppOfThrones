@@ -8,7 +8,7 @@
 
 import UIKit
 
-final class EpisodesViewController: UIViewController {
+final class EpisodesViewController: UIViewController, TabBarItemable {
     
     // MARK: IBOutlets
     
@@ -17,7 +17,9 @@ final class EpisodesViewController: UIViewController {
     
     // MARK: Variables
     
-    var episodes = [Episode]() {
+    var tbTitle: String { "Seasons" }
+    var tbImage: UIImage? { UIImage(systemName: "film.fill") }
+    private var episodes = [Episode]() {
         didSet {
             episodesTable.reloadData()
         }
@@ -41,8 +43,6 @@ final class EpisodesViewController: UIViewController {
     // MARK: Private functions
     
     private func configureView() {
-        title = "Seasons"
-        
         episodesSegmentedControl.setTitleTextAttributes([.foregroundColor: UIColor.orangeMain], for: .normal)
         episodesSegmentedControl.setTitleTextAttributes([.foregroundColor: UIColor.black], for: .selected)
         episodesSegmentedControl.selectedSegmentTintColor = .orangeMain;

@@ -8,7 +8,7 @@
 
 import UIKit
 
-final class FavoritesViewController: UIViewController {
+final class FavoritesViewController: UIViewController, TabBarItemable {
     
     // MARK: IBOutlet
     
@@ -16,12 +16,14 @@ final class FavoritesViewController: UIViewController {
     
     // MARK: Variables
     
-    var allEpisodes = [Episode]() {
+    var tbTitle: String { "Favorites" }
+    var tbImage: UIImage? { UIImage(systemName: "heart.fill") }
+    private var allEpisodes = [Episode]() {
         didSet {
             favoritesTable.reloadData()
         }
     }
-    var favoriteEpisodes: [Episode] {
+    private var favoriteEpisodes: [Episode] {
         return allEpisodes.filter { DataController.shared.isFavorite($0) }
     }
     
@@ -30,7 +32,6 @@ final class FavoritesViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        configureView()
         configureTable()
         addObservers()
         getData()
@@ -41,10 +42,6 @@ final class FavoritesViewController: UIViewController {
     }
     
     // MARK: Private functions
-    
-    private func configureView() {
-        title = "Favorites"
-    }
     
     private func configureTable() {
         favoritesTable.dataSource = self

@@ -8,7 +8,7 @@
 
 import UIKit
 
-final class HouseViewController: UIViewController {
+final class HouseViewController: UIViewController, TabBarItemable {
     
     // MARK: IBOutlets
     
@@ -16,7 +16,9 @@ final class HouseViewController: UIViewController {
     
     // MARK: Variables
     
-    var houses = [House]() {
+    var tbTitle: String { "Houses" }
+    var tbImage: UIImage? { UIImage(systemName: "shield.lefthalf.fill") }
+    private var houses = [House]() {
         didSet {
             housesTable.reloadData()
         }
@@ -27,7 +29,6 @@ final class HouseViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        configureView()
         configureTable()
         addObservers()
         getData()
@@ -38,10 +39,6 @@ final class HouseViewController: UIViewController {
     }
     
     // MARK: Private functions
-    
-    private func configureView() {
-        title = "Houses"
-    }
     
     private func configureTable() {
         housesTable.dataSource = self

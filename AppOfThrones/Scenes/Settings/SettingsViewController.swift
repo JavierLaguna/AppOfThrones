@@ -8,27 +8,27 @@
 
 import UIKit
 
-final class SettingsViewController: UIViewController {
+final class SettingsViewController: UIViewController, TabBarItemable {
     
     // MARK: IBOutlets
     
     @IBOutlet private weak var favoritesView: UIView!
     @IBOutlet private weak var ratedView: UIView!
     
+    // MARK: Variables
+    
+    var tbTitle: String { "Settings" }
+    var tbImage: UIImage? { UIImage(systemName: "gear") }
+    
     // MARK: LifeCycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        configureView()
         addGestures()
     }
     
     // MARK: Private functions
-    
-    private func configureView() {
-        title = "Settings"
-    }
     
     private func addGestures() {
         favoritesView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(emptyFavorites)))
