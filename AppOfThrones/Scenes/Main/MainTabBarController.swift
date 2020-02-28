@@ -18,10 +18,11 @@ final class MainTabBarController: UITabBarController {
         configureView()
         addTabs()
     }
-    
+     
     // MARK: Private functions
     
     private func configureView() {
+
         UINavigationBar.appearance().overrideUserInterfaceStyle = .dark
         UINavigationBar.appearance().tintColor = .orangeMain
         

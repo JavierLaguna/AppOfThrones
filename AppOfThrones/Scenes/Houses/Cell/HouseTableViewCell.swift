@@ -97,15 +97,15 @@ final class HouseTableViewCell: UITableViewCell, NibLoadableView, ReusableView {
         let image = isFavorite ? UIImage(systemName: "heart.fill") : UIImage(systemName: "heart")
         bigHeartImage.image = image
         bigHeartImage.transform = CGAffineTransform(scaleX: 0.1, y: 0.1)
-
-        UIView.animate(withDuration: 0.4, animations: { [weak self] in
+        
+        UIView.animate(withDuration: 0.5, animations: { [weak self] in
             
             self?.bigHeartImage.alpha = 1
-            self?.bigHeartImage.transform = .identity
             
             }, completion: { [weak self] _ in
-                UIView.animate(withDuration: 0.4, animations: { [weak self] in
+                UIView.animate(withDuration: 1, animations: { [weak self] in
                     self?.bigHeartImage.alpha = 0
+                    self?.bigHeartImage.transform = CGAffineTransform(scaleX: 1.2, y: 1.2)
                 })
         })
     }
