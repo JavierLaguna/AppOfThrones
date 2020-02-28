@@ -8,8 +8,9 @@
 
 import Foundation
 
-struct House: Decodable, Equatable {
+struct House: Identifiable, Decodable, Equatable {
     
+    let id: Int
     let imageName: String?
     let name: String?
     let words: String?

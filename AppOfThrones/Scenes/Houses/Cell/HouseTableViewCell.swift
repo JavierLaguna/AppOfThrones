@@ -28,6 +28,7 @@ final class HouseTableViewCell: UITableViewCell, NibLoadableView, ReusableView {
     // MARK: Variables
     
     private var house: House?
+    private var isFavorite = false
     private var displayMode: DisplayMode = .words {
         didSet {
             displayModeHasChange()
@@ -47,10 +48,12 @@ final class HouseTableViewCell: UITableViewCell, NibLoadableView, ReusableView {
     
     func setHouse(_ house: House) {
         self.house = house
+        self.isFavorite = DataController.shared.isFavorite(house)
         
         houseImage.image = UIImage(named: house.imageName ?? "")
         nameLabel.text = house.name
         
+        setFavoriteButton(isFavorite: isFavorite)
         displayModeHasChange()
     }
     
@@ -84,31 +87,47 @@ final class HouseTableViewCell: UITableViewCell, NibLoadableView, ReusableView {
         }
     }
     
+    private func setFavoriteButton(isFavorite: Bool) {
+        favoriteButton.setImage(UIImage(systemName: isFavorite ? "heart.fill" : "heart"), for: .normal)
+    }
+    
     private func animateFavorite(isFavorite: Bool) {
+        setFavoriteButton(isFavorite: isFavorite)
+        
         let image = isFavorite ? UIImage(systemName: "heart.fill") : UIImage(systemName: "heart")
         bigHeartImage.image = image
         bigHeartImage.transform = CGAffineTransform(scaleX: 0.1, y: 0.1)
 
-        UIView.animate(withDuration: 0.5, animations: { [weak self] in
+        UIView.animate(withDuration: 0.4, animations: { [weak self] in
             
             self?.bigHeartImage.alpha = 1
             self?.bigHeartImage.transform = .identity
             
             }, completion: { [weak self] _ in
-                UIView.animate(withDuration: 0.5, animations: { [weak self] in
+                UIView.animate(withDuration: 0.4, animations: { [weak self] in
                     self?.bigHeartImage.alpha = 0
                 })
         })
     }
     
+    private func toogleFavorite() {
+        guard let house = house else { return }
+        
+        let favorite = !isFavorite
+        animateFavorite(isFavorite: favorite)
+        DataController.shared.toogleFavorite(house)
+        
+        self.isFavorite = favorite
+    }
+    
     @objc private func dobleTapImage() {
-        animateFavorite(isFavorite: true)
+        toogleFavorite()
     }
     
     // MARK: IBActions
     
     @IBAction private func tapFavoriteButton(_ sender: Any) {
-        animateFavorite(isFavorite: true)
+        toogleFavorite()
     }
     
     @IBAction private func tapWordsButton(_ sender: Any) {
