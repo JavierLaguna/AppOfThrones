@@ -19,6 +19,7 @@ final class HouseTableViewCell: UITableViewCell, NibLoadableView, ReusableView {
     
     @IBOutlet private weak var nameLabel: UILabel!
     @IBOutlet private weak var houseImage: UIImageView!
+    @IBOutlet private weak var bigHeartImage: UIImageView!
     @IBOutlet private weak var favoriteButton: UIButton!
     @IBOutlet private weak var wordsButton: UIButton!
     @IBOutlet private weak var locationButton: UIButton!
@@ -39,6 +40,7 @@ final class HouseTableViewCell: UITableViewCell, NibLoadableView, ReusableView {
         super.awakeFromNib()
         
         configureView()
+        addGestures()
     }
     
     // MARK: Public functions
@@ -54,10 +56,19 @@ final class HouseTableViewCell: UITableViewCell, NibLoadableView, ReusableView {
     
     // MARK: Private functions
     
+    private func addGestures() {
+        let tap = UITapGestureRecognizer(target: self, action: #selector(dobleTapImage))
+        tap.numberOfTapsRequired = 2
+        houseImage.isUserInteractionEnabled = true
+        houseImage.addGestureRecognizer(tap)
+    }
+    
     private func configureView() {
         houseImage.layer.cornerRadius = 1.0
         houseImage.layer.borderWidth = 1.0
         houseImage.layer.borderColor = UIColor.white.withAlphaComponent(0.2).cgColor
+        
+        bigHeartImage.alpha = 0
     }
     
     private func displayModeHasChange() {
@@ -73,10 +84,31 @@ final class HouseTableViewCell: UITableViewCell, NibLoadableView, ReusableView {
         }
     }
     
+    private func animateFavorite(isFavorite: Bool) {
+        let image = isFavorite ? UIImage(systemName: "heart.fill") : UIImage(systemName: "heart")
+        bigHeartImage.image = image
+        bigHeartImage.transform = CGAffineTransform(scaleX: 0.1, y: 0.1)
+
+        UIView.animate(withDuration: 0.5, animations: { [weak self] in
+            
+            self?.bigHeartImage.alpha = 1
+            self?.bigHeartImage.transform = .identity
+            
+            }, completion: { [weak self] _ in
+                UIView.animate(withDuration: 0.5, animations: { [weak self] in
+                    self?.bigHeartImage.alpha = 0
+                })
+        })
+    }
+    
+    @objc private func dobleTapImage() {
+        animateFavorite(isFavorite: true)
+    }
+    
     // MARK: IBActions
     
     @IBAction private func tapFavoriteButton(_ sender: Any) {
-        
+        animateFavorite(isFavorite: true)
     }
     
     @IBAction private func tapWordsButton(_ sender: Any) {

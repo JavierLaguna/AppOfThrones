@@ -17,18 +17,23 @@
                 <rect key="frame" x="0.0" y="0.0" width="460" height="564"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Lannister" translatesAutoresizingMaskIntoConstraints="NO" id="UT0-Tn-Zvc">
-                        <rect key="frame" x="0.0" y="53" width="460" height="400"/>
-                        <constraints>
-                            <constraint firstAttribute="width" secondItem="UT0-Tn-Zvc" secondAttribute="height" multiplier="23:20" id="AQr-2c-eSi"/>
-                        </constraints>
-                    </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8m4-6X-9y4">
                         <rect key="frame" x="20" y="20" width="420" height="21"/>
                         <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Lannister" translatesAutoresizingMaskIntoConstraints="NO" id="UT0-Tn-Zvc">
+                        <rect key="frame" x="0.0" y="53" width="460" height="400"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="UT0-Tn-Zvc" secondAttribute="height" multiplier="23:20" id="AQr-2c-eSi"/>
+                        </constraints>
+                    </imageView>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="heart" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Idn-lO-ntb">
+                        <rect key="frame" x="0.0" y="54.5" width="460" height="396.5"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <preferredSymbolConfiguration key="preferredSymbolConfiguration" weight="ultraLight"/>
+                    </imageView>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kwB-Np-9Yj">
                         <rect key="frame" x="0.0" y="461" width="46" height="46"/>
                         <constraints>
@@ -90,8 +95,12 @@
                     <constraint firstItem="xJd-By-2YS" firstAttribute="centerY" secondItem="kwB-Np-9Yj" secondAttribute="centerY" id="Ff8-4W-xJi"/>
                     <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="Xzd-SL-EKz" secondAttribute="bottom" constant="20" id="V53-oB-Aeg"/>
                     <constraint firstItem="8m4-6X-9y4" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" symbolic="YES" id="Vbf-y5-4wQ"/>
+                    <constraint firstItem="Idn-lO-ntb" firstAttribute="bottom" secondItem="UT0-Tn-Zvc" secondAttribute="bottom" id="cjx-tY-9Nh"/>
                     <constraint firstAttribute="trailing" secondItem="Xzd-SL-EKz" secondAttribute="trailing" constant="20" symbolic="YES" id="elq-4B-XwE"/>
+                    <constraint firstItem="Idn-lO-ntb" firstAttribute="trailing" secondItem="UT0-Tn-Zvc" secondAttribute="trailing" id="hHd-Xy-jYp"/>
                     <constraint firstItem="kwB-Np-9Yj" firstAttribute="top" secondItem="UT0-Tn-Zvc" secondAttribute="bottom" constant="8" symbolic="YES" id="k6D-d5-J54"/>
+                    <constraint firstItem="Idn-lO-ntb" firstAttribute="top" secondItem="UT0-Tn-Zvc" secondAttribute="top" id="n5f-fk-E0B"/>
+                    <constraint firstItem="Idn-lO-ntb" firstAttribute="leading" secondItem="UT0-Tn-Zvc" secondAttribute="leading" id="oJQ-ZH-SSb"/>
                     <constraint firstItem="UT0-Tn-Zvc" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="rI5-5A-qXo"/>
                     <constraint firstAttribute="trailing" secondItem="UT0-Tn-Zvc" secondAttribute="trailing" id="zDH-mi-xe9"/>
                     <constraint firstItem="Xzd-SL-EKz" firstAttribute="top" secondItem="kwB-Np-9Yj" secondAttribute="bottom" constant="10" id="zV6-Ta-qI2"/>
@@ -100,6 +109,7 @@
             <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
+                <outlet property="bigHeartImage" destination="Idn-lO-ntb" id="r3I-RP-pwp"/>
                 <outlet property="descriptionLabel" destination="Xzd-SL-EKz" id="1Mv-jM-Q30"/>
                 <outlet property="favoriteButton" destination="kwB-Np-9Yj" id="blD-m8-jPP"/>
                 <outlet property="houseImage" destination="UT0-Tn-Zvc" id="rOg-vM-jci"/>
