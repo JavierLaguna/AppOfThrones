@@ -11,7 +11,7 @@ import UIKit
 final class HouseViewController: UIViewController {
     
     // MARK: IBOutlets
-
+    
     @IBOutlet private weak var housesTable: UITableView!
     
     // MARK: Variables
@@ -29,9 +29,14 @@ final class HouseViewController: UIViewController {
         
         configureView()
         configureTable()
+        addObservers()
         getData()
     }
-
+    
+    deinit {
+        removeObservers()
+    }
+    
     // MARK: Private functions
     
     private func configureView() {
@@ -49,6 +54,18 @@ final class HouseViewController: UIViewController {
     
     private func getData() {
         houses = DataController.shared.getHouses()
+    }
+    
+    private func addObservers() {
+        NotificationCenter.default.addObserver(self, selector: #selector(didFavoriteChanged), name: Constants.NotificationCenter.favoritesChanged, object: nil)
+    }
+    
+    private func removeObservers() {
+        NotificationCenter.default.removeObserver(self, name: Constants.NotificationCenter.favoritesChanged, object: nil)
+    }
+    
+    @objc private func didFavoriteChanged() {
+        housesTable.reloadData()
     }
 }
 
