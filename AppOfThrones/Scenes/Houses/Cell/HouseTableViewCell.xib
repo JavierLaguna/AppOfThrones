@@ -3,6 +3,7 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -34,10 +35,13 @@
                             <constraint firstAttribute="width" constant="46" id="MKH-Ec-Q7O"/>
                             <constraint firstAttribute="height" constant="46" id="S2A-re-W6D"/>
                         </constraints>
-                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" red="0.92156862750000001" green="0.67450980390000004" blue="0.14901960780000001" alpha="1" colorSpace="calibratedRGB"/>
                         <state key="normal" image="heart" catalog="system">
                             <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large" weight="regular"/>
                         </state>
+                        <connections>
+                            <action selector="tapFavoriteButton:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="2FG-eg-9IX"/>
+                        </connections>
                     </button>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xJd-By-2YS">
                         <rect key="frame" x="46" y="461" width="46" height="46"/>
@@ -45,10 +49,27 @@
                             <constraint firstAttribute="width" constant="46" id="SjH-82-eqM"/>
                             <constraint firstAttribute="height" constant="46" id="hkQ-Dh-0QN"/>
                         </constraints>
-                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" name="OrangeMain"/>
                         <state key="normal" image="quote.bubble" catalog="system">
                             <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large" weight="regular"/>
                         </state>
+                        <connections>
+                            <action selector="tapWordsButton:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="KQW-xQ-Ynd"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bqj-kF-DVp">
+                        <rect key="frame" x="92" y="461" width="46" height="46"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="46" id="MrC-Rj-KdE"/>
+                            <constraint firstAttribute="height" constant="46" id="lFy-Nx-TAH"/>
+                        </constraints>
+                        <color key="tintColor" name="OrangeMain"/>
+                        <state key="normal" image="location" catalog="system">
+                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large" weight="regular"/>
+                        </state>
+                        <connections>
+                            <action selector="tapLocationButton:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Ya0-yL-toF"/>
+                        </connections>
                     </button>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xzd-SL-EKz">
                         <rect key="frame" x="10" y="517" width="430" height="20.5"/>
@@ -56,17 +77,6 @@
                         <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bqj-kF-DVp">
-                        <rect key="frame" x="92" y="461" width="46" height="46"/>
-                        <constraints>
-                            <constraint firstAttribute="width" constant="46" id="MrC-Rj-KdE"/>
-                            <constraint firstAttribute="height" constant="46" id="lFy-Nx-TAH"/>
-                        </constraints>
-                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <state key="normal" image="location" catalog="system">
-                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large" weight="regular"/>
-                        </state>
-                    </button>
                 </subviews>
                 <constraints>
                     <constraint firstItem="Xzd-SL-EKz" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="1Lx-n8-oco"/>
@@ -105,5 +115,8 @@
         <image name="heart" catalog="system" width="64" height="54"/>
         <image name="location" catalog="system" width="64" height="56"/>
         <image name="quote.bubble" catalog="system" width="64" height="54"/>
+        <namedColor name="OrangeMain">
+            <color red="0.92156862745098034" green="0.67450980392156867" blue="0.14901960784313725" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
     </resources>
 </document>
