@@ -10,6 +10,28 @@ import UIKit
 
 final class MainTabBarController: UITabBarController {
     
+    // MARK: MainTabBarItem
+    
+    private struct MainTabBarItem {
+        let viewController: UIViewController
+        let displayMode: MainTabBarItemDisplayMode
+        
+        enum MainTabBarItemDisplayMode {
+            case navController
+            case splitView
+        }
+    }
+    
+    // MARK: Constants
+    
+    private let tabBarViewControllers: [MainTabBarItem] = [
+        MainTabBarItem(viewController: EpisodesSplitViewController(tbTag: 0), displayMode: .splitView),
+        MainTabBarItem(viewController: CastViewController(tbTag: 1), displayMode: .navController),
+        MainTabBarItem(viewController: HouseViewController(tbTag: 2), displayMode: .navController),
+        MainTabBarItem(viewController: FavoritesViewController(tbTag: 3), displayMode: .navController),
+        MainTabBarItem(viewController: SettingsViewController(tbTag: 4), displayMode: .navController)
+    ]
+    
     // MARK: LifeCycle
     
     override func viewDidLoad() {
@@ -22,7 +44,6 @@ final class MainTabBarController: UITabBarController {
     // MARK: Private functions
     
     private func configureView() {
-        
         UINavigationBar.appearance().overrideUserInterfaceStyle = .dark
         UINavigationBar.appearance().tintColor = .orangeMain
         
@@ -32,14 +53,12 @@ final class MainTabBarController: UITabBarController {
     
     private func addTabs() {
         
-        let tabBarViewControllers = [ // TabBarItemable
-            EpisodesViewController(tbTag: 0),
-            CastViewController(tbTag: 1),
-            HouseViewController(tbTag: 2),
-            FavoritesViewController(tbTag: 3),
-            SettingsViewController(tbTag: 4)
-        ]
-        
-        self.viewControllers = tabBarViewControllers.map({ UINavigationController(rootViewController: $0) })
+        self.viewControllers = tabBarViewControllers.map({
+            if $0.displayMode == .navController {
+                return UINavigationController(rootViewController: $0.viewController)
+            }
+            
+            return $0.viewController
+        })
     }
 }

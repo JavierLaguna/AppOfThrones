@@ -24,3 +24,11 @@ extension TabBarItemable where Self: UIViewController {
         tabBarItem = UITabBarItem(title: tbTitle, image: tbImage, tag: tbTag)
     }
 }
+
+extension TabBarItemable where Self: UISplitViewController {
+    init(tbTag: Int) {
+        self.init()
+        
+        tabBarItem = UITabBarItem(title: tbTitle, image: tbImage, tag: tbTag)
+    }
+}

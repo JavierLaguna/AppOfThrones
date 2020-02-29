@@ -16,6 +16,9 @@
 		49325D882405BAD700D7F9DD /* FavoritesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49325D862405BAD700D7F9DD /* FavoritesViewController.xib */; };
 		49325D8B24084E0200D7F9DD /* FavoriteDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49325D8A24084E0200D7F9DD /* FavoriteDelegate.swift */; };
 		49325D8D24099C2F00D7F9DD /* TabBarItemable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49325D8C24099C2F00D7F9DD /* TabBarItemable.swift */; };
+		49325D8F240A6BE900D7F9DD /* EpisodesSplitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49325D8E240A6BE900D7F9DD /* EpisodesSplitViewController.swift */; };
+		49325D93240A753D00D7F9DD /* PlaceholderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49325D91240A753D00D7F9DD /* PlaceholderViewController.swift */; };
+		49325D94240A753D00D7F9DD /* PlaceholderViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49325D92240A753D00D7F9DD /* PlaceholderViewController.xib */; };
 		4942DBAE23FF32ED00ECC72D /* season_4.json in Resources */ = {isa = PBXBuildFile; fileRef = 4942DBA423FF32ED00ECC72D /* season_4.json */; };
 		4942DBAF23FF32ED00ECC72D /* season_8.json in Resources */ = {isa = PBXBuildFile; fileRef = 4942DBA523FF32ED00ECC72D /* season_8.json */; };
 		4942DBB023FF32ED00ECC72D /* season_5.json in Resources */ = {isa = PBXBuildFile; fileRef = 4942DBA623FF32ED00ECC72D /* season_5.json */; };
@@ -86,6 +89,9 @@
 		49325D862405BAD700D7F9DD /* FavoritesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavoritesViewController.xib; sourceTree = "<group>"; };
 		49325D8A24084E0200D7F9DD /* FavoriteDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteDelegate.swift; sourceTree = "<group>"; };
 		49325D8C24099C2F00D7F9DD /* TabBarItemable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarItemable.swift; sourceTree = "<group>"; };
+		49325D8E240A6BE900D7F9DD /* EpisodesSplitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodesSplitViewController.swift; sourceTree = "<group>"; };
+		49325D91240A753D00D7F9DD /* PlaceholderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceholderViewController.swift; sourceTree = "<group>"; };
+		49325D92240A753D00D7F9DD /* PlaceholderViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlaceholderViewController.xib; sourceTree = "<group>"; };
 		4942DBA423FF32ED00ECC72D /* season_4.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = season_4.json; sourceTree = "<group>"; };
 		4942DBA523FF32ED00ECC72D /* season_8.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = season_8.json; sourceTree = "<group>"; };
 		4942DBA623FF32ED00ECC72D /* season_5.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = season_5.json; sourceTree = "<group>"; };
@@ -191,6 +197,31 @@
 				49325D8A24084E0200D7F9DD /* FavoriteDelegate.swift */,
 			);
 			path = Delegates;
+			sourceTree = "<group>";
+		};
+		49325D90240A751F00D7F9DD /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				49325D95240A754300D7F9DD /* PlaceholderViewController */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		49325D95240A754300D7F9DD /* PlaceholderViewController */ = {
+			isa = PBXGroup;
+			children = (
+				49325D91240A753D00D7F9DD /* PlaceholderViewController.swift */,
+				49325D92240A753D00D7F9DD /* PlaceholderViewController.xib */,
+			);
+			path = PlaceholderViewController;
+			sourceTree = "<group>";
+		};
+		49325D96240A75E600D7F9DD /* SplitView */ = {
+			isa = PBXGroup;
+			children = (
+				49325D8E240A6BE900D7F9DD /* EpisodesSplitViewController.swift */,
+			);
+			path = SplitView;
 			sourceTree = "<group>";
 		};
 		4942DBA323FF32ED00ECC72D /* Jsons */ = {
@@ -349,6 +380,7 @@
 		49BAF29623F5F07A005B5534 /* Episodes */ = {
 			isa = PBXGroup;
 			children = (
+				49325D96240A75E600D7F9DD /* SplitView */,
 				4956F8F424044F0200E3F0D5 /* Cell */,
 				49F8AFE024045319009E4BD3 /* EpisodesViewController.swift */,
 				49BAF29823F5F09D005B5534 /* EpisodesViewController.xib */,
@@ -407,6 +439,7 @@
 		49BCA113240593DC00498F29 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				49325D90240A751F00D7F9DD /* ViewController */,
 				49BCA1142405940100498F29 /* TableCell */,
 			);
 			path = UI;
@@ -538,6 +571,7 @@
 				4942DBB523FF32ED00ECC72D /* season_1.json in Resources */,
 				4942DBB123FF32ED00ECC72D /* season_2.json in Resources */,
 				4956F8FA24044FD200E3F0D5 /* Colors.xcassets in Resources */,
+				49325D94240A753D00D7F9DD /* PlaceholderViewController.xib in Resources */,
 				49A45C5323FB488300474F8D /* CastTableViewCell.xib in Resources */,
 				4989F58323F34BD20058EF88 /* LaunchScreen.storyboard in Resources */,
 				4942DBB423FF32ED00ECC72D /* houses.json in Resources */,
@@ -586,6 +620,7 @@
 				49BAF2A623F602A7005B5534 /* SettingsViewController.swift in Sources */,
 				49BAF29D23F5F419005B5534 /* Episode.swift in Sources */,
 				4956F8F724044F6200E3F0D5 /* UIColor.swift in Sources */,
+				49325D93240A753D00D7F9DD /* PlaceholderViewController.swift in Sources */,
 				49325D8D24099C2F00D7F9DD /* TabBarItemable.swift in Sources */,
 				49A45C5223FB488300474F8D /* CastTableViewCell.swift in Sources */,
 				49F8AFE124045319009E4BD3 /* EpisodesViewController.swift in Sources */,
@@ -601,6 +636,7 @@
 				49A45C5923FB556500474F8D /* DataController.swift in Sources */,
 				49BCA112240471C600498F29 /* MainTabBarController.swift in Sources */,
 				4956F8EA24044B7C00E3F0D5 /* Identifiable.swift in Sources */,
+				49325D8F240A6BE900D7F9DD /* EpisodesSplitViewController.swift in Sources */,
 				49D0379023FC6B7100B80379 /* HouseTableViewCell.swift in Sources */,
 				49BAF2AF23F60938005B5534 /* HouseViewController.swift in Sources */,
 			);

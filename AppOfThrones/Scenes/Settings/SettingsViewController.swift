@@ -42,7 +42,7 @@ final class SettingsViewController: UIViewController, TabBarItemable {
     }
     
     @objc private func emptyRates() {
-        displayDeleteAdvice(title: "Borrar Favoritos") {
+        displayDeleteAdvice(title: "Borrar Puntuaciones") {
             DataController.shared.cleanRating()
         }
     }

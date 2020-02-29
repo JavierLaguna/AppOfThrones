@@ -40,6 +40,12 @@ final class EpisodesViewController: UIViewController, TabBarItemable {
         removeObservers()
     }
     
+    // MARK: Public functions
+    
+    func setTitle(_ title: String?) {
+        self.title = title
+    }
+    
     // MARK: Private functions
     
     private func configureView() {
@@ -116,9 +122,14 @@ extension EpisodesViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let episode = episodes[indexPath.row]
-        let detailVC = EpisodeDetailViewController(withEpisode: episode)
+        let detailVC = UINavigationController(rootViewController: EpisodeDetailViewController(withEpisode: episode))
         
-        self.navigationController?.present(UINavigationController(rootViewController: detailVC), animated: true, completion: nil)
+        if let splitViewController = splitViewController {
+            splitViewController.show(detailVC, sender: nil)
+            return
+        }
+        
+        navigationController?.present(detailVC, animated: true, completion: nil)
     }
 }
 
