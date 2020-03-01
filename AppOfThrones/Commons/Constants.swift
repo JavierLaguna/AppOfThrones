@@ -17,4 +17,9 @@ struct Constants {
         static let favoritesChanged = Notification.Name("NCFavoritesChanged")
         static let ratesChanged = Notification.Name("NCRatesChanged")
     }
+    
+    struct UserDefaultKey {
+        static let favorites = "UDFavorites"
+        static let rates = "UDRates"
+    }
 }

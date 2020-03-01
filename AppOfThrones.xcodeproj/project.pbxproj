@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		490EA46523FC827100953123 /* Rating.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490EA46423FC827100953123 /* Rating.swift */; };
+		492FF983240BC88A00362F3A /* UserDefaultsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492FF982240BC88A00362F3A /* UserDefaultsManager.swift */; };
 		49325D7C2405B05400D7F9DD /* ActorDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49325D7A2405B05400D7F9DD /* ActorDetailCell.swift */; };
 		49325D7D2405B05400D7F9DD /* ActorDetailCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49325D7B2405B05400D7F9DD /* ActorDetailCell.xib */; };
 		49325D812405B2B200D7F9DD /* CastDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49325D7F2405B2B200D7F9DD /* CastDetailViewController.swift */; };
@@ -81,6 +82,7 @@
 
 /* Begin PBXFileReference section */
 		490EA46423FC827100953123 /* Rating.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rating.swift; sourceTree = "<group>"; };
+		492FF982240BC88A00362F3A /* UserDefaultsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsManager.swift; sourceTree = "<group>"; };
 		49325D7A2405B05400D7F9DD /* ActorDetailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActorDetailCell.swift; sourceTree = "<group>"; };
 		49325D7B2405B05400D7F9DD /* ActorDetailCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ActorDetailCell.xib; sourceTree = "<group>"; };
 		49325D7F2405B2B200D7F9DD /* CastDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CastDetailViewController.swift; sourceTree = "<group>"; };
@@ -265,6 +267,7 @@
 				49BCA113240593DC00498F29 /* UI */,
 				49BCA10E24046CB600498F29 /* Constants.swift */,
 				49A45C5823FB556500474F8D /* DataController.swift */,
+				492FF982240BC88A00362F3A /* UserDefaultsManager.swift */,
 			);
 			path = Commons;
 			sourceTree = "<group>";
@@ -614,6 +617,7 @@
 				4989F59923F35E430058EF88 /* RateViewController.swift in Sources */,
 				4989F57723F34BCE0058EF88 /* AppDelegate.swift in Sources */,
 				49BCA11C2405957800498F29 /* EpisodeDetailViewController.swift in Sources */,
+				492FF983240BC88A00362F3A /* UserDefaultsManager.swift in Sources */,
 				490EA46523FC827100953123 /* Rating.swift in Sources */,
 				49BCA1222405A52C00498F29 /* EpisodeDetailCell.swift in Sources */,
 				49325D7C2405B05400D7F9DD /* ActorDetailCell.swift in Sources */,

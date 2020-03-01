@@ -8,12 +8,42 @@
 
 import Foundation
 
-enum Rate {
+enum Rate: Codable {
     case unrated
     case rated(value: Double)
+    
+    enum CodingKeys: String, CodingKey {
+        case rate
+        case value
+    }
+    
+    init(from decoder: Decoder) throws {
+        let values = try decoder.container(keyedBy: CodingKeys.self)
+        
+        let rate = try values.decode(String.self, forKey: .rate)
+        switch rate {
+        case "rated":
+            let value = try values.decode(Double.self, forKey: .value)
+            self = .rated(value: value)
+        default:
+            self = .unrated
+        }
+    }
+    
+    func encode(to encoder: Encoder) throws {
+        var container = encoder.container(keyedBy: CodingKeys.self)
+               
+        switch self {
+        case .rated(let value):
+            try container.encode("rated", forKey: .rate)
+            try container.encode(value, forKey: .value)
+        case .unrated:
+            try container.encode("unrated", forKey: .rate)
+        }
+    }
 }
 
-struct Rating {
+struct Rating: Codable {
     var id: Int
     var rate: Rate
 }

@@ -15,13 +15,13 @@ App Extra Features:
     - House layout design like Instagram with a little favorite animation
     - SplitView on Episodes for improve UX on iPad devices
     - Show favorites Cast and Houses on Favorites section using table sections
+    - Save favorites and rates on UserDefaults
     - Add some utils and protocols for improve app and reuse code
 
 ## Next Steps TODO
 
 The next steps to do or improve on this project will be:
 
-    - Save favorites and rates, on UserDefaults for example
     - Improve some UI things like image ratio and cell distribution for big devices like iPad and small devices like iPhone SE
     - Use `Results` as return on methods that get data of json
     - Implement localized for multilanguage

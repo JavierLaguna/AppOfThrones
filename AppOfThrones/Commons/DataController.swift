@@ -18,14 +18,16 @@ final class DataController {
     // MARK: Private Variables
     
     lazy private var decoder = JSONDecoder()
-    private var rating = [Rating]() {
+    private var rating: [Rating] = UserDefaultsManager.getRates() {
         didSet {
             notifyRatingDidChanged()
+            UserDefaultsManager.saveRates(rating)
         }
     }
-    private var favorite = [Int]() {
+    private var favorites: [Int] = UserDefaultsManager.getFavorites() {
         didSet {
             notifyFavoriteDidChanged()
+            UserDefaultsManager.saveFavorites(favorites)
         }
     }
 }
@@ -127,21 +129,21 @@ extension DataController {
 extension DataController {
     
     func isFavorite<T: Identifiable>(_ value: T) -> Bool {
-        favorite.contains(value.id)
+        favorites.contains(value.id)
     }
     
     func addFavorite<T: Identifiable>(_ value: T) {
         if !isFavorite(value) {
-            favorite.append(value.id)
+            favorites.append(value.id)
         }
     }
     
     func removeFavorite<T: Identifiable>(_ value: T) {
-        guard let index = favorite.firstIndex(where: { $0 == value.id }) else {
+        guard let index = favorites.firstIndex(where: { $0 == value.id }) else {
             return
         }
         
-        favorite.remove(at: index)
+        favorites.remove(at: index)
     }
     
     func toogleFavorite<T: Identifiable>(_ value: T) {
@@ -153,7 +155,7 @@ extension DataController {
     }
     
     func cleanFavorites() {
-        favorite.removeAll()
+        favorites.removeAll()
     }
     
     // MARK: Favorite - Private functions
